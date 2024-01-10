@@ -1,0 +1,7 @@
+{
+    "terminal.integrated.commandsToSkipShell": [
+        "editor.action.formatDocument"
+    ],
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
+}
