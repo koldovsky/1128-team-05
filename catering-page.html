@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catering</title>
 </head>
+
 <body>
-    <!-- <header>місця для першого блоку- його робить інша учасниця</header> -->
+    <header data-include="index.header.partial.html"></header>
+    
     <main>
         <!-- <div>місце другого блоку</div> -->
-        <div> 
+        
+        <section class="catering-page.motto-motto.partial.html"></section>
+        <!-- я добавив але не знаю чи працює -->
+
+        <div>
             <div><img src="img/img-for-catering/622facb9c898e60022f3a492_optimized.jpg" alt="burgers"></div>
             <section>
                 <h2>Hire us</h2>
                 <h3>Your Party, Our Food</h3>
                 <p>An event is coming up, and you don't want to cook? Freddy Burgers offers its catering services!</p>
                 <div>
-                    <p><img src="img/img-for-catering/yellow-circle-svgrepo-com.svg" height="20px" width="20px" alt="">$200 minimum
+                    <p><img src="img/img-for-catering/yellow-circle-svgrepo-com.svg" height="20px" width="20px"
+                            alt="">$200 minimum
                         order;</p>
-                    <p><img src="img/img-for-catering/yellow-circle-svgrepo-com.svg" height="20px" width="20px" alt="">24-hour notice
+                    <p><img src="img/img-for-catering/yellow-circle-svgrepo-com.svg" height="20px" width="20px"
+                            alt="">24-hour notice
                         is appreciated for all orders;</p>
-                    <p><img src="img/img-for-catering/yellow-circle-svgrepo-com.svg" height="20px" width="20px" alt="">Prices do not
+                    <p><img src="img/img-for-catering/yellow-circle-svgrepo-com.svg" height="20px" width="20px"
+                            alt="">Prices do not
                         include tax, delivery, or service.</p>
                     <p>Surprise your guests with hot burgers and side dishes! Also, we are ready to create an exclusive
                         menu based on the event type and your preferences.</p>
@@ -42,20 +52,26 @@
                         recommend getting in touch with us 24 hours.</p>
                 </div>
                 <div>
-                    <img src="img/img-for-catering/delivery-man 2.svg" alt="delivery-man" style="height: 50px; width: 50px;">
+                    <img src="img/img-for-catering/delivery-man 2.svg" alt="delivery-man"
+                        style="height: 50px; width: 50px;">
                     <h4>On site</h4>
-                    <p>We'll also happily travel to your event. Our friendly staff can set up shop with everything necessary to
+                    <p>We'll also happily travel to your event. Our friendly staff can set up shop with everything
+                        necessary to
                         serve up burgers, chips & fries.</p>
                 </div>
                 <div>
-                    <img src="img/img-for-catering/food-truck 1.svg" alt="food-truck" style="height: 50px; width: 50px;">
+                    <img src="img/img-for-catering/food-truck 1.svg" alt="food-truck"
+                        style="height: 50px; width: 50px;">
                     <h4>Truck</h4>
-                    <p>The Freddy Burgers Food Truck will surely make your party extraordinary. We should mention that our truck
+                    <p>The Freddy Burgers Food Truck will surely make your party extraordinary. We should mention that
+                        our truck
                         is also Zagat's #1 rated. </p>
                 </div>
             </div>
         </div>
         <!-- <div>п'ятий блок</div> -->
+        <section data-include="catering-page.map.partial.html"></section>
+        <!-- Чомусь тимчасово не працює-->
         <div>
             <img src="img/img-for-catering/burger-background.jpg" alt="burger burger-background">
             <div>
@@ -75,7 +91,9 @@
             </div>
         </div>
 
-    </main>    
+    </main>
     <footer></footer>
+    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
 </body>
+
 </html>
