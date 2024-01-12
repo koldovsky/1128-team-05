@@ -1,27 +1,33 @@
-<section class="index__form block">
-  <div class="block__background__image">
-    <img src="img/burger-food-truck-background.jpg" alt="Background burger" />
+<section class="index-form">
+  <div class="index-form__background">
+    <img src="img/burger-food-truck-background.jpg" alt="Background with a burger food truck" />
   </div>
-  <div class="block__form">
-    <h2>Hire Us</h2>
-    <p>Quick Catering Request</p>
-    <p>
-      We will contact you soon to agree on details and throw a gastronomic
-      party!
+  <div class="index-form__content">
+    <h2 class="index-form__heading">Hire Us</h2>
+    <p class="index-form__subtitle">Quick Catering Request</p>
+    <p class="index-form__description">
+      We will contact you soon to agree on details and throw a gastronomic party!
     </p>
     <form
-      class="block__contact__form"
+      class="index-form__contact-form"
       action="https://formspree.io/f/xleqdelq"
       method="post"
     >
-      <input type="text" name="Full-name" placeholder="Enter your full name" />
+      <label for="full-name" class="visually-hidden">Full Name</label>
+      <input type="text" id="full-name" name="Full-name" placeholder="Enter your full name" />
+      
+      <label for="phone-number" class="visually-hidden">Phone Number</label>
       <input
         type="text"
+        id="phone-number"
         name="Phone-number"
         placeholder="Enter your phone number"
       />
-      <input type="text" name="Email" placeholder="Enter your email" />
-      <input type="submit" value="Send" />
+
+      <label for="email" class="visually-hidden">Email</label>
+      <input type="text" id="email" name="Email" placeholder="Enter your email" />
+
+      <input type="submit" value="Send" class="index-form__submit-button" />
     </form>
   </div>
 </section>
