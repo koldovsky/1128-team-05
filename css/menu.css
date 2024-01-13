@@ -1,0 +1,177 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+:root {
+    scroll-behavior: smooth;
+    --background-menu-color: #fbbe36;
+    --h2-color: #e7272d;
+    --ui-light-accent-color: white;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.section__menu-top {
+    background-color: var(--background-menu-color);
+    height: 255px;
+    display: flex;
+    width: 100%;
+    padding: 80px 0 65px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.menu-top-review {
+    width: 354px;
+    height: 97px;
+    padding: 0 15px;
+
+}
+
+.menu-top-title {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--h2-color);
+    height: 25px;
+}
+
+.menu-top-subtitle {
+    color: var(--ui-light-accent-color);
+    font-size: 47px;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+    padding: 15px 0 0 0;
+}
+
+.menu-top__description {
+    color: var(--ui-light-accent-color);
+    font-size: 20px;
+    font-weight: 700;
+    width: 737px;
+    padding: 0 15px;
+}
+
+.section__menu-container {
+    padding: 100px 0;
+    position: relative;
+    background-image: url(../img/img-for-menu/background-image-leaf.jpg);
+    background-repeat: no-repeat;
+    min-height: 865px;
+    background-size: cover;
+}
+
+
+
+.section__menu-btn {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section__menu {
+    width: 1170px;
+    max-height: 558px;
+}
+
+
+
+.section__menu-icon-name {
+    position: relative;
+    top: 0px;
+    display: flex;
+    width: 1170px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 30px 0;
+}
+
+.menu-icon {
+    padding: 15px 20px;
+    display: flex;
+    height: 60px;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-img {
+    height: 25px;
+    width: 25px;
+}
+
+.items-icon-burgers, .items-icon-drinks, .items-icon-salads {
+    height: 70px;
+    width: 70px;
+}
+
+.menu-icon-title {
+    padding: 0 20px 0 15px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    color:  rgb(69, 69, 69);
+}
+
+.hr-line {
+    color: rgb(40, 38, 35);
+    opacity: 0.125;
+    position: relative;
+    top: -25px;
+}
+
+.section__menu-items {
+    max-width: 1200px;
+    max-height: 468px;
+}
+
+.menu-wrapper-burgers {
+    max-width: 1200px;
+    max-height: 468px;
+    padding: 0 15px;
+    display: flex;
+}
+
+.section__menu-burgers-l, .section__menu-burgers-r {
+    max-height: 468px;
+    padding: 0 15px;
+    max-width: 600px;
+}
+
+.menu-burgers-name {
+    display: flex;
+    max-width: 485px;
+    max-height: 36px;
+}
+
+.menu-burgers-name h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.menu-burgers-name p {
+    font-size: 17px;
+}
+
+.menu-burgers-name span {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Rubik', sans-serif;
+}
+
+.menu-img-usually {
+    height: 70px;
+    width: 70px;
+}
+
+.section-burger {
+    width: 585px;
+    height: 102px;
+    display: flex;
+}
