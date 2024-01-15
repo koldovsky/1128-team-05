@@ -1,0 +1,54 @@
+@import "common.css";
+@import "header.css";
+@import "footer.css";
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+:root {
+  scroll-behavior: smooth;
+  --background-top-color: #fbbe36;
+  --titles-color: #e7272d;
+  --ui-light-color: white;
+}
+
+img {
+  display: block;
+}
+
+.top {
+  background-color: var(--background-top-color);
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.top__title {
+  font-family: "Permanent Marker", cursive;
+  color: var(--titles-color);
+  font-size: 1rem;
+}
+
+.top__subtitle {
+  font-family: "Rubik", sans-serif;
+  font-size: 2.375rem;
+  color: var(--ui-light-color);
+}
+
+.top__description {
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+  color: var(--ui-light-color);
+}
+
+/* 
+
+@media (min-width: 991px) {
+
+}
+
+*/

@@ -1,0 +1,22 @@
+.news_bimage {
+    background-image: url("../img/img_news/bg-6.jpg");
+    background-position: top center;
+    background-size: initial;
+}
+
+.news_bl{
+    display: flex;
+    margin: 32px;
+}
+
+.blog_text{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    color: red;
+    text-align: center;
+    font-style: italic;
+}

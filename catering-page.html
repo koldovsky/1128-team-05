@@ -4,19 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/catering.css">
+    
+
     <title>Catering</title>
 </head>
 
-<body>
+<body class="container">
     <header data-include="header.partial.html"></header>
 
     <main class="catering-wrapper">
         <!-- <div>місце другого блоку</div> -->
 
-        <section data-include="catering-page.motto-motto.partial.html"></section>
+        <section data-include="catering-page.motto.partial.html"></section>
         <!-- я добавив але не знаю чи працює -->
 
-        <div class="catering-advertisement">
+        <div class="catering-advertisement">  <!--start of block-->
             <div class="catering-advertisement__picture"><img src="img/img-for-catering/burgers-and-salad.jpg"
                     alt="burgers"></div>
             <section class="catering-advertisement__section">
@@ -40,7 +44,7 @@
                         menu based on the event type and your preferences.</p>
                 </div>
             </section>
-        </div>
+        </div> <!--end of block-->
 
         <div class="catering-options-wrapper">
             <section class="catering-options">
@@ -85,18 +89,23 @@
         <section data-include="catering-page.map.partial.html"></section>
         <!-- Чомусь тимчасово не працює-->
         <div class="catering-request">
-            <div class="catering-request__image"><img src="img/img-for-catering/burger-background.jpg" alt="burger burger-background"></div>
+            <div class="catering-request__image"><img src="img/img-for-catering/burger-background.jpg"
+                    alt="burger burger-background"></div>
             <div class="catering-request-wrap">
                 <h2 class="catering-request__title">Request</h2>
                 <h3 class="catering-request__subtitle">Fill in a Catering Inquiry</h3>
                 <div class="catering-request__form">
                     <form action="https://formspree.io/f/mbjnllbl" method="post" class="catering-request__form-inner">
-                        <input type="text" placeholder="Full name*" required name="fullName" class="catering-request__input">
-                        <input type="text" placeholder="Phone number*" required name="phoneNumber" class="catering-request__input">
+                        <input type="text" placeholder="Full name*" required name="fullName"
+                            class="catering-request__input">
+                        <input type="text" placeholder="Phone number*" required name="phoneNumber"
+                            class="catering-request__input">
                         <input type="text" placeholder="E-mail*" required name="email" class="catering-request__input">
                         <input type="text" placeholder="Event date" name="eventDate" class="catering-request__input">
-                        <input type="text" placeholder="Number of people" name="numberOfPeople" class="catering-request__input">
-                        <input type="text" placeholder="Leave any questions or specific notes" name="notes" class="catering-request__input">
+                        <input type="text" placeholder="Number of people" name="numberOfPeople"
+                            class="catering-request__input">
+                        <input type="text" placeholder="Leave any questions or specific notes" name="notes"
+                            class="catering-request__input">
                         <input type="submit" class="catering-request__submit">
                     </form>
                 </div>

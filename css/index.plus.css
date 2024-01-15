@@ -1,0 +1,26 @@
+.container{
+    display: block;
+    flex-wrap: wrap;
+
+}
+.why {
+    background-color: #fbf7ed;
+    
+}
+.why-item-img{
+    height: 60px;
+    width: 60px;
+}
+
+
+.why-items {
+    display: flex;
+}
+
+.why-item {
+    display: flex;
+}
+
+.why-item-title {}
+
+.why-item-text {}
