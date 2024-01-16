@@ -10,6 +10,9 @@
   --background-top-color: #fbbe36;
   --titles-color: #e7272d;
   --ui-light-color: white;
+  --ui-medium-color: #676767;
+  --ui-dark-color: #454545;
+  --ui-darker-color: #282623;
 }
 
 img {
@@ -19,36 +22,96 @@ img {
 .top {
   background-color: var(--background-top-color);
   display: flex;
-  height: auto;
   flex-direction: column;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  padding-right: 15px;
-  padding-left: 15px;
+  max-width: 100vw;
+  padding: 80px 24px 80px;
 }
 
-.top__title {
+h1, h2 {
   font-family: "Permanent Marker", cursive;
+  font-size: 20px;
   color: var(--titles-color);
-  font-size: 1rem;
 }
 
 .top__subtitle {
   font-family: "Rubik", sans-serif;
-  font-size: 2.375rem;
+  font-size: 56px;
   color: var(--ui-light-color);
+  font-weight: bold;
+  padding-top: 30px;
+  min-height: 100px;
+}
+
+.top__title {
+  padding-bottom: 80px;
 }
 
 .top__description {
   font-family: "Lato", sans-serif;
-  font-size: 1.25rem;
+  font-size: 20px;
   color: var(--ui-light-color);
+  font-weight: 600;
+  line-height: 1.6;
 }
 
-/* 
-
-@media (min-width: 991px) {
-
+.about {
+  display: grid;
 }
 
-*/
+.about__article {
+padding: 90px 30px 90px;
+  display: grid;
+  grid-template-rows: 30px 2fr 2.5fr 5fr;
+  align-items: center;
+}
+
+.about__article-subtitle {
+  font-family: "Rubik", sans-serif;
+  font-size: 56px;
+  color: var(--ui-darker-color);
+}
+
+.about__article-description {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--ui-dark-color);
+}
+
+.about__article-text {
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--ui-medium-color);
+}
+
+@media (min-width: 768px) {
+  .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .top__title {
+    flex: 40%;
+    max-width: 480px;
+    padding-bottom: 0;
+  }
+
+  .top__description {
+    flex: 60%;
+    max-width: 780px;
+    align-self: center;
+  }
+
+  .top__description-text {
+    max-width: 600px;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
