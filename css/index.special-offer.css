@@ -1,4 +1,32 @@
+.special-offer{
+    background-image: url('img/img-for-special-offer/background.jpg');
+    background-size: cover;
+}
+
 .special-offer__block{
     max-width: 1200px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    
 }
+.special-offer__item{
+    padding: 15px;
+}
+
+.burger{
+    max-width: 700px;
+}
+
+.salad{
+    max-width: 500px;
+}
+
+@media (min-width: 500px) {
+    .special-offer__block{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
