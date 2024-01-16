@@ -1,0 +1,122 @@
+.trending-products {
+    min-height: 670px;
+    display: flex;
+    flex-direction: column;
+    padding: 110px 0 120px 0;
+}
+
+.trending-products__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 165px;
+    justify-content: space-between;
+}
+
+.trending-products__title {
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--title-text-color);
+    line-height: 60px;
+}
+
+.trending-products__icon {
+    height: 32px;
+}
+
+.trending-products__description {
+    color: var(--main-text-color);
+    font-family: "PT Sans", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28.5px;
+}
+
+.trending-products__carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 40px 0 40px;
+}
+
+.trending-products__carousel-arrow {}
+
+.trending-products__arrow-button {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+.trending-products__arrow-img {
+    width: 30px;
+    height: 30px;
+}
+
+.rotate-img {
+    transform: rotate(180deg);
+}
+
+.trending-products__carousel-slides {
+    display: flex;
+    flex-direction: row;
+}
+
+.trending-products__carousel-slides-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 15px;
+}
+
+.trending-products__click-link {}
+
+.trending-products__click-link-img {
+    width: 263px;
+    height: 263px;
+}
+
+.trending-products__item-title {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--main-text-color);
+    cursor: pointer;
+    margin: 24px 0 0 0;
+    text-decoration-line: none;
+}
+
+.trending-products__item-title:hover {
+    text-decoration-line: underline;
+}
+
+.trending-products__price {
+    color: var(--price-text-color);
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    cursor: default;
+}
+
+.trending-products__button {
+    margin-top: 24px;
+    min-width: 145px;
+    min-height: 49px;
+    background-color: var(--button-cart-background-color);
+    border-radius: 25px;
+    color: var(--button-cart-text-color);
+    cursor: pointer;
+    font-family: "PT Sans", sans-serif;
+    font-size: 16.5px;
+    font-weight: bold;
+    line-height: 16.5px;
+    padding: 16px 28px;
+    border: none;
+}
+
+.trending-products__button:hover {
+    background-color: var(--button-cart-background-color-hover);
+    color: var(--price-text-color);
+}
