@@ -1,9 +1,12 @@
 <section class="contact-section">
     <div class="contact-content">
-        <h2>Contact Us</h2>
+        <h2 class="contact__title section-title">Contact Us</h2>
         <p>Feel free to contact us for any inquiries.</p>
         <p>You can order delivery in the app or find us on the streets of Los Angeles. Also, you can contact us to discuss the franchise conditions we offer. If you are throwing a party and want to surprise your guests with hot and fresh burgers, fill out the form in advance!</p>
-        <a href="order-form.html" class="order-button">Order Form</a>
+        <!-- <a href="order-form.html" class="order-button">Order Form</a> --> 
+        
+        <!-- файлу order-form.html не існує! Тому html-proofer видає помилку. перед тим, як ссилатись на 
+        файл, його треба створити. поки що я закомментувала цю строку, щоб на неї не ругався html-proofer-->
     </div>
     <div class="contact-details">
         <div class="address">
@@ -22,5 +25,18 @@
             <h3>Operating hours</h3>
             <p>Hours: 9:00 AM - 7:00 PM</p>
         </div>
+        <!-- Carousel-slides -->
+        <div class="carousel-slides">
+            <div class="slide"><img src="img/img-for-contact-us-carousel/carousel-img-1.jpeg" alt="Image 1"></div>
+            <div class="slide"><img src="img/img-for-contact-us-carousel/carousel-img-2.webp" alt="Image 2"></div>
+            <div class="slide"><img src="img/img-for-contact-us-carousel/carousel-img-3.webp" alt="Image 3"></div>
+            <div class="slide"><img src="img/img-for-contact-us-carousel/carousel-img-4.webp" alt="Image 4"></div>
+            <div class="slide"><img src="img/img-for-contact-us-carousel/carousel-img-5.webp" alt="Image 5"></div>
+            <div class="slide"><img src="img/img-for-contact-us-carousel/carousel-img-6.webp" alt="Image 6"></div>
+            <div class="slide"><img src="img/img-for-contact-us-carousel/carousel-img-7.webp" alt="Image 7"></div>
+        </div>
+        <button class="carousel__button carousel__button--left" type="button">←</button>
+        <button class="carousel__button carousel__button--right" type="button">→</button>
+    
     </div>
 </section>
