@@ -1,5 +1,5 @@
 .special-offer{
-    background-image: url('img/img-for-special-offer/background.jpg');
+    background-image: url('../img/img-for-special-offer/background.jpg');
     background-size: cover;
 }
 
