@@ -1,40 +1,64 @@
 .schedule {
     display: flex;
     flex-direction: column;
-    margin: 0 10px 20px 10px;
+    margin: 0;
+    background-image: url("img/head-of-block.svg");
+    background-color: var(--weekly-color-main);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+  .schedule__back{
+    min-width: 320px;
+    max-width: auto;
   }
   .schedule-container {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin:  auto;
   }
   .schedule__title {
-    font-family: Rubik;
-    font-size: 56px;
+    font-family: Rubik, sans-serif;
+    font-size: 38px;    
     font-weight: 700;
-    text-align: left;
-    color: #ffffff;
+    text-align: center;
+    text-align: left;    
+    color: var(--weekly-title-color);
   }
   .schedule__description {
-    font-family: Lato;
-    font-size: 16px;
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: var(--weekly-description-color);
+    line-height: 30px;
     text-align: left;
-    color: rgb(69, 69, 69);
-  }
-
-  .schedule {
-    background-color: #fbbe36;
+    
   }
      .schedule_contact img {
     width: 26px;
     height: 26px;
   }  
   .shedule__contact-link{
-    color: black;
+    color: var(--weekly-link-color);
   }
   .schedule__contact-title{
-    color: #ffffff;
+    color: var(--weekly-title-color);
     font-family: Lato, sans-serif;
     font-size: 17px;
     font-weight: 700;
   }
+  .schedule-carousel{
+    display: flex;
+  }
+  .shedule__carousel-slides{
+    flex :1;
+    justify-content: space-around;
+  }
+  @media (min-width: 992px) {
+    .schedule-carousel{
+      display: flex;
+    }
+
+  }
+ 
