@@ -1,23 +1,4 @@
 @import "common.css";
-@import "header.css";
-@import "footer.css";
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-
-:root {
-  scroll-behavior: smooth;
-  --background-top-color: #fbbe36;
-  --titles-color: #e7272d;
-  --ui-light-color: white;
-  --ui-medium-color: #676767;
-  --ui-dark-color: #454545;
-  --ui-darker-color: #282623;
-}
-
-img {
-  display: block;
-}
 
 .top {
   background-color: var(--background-top-color);
@@ -27,7 +8,8 @@ img {
   padding: 80px 24px 80px;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: "Permanent Marker", cursive;
   font-size: 20px;
   color: var(--titles-color);
@@ -36,7 +18,7 @@ h1, h2 {
 .top__subtitle {
   font-family: "Rubik", sans-serif;
   font-size: 56px;
-  color: var(--ui-light-color);
+  color: var(--text-light-color);
   font-weight: bold;
   padding-top: 30px;
   min-height: 100px;
@@ -49,17 +31,23 @@ h1, h2 {
 .top__description {
   font-family: "Lato", sans-serif;
   font-size: 20px;
-  color: var(--ui-light-color);
+  color: var(--text-light-color);
   font-weight: 600;
   line-height: 1.6;
 }
 
 .about {
   display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.about__img img {
+  height: 100%;
+  object-fit: cover;
 }
 
 .about__article {
-padding: 90px 30px 90px;
+  padding: 90px 30px 90px;
   display: grid;
   grid-template-rows: 30px 2fr 2.5fr 5fr;
   align-items: center;
@@ -68,7 +56,8 @@ padding: 90px 30px 90px;
 .about__article-subtitle {
   font-family: "Rubik", sans-serif;
   font-size: 56px;
-  color: var(--ui-darker-color);
+  font-weight: bold;
+  color: var(--text-big-color);
 }
 
 .about__article-description {
@@ -76,14 +65,14 @@ padding: 90px 30px 90px;
   font-size: 20px;
   font-weight: 600;
   line-height: 1.6;
-  color: var(--ui-dark-color);
+  color: var(--text-medium-color);
 }
 
 .about__article-text {
   font-family: "Lato", sans-serif;
   font-size: 17px;
   line-height: 1.5;
-  color: var(--ui-medium-color);
+  color: var(--text-small-color);
 }
 
 @media (min-width: 768px) {
@@ -110,8 +99,7 @@ padding: 90px 30px 90px;
   }
 
   .about {
-    display: grid;
+    display: ;
     grid-template-columns: 1fr 1fr;
   }
 }
-
