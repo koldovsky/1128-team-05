@@ -9,7 +9,8 @@
 }
 
 :root {
-  font-family: Lato, sans-serif;
+  font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
   --weekly-color-main: #fbbe36;
   --weekly-title-color: #ffffff;
   --weekly-description-color: rgb(69, 69, 69);
@@ -23,6 +24,14 @@
   --text-big-color: #454545;
   --text-medium-color: #282623;
   /* about-page.html */
+  /* menu.html */
+  --background-menu-color: #fbbe36;
+  --h2-span-color: #e7272d;
+  --ui-light-accent-color: white;
+  --p-menu-burgers-title: rgb(103, 103, 103);
+  --bottom-box-button-hover: rgb(40, 38, 35);
+  --menu-icon-title-color-text: rgb(69, 69, 69);
+  /* menu.html */
 }
 
 img {

@@ -1,27 +1,14 @@
-body {
-    font-family: 'Lato', sans-serif;
-}
-
-:root {
-    scroll-behavior: smooth;
-    --background-menu-color: #fbbe36;
-    --h2-span-color: #e7272d;
-    --ui-light-accent-color: white;
-    --p-menu-burgers-title: rgb(103, 103, 103);
-}
+@import "common.css";
+@import "header.css";
+@import "footer.css";
 
 .hr__bottom-line {
     width: 100%;
     min-width: 10px;
-    opacity: 0.2;
+    opacity: 0.5;
     height: 2px;
     flex: 1 1;
     margin: 0 0 3px;
-}
-
-img {
-    display: block;
-    width: 100%;
 }
 
 .section__menu-top {
@@ -37,7 +24,6 @@ img {
     width: 354px;
     height: 97px;
     padding: 0 15px;
-
 }
 
 .menu-top-title {
@@ -65,29 +51,33 @@ img {
     line-height: 30px;
 }
 
+.background__image {
+    width: 100%;
+    height: 60px;
+    object-fit: cover;
+}
+
 .section__menu-container {
     padding: 100px 0;
     position: relative;
+    height: 100%;
+}
+
+.section__menu-container-image {
     background-image: url(../img/img-for-menu/background-image-leaf.jpg);
     background-repeat: no-repeat;
-    height: 100%;
     background-size: cover;
 }
 
-
-
 .section__menu-btn {
     max-width: 1200px;
-    padding: 0 15px;
     margin: 0 auto;
 }
 
 .section__menu {
     max-height: 558px;
-    width: 1200px;
+    max-width: 1200px;
 }
-
-
 
 .section__menu-icon-name {
     display: grid;
@@ -96,7 +86,6 @@ img {
     justify-content: center;
     margin: 0 0 30px 0;
     grid-template-columns: repeat(3, 150px);
-    gap: 20px;
 }
 
 .menu-icon {
@@ -127,10 +116,10 @@ img {
 
 
 .hr-line {
-    color: rgb(40, 38, 35);
-    opacity: 0.125;
+    color: var(--bottom-box-button-hover);
+    opacity: 0.2;
     position: relative;
-    top: -30px;
+    top: -31px;
 }
 
 .icon-img {
@@ -144,7 +133,7 @@ img {
     font-size: 20px;
     font-weight: 700;
     font-family: 'Lato', sans-serif;
-    color:  rgb(69, 69, 69);
+    color:  var(--menu-icon-title-color-text);
 }
 
 .section__menu-items {
@@ -176,7 +165,6 @@ img {
 
 
 .menu-burger, .menu-salads, .menu-drinks {
-    width: 585px;
     height: 102px;
     display: flex;
     padding: 7.5px 0;
@@ -263,30 +251,23 @@ img {
 
 
 .btn-style-inside {
-    background-color: rgb(251, 190, 54);
+    background-color: var(--background-menu-color);
     font-size: 16.5px;
     font-family: Lato, sans-serif;
-    color: white;
+    color: var(--ui-light-accent-color);
     font-weight: 700;
     border-radius: 25px;
     max-width: fit-content;
     padding: 16px 28px;
     border: none;
-    margin: 0 0 0 45px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .btn-style-inside:hover {
-    background-color: rgb(40, 38, 35);
+    background-color: var(--bottom-box-button-hover);
 }
 
-.section__whi-yel-line {
-    background-image: url(../img/img-for-menu/white-yellow-background-short.svg);
-    height: 60px;
-    width: 100%;
-    background-size: cover;
-}
 
 .section__menu-bottom {
     background-color: var(--background-menu-color);
@@ -330,7 +311,7 @@ img {
     background-color: var(--h2-span-color);
     font-size: 16.5px;
     font-family: Lato, sans-serif;
-    color: white;
+    color: var(--ui-light-accent-color);
     font-weight: 700;
     border-radius: 25px;
     border: none;
@@ -339,6 +320,9 @@ img {
     padding: 16px 28px;
 }
 
+.bottom-box-button:hover {
+    background-color: var(--bottom-box-button-hover);
+}
 
 @media (max-width: 767px) {
     .section__menu-top {
@@ -411,6 +395,225 @@ img {
         max-width: 200px;
         padding: 0 33px;
         align-self: center;
+    }
+
+    .section__menu {
+        max-height: 100%;
+        max-width: 1200px;
+    }
+
+    .section__menu-btn {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+    }
+
+    .section__menu-icon-name {
+        display: grid;
+        max-width: 1200px;
+        align-items: center;
+        margin: 0 0 30px 0;
+        grid-template-columns: repeat(3, minmax(90px, 150px));
+        justify-content: flex-start;
+    }
+
+    .menu-burgers-name span {
+        font-size: 24px;
+        font-weight: 600;
+        font-family: 'Rubik', sans-serif;
+        color: var(--h2-span-color);
+        padding-left: 5px;
+    }
+
+    .section__menu-items {
+        max-height: 100%;
+        margin: 15px 0 0 0;
+    }
+
+    .menu-wrapper-burgers, .menu-wrapper-salads, .menu-wrapper-drinks {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .menu-burger, .menu-salads, .menu-drinks {
+        max-width: 100%;
+        height: 100%;
+        display: flex;
+        padding: 7.5px 0;
+    }
+
+    .menu-wrapper-salads {
+        display: none;
+    }
+
+    .menu-wrapper-drinks {
+        display: none;
+    }
+
+    .section__menu-burgers-l, .section__menu-burgers-r, .section__menu-salads-l, .section__menu-salads-r, .section__menu-drinks-l, .section__menu-drinks-r {
+        max-width: 100%;
+        display: grid;
+        gap: 15px;
+    }
+
+    .menu-burgers__box, .menu-salads__box, .menu-drinks__box {
+        padding: 0 0 0 18px;
+        width: 100%;
+    }
+
+    .menu-btn {
+        display: flex;
+        padding: 0 15px;
+        max-width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .menu-icon {
+        display: flex;
+        height: 60px;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.7;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        position: relative;
+        gap: 10px;
+    }
+
+    .menu-icon-title {
+        font-size: 15px;
+        font-weight: 700;
+        font-family: 'Lato', sans-serif;
+        color: var(--menu-icon-title-color-text);
+    }
+
+    .icon-img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .menu-top-review {
+        padding: 0 15px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .section__menu-icon-name {
+        display: grid;
+        max-width: 1200px;
+        align-items: center;
+        margin: 0 0 30px 0;
+        grid-template-columns: repeat(3, minmax(85px, 150px));
+        justify-content: flex-start;
+    }
+
+    .section__menu-items {
+        max-height: 100%;
+        margin: 15px 0 0 0;
+    }
+
+    .menu-burger, .menu-salads, .menu-drinks {
+        max-width: 100%;
+        height: 100%;
+        display: flex;
+        padding: 7.5px 0;
+    }
+
+    .menu-img-usually {
+        height: 40px;
+        width: 40px;
+    }
+
+    .items-icon-burgers, .items-icon-drinks, .items-icon-salads {
+        height: 40px;
+        width: 40px;
+    }
+
+    .menu-burgers__box, .menu-salads__box, .menu-drinks__box {
+        padding: 0 0 0 18px;
+        max-width: 100%;
+    }
+
+    .menu-burgers-name, .menu-salads-name, .menu-drinks-name {
+        display: flex;
+        width: 100%;
+        height: 36px;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .menu-burgers-name h3 {
+        font-size: 14px;
+        font-weight: 700;
+        padding: 0 5px 0 0;
+    }
+
+    .menu-burgers-name span {
+        font-size: 16px;
+        font-weight: 600;
+        font-family: 'Rubik', sans-serif;
+        color: var(--h2-span-color);
+        padding-left: 5px;
+    }
+
+    .menu-burgers-title, .menu-salads-title, .menu-drinks-title {
+        font-size: 13px;
+        color: var(--p-menu-burgers-title);
+        padding: 5px 0 0 0;
+        line-height: 25.5px;
+    }
+
+    .menu-btn {
+        display: flex;
+        padding: 0 15px;
+        max-width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .btn-style-inside {
+        background-color: var(--background-menu-color);
+        font-size: 10px;
+        font-family: Lato, sans-serif;
+        color: var(--ui-light-accent-color);
+        font-weight: 700;
+        border-radius: 25px;
+        max-width: fit-content;
+        padding: 16px 28px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .menu-top-title {
+        font-family: 'Permanent Marker', cursive;
+        font-size: 15px;
+        font-weight: 400;
+        color: var(--h2-span-color);
+        height: 25px;
+    }
+
+    .menu-top-subtitle {
+        color: var(--ui-light-accent-color);
+        font-size: 30px;
+        font-weight: 700;
+        font-family: 'Rubik', sans-serif;
+        padding: 15px 0 0 0;
+    }
+
+    .menu-top__description {
+        color: var(--ui-light-accent-color);
+        font-size: 15px;
+        font-weight: 700;
+        max-width: 737px;
+        padding: 0 15px;
+        line-height: 30px;
     }
 
 }
