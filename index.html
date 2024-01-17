@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FREDDY BURGERS - Burgers Food Truck Website - 1128-TEAM-05</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FREDDY BURGERS - Burgers Food Truck Website - 1128-TEAM-05</title>
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="css/index.css" />
-</head>
-
-<body>
-  <!--1 block-->
-  <header data-include="header.partial.html"></header>
-  <main>
-    <!-- 
+  <body>
+    <!--1 block-->
+    <header data-include="header.partial.html"></header>
+    <main>
+      <!-- 
         Кожний в кого є вже свій блок може вже додавати файл(навіть пустий), 
         і підключати до свого тегу. Номер  свого блоку можна дізнатись 
         з таблички https://docs.google.com/document/d/1bk7AAr5NBxZagQbUkDvmVNEENFkMBXEYJHQKXBkI4l4/edit?usp=sharing
@@ -33,11 +32,11 @@
       <!--3 block-->
       <section data-include="index.burgers.partial.html"></section>
       <!--4 block-->
-      <section></section>
-      <!--5 block-->
       <section data-include="index.special-offer.partial.html"></section>
+      <!--5 block-->
+      <section data-include="index.add-discount.partial.html"></section>
       <!--6 block-->
-      <section></section>
+      <section data-include="index.ingredients.partial.html"></section>
       <!--7 block-->
       <section data-include="index.services.partial.html"></section>
       <!--8 block-->
@@ -55,13 +54,13 @@
       <!--14 block-->
       <section></section>
       <!--15 block-->
-      <section></section>
+      <section data-include="index.contact-us.partial.html"></section>
       <!--16 block-->
 
-    <!-- <section data-include="index.products.partial.html"></section>
+      <!-- <section data-include="index.products.partial.html"></section>
       <section data-include="index.contacts.partial.html"></section>    поки що не видаляю приклад, як підключати data-unclude-->
     </main>
-    <footer data include="index.footer.partial.html"></footer>
+    <footer data include="footer.partial.html"></footer>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
   </body>
 </html>
