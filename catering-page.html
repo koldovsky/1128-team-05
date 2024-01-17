@@ -10,7 +10,7 @@
 <!-- <body class="container"> -->
 
 <body>
-    <header data-include="header.partial.html"></header>
+    <!-- <header data-include="header.partial.html"></header> -->
 
     <main class="catering-wrapper">
 
@@ -28,18 +28,15 @@
                         Burgers offers its catering services!</p>
                     <div class="catering-advertisement__list">
                         <div class="catering-advertisement__list-item">
-                            <img src="img/img-for-catering/yellow-circle.svg"
-                                height="20px" width="20px" alt="">
+                            <img src="img/img-for-catering/yellow-circle.svg" class="circle-image" alt="">
                             <p> $200 minimum order;</p>
                         </div>
                         <div class="catering-advertisement__list-item">
-                            <img src="img/img-for-catering/yellow-circle.svg"
-                                height="20px" width="20px" alt="">
+                            <img src="img/img-for-catering/yellow-circle.svg" class="circle-image" alt="">
                             <p> 24-hour notice is appreciated for all orders;</p>
                         </div>
                         <div class="catering-advertisement__list-item">
-                            <img src="img/img-for-catering/yellow-circle.svg"
-                                height="20px" width="20px" alt="">
+                            <img src="img/img-for-catering/yellow-circle.svg" class="circle-image" alt="">
                             <p> Prices do not include tax, delivery, or service.</p>
                         </div>
                     </div>
@@ -51,70 +48,82 @@
         </div> <!--end of block-->
 
         <div class="catering-options-wrapper">
-            <section class="catering-options">
-                <h2 class="catering-options__title">Options</h2>
-                <h3 class="catering-options__subtitle">Catering Specialties</h3>
-                <p class="catering-options__text">Freddy Burger caters breakfasts, lunches, and dinners, perfect for
+            <section class="catering-options__section">
+                <h2 class="catering-options__title centered-text">Options</h2>
+                <h3 class="catering-options__subtitle centered-text">Catering Specialties</h3>
+                <p class="catering-options__text centered-text">Freddy Burger caters breakfasts, lunches, and dinners,
+                    perfect for
                     small and large
                     private parties or corporate events.</p>
             </section>
             <div class="catering-options-list">
                 <div class="catering-options-list__item">
-                    <div class="catering-options-list__item-image"><img src="img/img-for-catering/take-away.svg"
-                            alt="take-away" style="height: 50px; width: 50px;"></div>
-                    <h4 class="catering-options-list__item-title">Delivery</h4>
-                    <p class="catering-options-list__item-text">Make an order of $200 or more, and we'll ship it to your
+                    <div class="catering-options-list__item-image">
+                        <div class="circle-icon"><img src="img/img-for-catering/take-away.svg" alt="take-away"
+                                class="centered-image "></div>
+                    </div>
+                    <h4 class="catering-options-list__item-title centered-text">Delivery</h4>
+                    <p class="catering-options-list__item-text centered-text">Make an order of $200 or more, and we'll
+                        ship it to your
                         doorstep absolutely for free! We highly
                         recommend getting in touch with us 24 hours.</p>
                 </div>
                 <div class="catering-options-list__item">
                     <div class="catering-options-list__item-image">
-                        <img src="img/img-for-catering/delivery-man.svg" alt="delivery-man"
-                            style="height: 50px; width: 50px;">
+                        <div class="circle-icon">
+                            <div class="circle-icon"><img src="img/img-for-catering/delivery-man.svg" alt="delivery-man"
+                                    class="centered-image"></div>
+                        </div>
+                        <h4 class="catering-options-list__item-title centered-text">On site</h4>
+                        <p class="catering-options-list__item-text centered-text">We'll also happily travel to your
+                            event. Our friendly
+                            staff can set up shop with everything
+                            necessary to
+                            serve up burgers, chips & fries.</p>
                     </div>
-                    <h4 class="catering-options-list__item-title">On site</h4>
-                    <p class="catering-options-list__item-text">We'll also happily travel to your event. Our friendly
-                        staff can set up shop with everything
-                        necessary to
-                        serve up burgers, chips & fries.</p>
-                </div>
-                <div class="catering-options-list__item">
-                    <div class="catering-options-list__item-image"><img src="img/img-for-catering/food-truck.svg"
-                            alt="food-truck" style="height: 50px; width: 50px;"></div>
-                    <h4 class="catering-options-list__item-title">Truck</h4>
-                    <p class="catering-options-list__item-text">The Freddy Burgers Food Truck will surely make your
-                        party extraordinary. We should mention that
-                        our truck
-                        is also Zagat's #1 rated. </p>
+                    <div class="catering-options-list__item">
+                        <div class="catering-options-list__item-image">
+                            <div class="circle-icon"><img src="img/img-for-catering/food-truck.svg" alt="food-truck"
+                                    class="centered-image"></div>
+                        </div>
+                        <h4 class="catering-options-list__item-title centered-text">Truck</h4>
+                        <p class="catering-options-list__item-text centered-text">The Freddy Burgers Food Truck will
+                            surely make your
+                            party extraordinary. We should mention that
+                            our truck
+                            is also Zagat's #1 rated. </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- <div>п'ятий блок</div> -->
-        <section data-include="catering-page.map.partial.html"></section>
-        <!-- Чомусь тимчасово не працює-->
-        <div class="catering-request">
-            <div class="catering-request__image"><img src="img/img-for-catering/burger-background.jpg"
-                    alt="burger burger-background"></div>
-            <div class="catering-request-wrap">
-                <h2 class="catering-request__title">Request</h2>
-                <h3 class="catering-request__subtitle">Fill in a Catering Inquiry</h3>
-                <div class="catering-request__form">
-                    <form action="https://formspree.io/f/mbjnllbl" method="post" class="catering-request__form-inner">
-                        <input type="text" placeholder="Full name*" required name="fullName"
-                            class="catering-request__input">
-                        <input type="text" placeholder="Phone number*" required name="phoneNumber"
-                            class="catering-request__input">
-                        <input type="text" placeholder="E-mail*" required name="email" class="catering-request__input">
-                        <input type="text" placeholder="Event date" name="eventDate" class="catering-request__input">
-                        <input type="text" placeholder="Number of people" name="numberOfPeople"
-                            class="catering-request__input">
-                        <input type="text" placeholder="Leave any questions or specific notes" name="notes"
-                            class="catering-request__input">
-                        <input type="submit" class="catering-request__submit">
-                    </form>
+            <!-- <div>п'ятий блок</div> -->
+            <section data-include="catering-page.map.partial.html"></section>
+            <!-- Чомусь тимчасово не працює-->
+            <div class="catering-request">
+                <div class="catering-request__image"><img src="img/img-for-catering/burger-background.jpg"
+                        alt="burger burger-background"></div>
+                <div class="catering-request-wrap">
+                    <h2 class="catering-request__title">Request</h2>
+                    <h3 class="catering-request__subtitle">Fill in a Catering Inquiry</h3>
+                    <div class="catering-request__form">
+                        <form action="https://formspree.io/f/mbjnllbl" method="post"
+                            class="catering-request__form-inner">
+                            <input type="text" placeholder="Full name*" required name="fullName"
+                                class="catering-request__input">
+                            <input type="text" placeholder="Phone number*" required name="phoneNumber"
+                                class="catering-request__input">
+                            <input type="text" placeholder="E-mail*" required name="email"
+                                class="catering-request__input">
+                            <input type="text" placeholder="Event date" name="eventDate"
+                                class="catering-request__input">
+                            <input type="text" placeholder="Number of people" name="numberOfPeople"
+                                class="catering-request__input">
+                            <input type="text" placeholder="Leave any questions or specific notes" name="notes"
+                                class="catering-request__input">
+                            <input type="submit" class="catering-request__submit">
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
 
     </main>
     <footer></footer>
