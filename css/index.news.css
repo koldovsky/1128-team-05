@@ -26,6 +26,17 @@
 
 }
 
+.news-o {
+    display: flex;
+}
+
+.news-title {
+    color: red;
+}
+
+.news-date {
+    color: orange;
+}
 
 .news_title {
 
