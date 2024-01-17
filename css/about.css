@@ -11,13 +11,13 @@
 h1,
 h2 {
   font-family: "Permanent Marker", cursive;
-  font-size: 20px;
+  font-size: 1rem;
   color: var(--titles-color);
 }
 
 .top__subtitle {
   font-family: "Rubik", sans-serif;
-  font-size: 56px;
+  font-size: 2.375rem;
   color: var(--text-light-color);
   font-weight: bold;
   padding-top: 30px;
@@ -30,7 +30,7 @@ h2 {
 
 .top__description {
   font-family: "Lato", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: var(--text-light-color);
   font-weight: 600;
   line-height: 1.6;
@@ -38,7 +38,6 @@ h2 {
 
 .about {
   display: grid;
-  grid-template-rows: 1fr 1fr;
 }
 
 .about__img img {
@@ -46,33 +45,73 @@ h2 {
   object-fit: cover;
 }
 
-.about__article {
-  padding: 90px 30px 90px;
+.about__article,
+.team__article {
+  padding: 30px 30px 30px;
   display: grid;
-  grid-template-rows: 30px 2fr 2.5fr 5fr;
+  grid-template-rows: 30px 1.5fr 2fr auto;
   align-items: center;
 }
 
-.about__article-subtitle {
+.about__article-subtitle,
+.team__subtitle {
   font-family: "Rubik", sans-serif;
-  font-size: 56px;
+  font-size: 2.375rem;
   font-weight: bold;
   color: var(--text-big-color);
 }
 
-.about__article-description {
+.about__article-description,
+.team__description {
   font-family: "Lato", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.6;
   color: var(--text-medium-color);
 }
 
-.about__article-text {
+.about__article-text,
+.team__article-text {
   font-family: "Lato", sans-serif;
-  font-size: 17px;
+  font-size: 1.06rem;
   line-height: 1.5;
+  margin-top: 24px;
   color: var(--text-small-color);
+}
+
+.team__article-text p {
+  margin-top: 30px;
+}
+
+.team {
+  background-color: var(--background-medium-color);
+}
+
+.team__carousel-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.team__carousel-item {
+  padding: 15px;
+  display: grid;
+}
+
+.team__carousel-item h3 {
+  font-size: 1.375rem;
+  color: var(--text-medium-color);
+  padding: 20px 0 0;
+}
+
+.team__carousel-item p {
+  font-size: 1.06rem;
+  color: var(--text-small-color);
+  padding: 20px 0 0;
+
+}
+
+.team__carousel-item img {
+border-radius: 7px;
 }
 
 @media (min-width: 768px) {
@@ -99,7 +138,12 @@ h2 {
   }
 
   .about {
-    display: ;
+    display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .team__carousel-box {
+    display: flex;
+    flex-direction: row;
   }
 }
