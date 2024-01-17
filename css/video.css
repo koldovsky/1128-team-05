@@ -1,0 +1,12 @@
+.video {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-image: url(../img/container10-back.jpg);    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.video__icon{
+    width: 24px;
+}

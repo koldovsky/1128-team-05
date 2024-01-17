@@ -10,6 +10,15 @@ body {
     --p-menu-burgers-title: rgb(103, 103, 103);
 }
 
+.hr__bottom-line {
+    width: 100%;
+    min-width: 10px;
+    opacity: 0.2;
+    height: 2px;
+    flex: 1 1;
+    margin: 0 0 3px;
+}
+
 img {
     display: block;
     width: 100%;
@@ -23,8 +32,6 @@ img {
     padding: 80px 0 65px;
     align-items: center;
     justify-content: center;
-
-
 }
 
 .menu-top-review {
@@ -44,7 +51,7 @@ img {
 
 .menu-top-subtitle {
     color: var(--ui-light-accent-color);
-    font-size: 47px;
+    font-size: 56px;
     font-weight: 700;
     font-family: 'Rubik', sans-serif;
     padding: 15px 0 0 0;
@@ -56,6 +63,7 @@ img {
     font-weight: 700;
     width: 737px;
     padding: 0 15px;
+    line-height: 30px;
 }
 
 .section__menu-container {
@@ -134,6 +142,14 @@ img {
     gap: 30px;
 }
 
+.menu-wrapper-salads {
+    display: none;
+}
+
+.menu-wrapper-drinks{
+    display: none;
+}
+
 .section__menu-burgers-l, .section__menu-burgers-r, .section__menu-salads-l, .section__menu-salads-r, .section__menu-drinks-l, .section__menu-drinks-r {
     max-width: 600px;
     display: grid;
@@ -174,22 +190,26 @@ img {
 .menu-burgers-name h3 {
     font-size: 20px;
     font-weight: 700;
+    padding: 0 5px 0 0;
 }
 
 .menu-salads-name h3 {
     font-size: 20px;
     font-weight: 700;
+    padding: 0 5px 0 0;
 }
 
 .menu-drinks-name h3 {
     font-size: 20px;
     font-weight: 700;
+    padding: 0 5px 0 0;
 }
 
 .menu-burgers-title, .menu-salads-title, .menu-drinks-title {
     font-size: 17px;
     color: var(--p-menu-burgers-title);
     padding: 5px 0 0 0;
+    line-height: 25.5px;
 }
 
 .menu-burgers-name span {
@@ -197,6 +217,7 @@ img {
     font-weight: 600;
     font-family: 'Rubik', sans-serif;
     color: var(--h2-span-color);
+    padding-left: 5px;
 }
 
 .menu-salads-name span {
@@ -204,6 +225,7 @@ img {
     font-weight: 600;
     font-family: 'Rubik', sans-serif;
     color: var(--h2-span-color);
+    padding-left: 5px;
 }
 
 .menu-drinks-name span {
@@ -211,5 +233,95 @@ img {
     font-weight: 600;
     font-family: 'Rubik', sans-serif;
     color: var(--h2-span-color);
+    padding-left: 5px;
 }
 
+.menu-btn {
+    display: flex;
+    margin: 55px 0 auto;
+    padding: 0 15px;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.menu-btn-style {
+
+}
+
+.btn-style-inside {
+    background-color: rgb(251, 190, 54);
+    font-size: 16.5px;
+    font-family: Lato, sans-serif;
+    color: white;
+    font-weight: 700;
+    border-radius: 25px;
+    max-width: fit-content;
+    padding: 16px 28px;
+    border: none;
+    margin: 0 0 0 45px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-style-inside:hover {
+    background-color: rgb(40, 38, 35);
+}
+
+.section__whi-yel-line {
+    background-image: url(../img/img-for-menu/white-yellow-background-short.svg);
+    height: 60px;
+    width: 100%;
+    background-size: cover;
+}
+
+.section__menu-bottom {
+    background-color: var(--background-menu-color);
+    height: 255px;
+    display: flex;
+    width: 100%;
+    padding: 50px 0 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-bottom-box-h3 {
+    max-width: 600px;
+    padding: 0 18px 0 15px;
+}
+
+.box-h3 {
+    font-size: 36px;
+    font-family: 'Rubik', sans-serif;
+    color: var(--ui-light-accent-color);
+}
+
+.menu-bottom-box-title {
+    max-width: 400px;
+    padding: 0 15px;
+    font-size: 15px;
+    color: var(--ui-light-accent-color);
+    font-weight: 900;
+    line-height: 22px;
+}
+
+.special {
+    color: var(--h2-span-color)
+}
+
+.menu-bottom-box-button {
+    max-width: 200px;
+    padding: 0 33px;
+}
+
+.bottom-box-button {
+    background-color: var(--h2-span-color);
+    font-size: 16.5px;
+    font-family: Lato, sans-serif;
+    color: white;
+    font-weight: 700;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 16px 28px;
+}
