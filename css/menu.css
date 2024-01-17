@@ -26,7 +26,6 @@ img {
 
 .section__menu-top {
     background-color: var(--background-menu-color);
-    height: 255px;
     display: flex;
     width: 100%;
     padding: 80px 0 65px;
@@ -61,7 +60,7 @@ img {
     color: var(--ui-light-accent-color);
     font-size: 20px;
     font-weight: 700;
-    width: 737px;
+    max-width: 737px;
     padding: 0 15px;
     line-height: 30px;
 }
@@ -96,17 +95,36 @@ img {
     align-items: center;
     justify-content: center;
     margin: 0 0 30px 0;
-    grid-template-columns: 110px 110px 110px;
+    grid-template-columns: repeat(3, 150px);
     gap: 20px;
 }
 
 .menu-icon {
     display: flex;
     height: 60px;
-    width: 120px;
     align-items: center;
     justify-content: center;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    gap: 17px;
 }
+
+.menu-icon:hover {
+    opacity: 1;
+}
+
+.menu-icon:hover::after {
+    width: 100%;
+    height: 2px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    background-color: var(--background-menu-color);
+}
+
 
 .hr-line {
     color: rgb(40, 38, 35);
@@ -123,7 +141,6 @@ img {
 
 
 .menu-icon-title {
-    padding: 0 20px 0 15px;
     font-size: 20px;
     font-weight: 700;
     font-family: 'Lato', sans-serif;
@@ -244,9 +261,6 @@ img {
     justify-content: center;
 }
 
-.menu-btn-style {
-
-}
 
 .btn-style-inside {
     background-color: rgb(251, 190, 54);
@@ -276,7 +290,6 @@ img {
 
 .section__menu-bottom {
     background-color: var(--background-menu-color);
-    height: 255px;
     display: flex;
     width: 100%;
     padding: 50px 0 40px;
@@ -324,4 +337,80 @@ img {
     cursor: pointer;
     transition: all 0.3s ease;
     padding: 16px 28px;
+}
+
+
+@media (max-width: 767px) {
+    .section__menu-top {
+        background-color: var(--background-menu-color);
+        display: flex;
+        width: 100%;
+        padding: 80px 24px 65px;
+        align-items: start;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .menu-top-review {
+        /* width: 354px; */
+        /* height: 97px; */
+        padding: 0 15px;
+    }
+
+    .menu-top-title {
+        font-family: 'Permanent Marker', cursive;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--h2-span-color);
+        height: 25px;
+    }
+
+    .menu-top-subtitle {
+        color: var(--ui-light-accent-color);
+        font-size: 38px;
+        font-weight: 700;
+        font-family: 'Rubik', sans-serif;
+        padding: 15px 0 0 0;
+    }
+
+    .menu-top__description {
+        color: var(--ui-light-accent-color);
+        font-size: 20px;
+        font-weight: 700;
+        max-width: 737px;
+        padding: 0 15px;
+        line-height: 30px;
+    }
+
+    .section__menu-bottom {
+        background-color: var(--background-menu-color);
+        display: flex;
+        width: 100%;
+        padding: 50px 0 40px;
+        align-items: start;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .box-h3 {
+        font-size: 30px;
+        font-family: 'Rubik', sans-serif;
+        color: var(--ui-light-accent-color);
+    }
+
+    .menu-bottom-box-title {
+        padding: 0 15px;
+        font-size: 14px;
+        color: var(--ui-light-accent-color);
+        font-weight: 900;
+        line-height: 22px;
+        max-width: fit-content;
+    }
+
+    .menu-bottom-box-button {
+        max-width: 200px;
+        padding: 0 33px;
+        align-self: center;
+    }
+
 }
