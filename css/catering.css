@@ -3,92 +3,87 @@
 @import "footer.css";
 
 body {
-    /* Убирает прокрутку по горизонтали, для мобильной версии */
-    overflow-x: hidden;
+  /* Убирает прокрутку по горизонтали, для мобильной версии */
+  overflow-x: hidden;
 }
 
 iframe {
-    max-width: 100%;
-    overflow: hidden;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 h2 {
-    font-family: 'Permanent Marker';
-    color: rgb(231, 39, 45);
-    font-size: 16px;
-    margin: 10px 0px 10px 0px;
+  font-family: "Permanent Marker";
+  color: rgb(231, 39, 45);
+  font-size: 16px;
+  margin: 10px 0px 10px 0px;
 }
 
 h3 {
-    font-family: "Rubik", sans-serif;
-    font-size: 38px;
-    margin: 10px 0px 10px 0px;
-
+  font-family: "Rubik", sans-serif;
+  font-size: 38px;
+  margin: 10px 0px 10px 0px;
 }
 
 .centered-text {
-    text-align: center;
+  text-align: center;
 }
 
 .centered-image {
-    display: block;
-    height: 50px;
-    width: 50px;
-    margin: auto;
-
+  display: block;
+  height: 50px;
+  width: 50px;
+  margin: auto;
 }
 
 .circle-icon {
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #efece3;
-    display: flex;
-    justify-content: center;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #efece3;
+  display: flex;
+  justify-content: center;
 }
 
 .circle-image {
-    display: inline;
-    width: auto;
-    height: 20px;
-    width: 20px;
-    margin-right: 10px;
+  display: inline;
+  width: auto;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
 }
 
 .catering-advertisement__section,
 .catering-options-wrapper {
-    padding: 90px 30px;
+  padding: 90px 30px;
 }
 
 .catering-advertisement__section-wrapper,
 .catering-options__section {
-
-    padding: 0px 15px;
+  padding: 0px 15px;
 }
 
 div.catering-advertisement__list {
-    display: flex;
-    flex-direction: column;
-    background-color: tomato;
+  display: flex;
+  flex-direction: column;
+  background-color: tomato;
 }
 
 .catering-advertisement__list-item {
-    display: grid;
-    grid-template-columns: 1fr 100fr;
-    margin: 10px 0px 10px 0px;
-    background-color: chartreuse;
+  display: grid;
+  grid-template-columns: 1fr 100fr;
+  margin: 10px 0px 10px 0px;
+  background-color: chartreuse;
 }
 
 div.catering-advertisement__list-item img {
-    background-color: aqua;
-
+  background-color: aqua;
 }
 
 div.catering-advertisement__list-item p {
-    background-color: yellow;
-
+  background-color: yellow;
 }
 
 /* .catering-advertisement {
@@ -102,55 +97,53 @@ div.catering-advertisement__list-item p {
     width: 100%;
 } */
 div.catering-advertisement__picture img {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 /* section.catering-advertisement__section > * {
     margin: 4%;
 } */
 .catering-advertisement__title {
-    font-family: 'Permanent Marker';
-    color: rgb(231, 39, 45);
-    font-size: 16px;
-    margin: 10px 0px 10px 0px;
+  font-family: "Permanent Marker";
+  color: rgb(231, 39, 45);
+  font-size: 16px;
+  margin: 10px 0px 10px 0px;
 }
 
 .catering-advertisement__subtitle {
-    font-family: "Rubik", sans-serif;
-    font-size: 38px;
-    margin: 10px 0px 10px 0px;
-
+  font-family: "Rubik", sans-serif;
+  font-size: 38px;
+  margin: 10px 0px 10px 0px;
 }
 
 .catering-advertisement__text {
-    font-family: "Lato", sans-serif;
-    font-size: 20px;
-    margin: 10px 0px 10px 0px;
-
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  margin: 10px 0px 10px 0px;
 }
 
 .catering-advertisement__list-item {
-    font-family: "Lato", sans-serif;
-    font-size: 17px;
-    font-weight: bold;
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .catering-advertisement__additional-text {
-    font-family: "Lato", sans-serif;
-    color: rgb(103, 103, 103);
-    font-size: 17px;
-    margin: 10px 0px 10px 0px;
+  font-family: "Lato", sans-serif;
+  color: rgb(103, 103, 103);
+  font-size: 17px;
+  margin: 10px 0px 10px 0px;
 }
 
 .catering-options-wrapper {
-    background: rgb(251 247 236);
+  background: rgb(251 247 236);
 }
 
 .catering-options__text {
-    font-family: "Lato", sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 10px 0px 10px 0px;
-    color: #454545;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0px 10px 0px;
+  color: #454545;
 }
