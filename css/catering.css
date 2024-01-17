@@ -1,20 +1,50 @@
 @import "common.css";
 @import "header.css";
-
-.catering-advertisement__picture {
+@import "footer.css";
+body {
+    /* Убирает прокрутку по горизонтале, для мобильной версии */
+    overflow-x: hidden;
+}
+.catering-advertisement__section{ 
+    padding: 0px 15px;
+}
+.catering-advertisement__section-wrapper{
+    padding: 90px 30px;
+}
+.catering-advertisement__list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    background-color: chartreuse;
+}
+div.catering-advertisement__list {
+    background-color: tomato;
+}
+div.catering-advertisement__list-item img {
+    background-color: aqua;
+    margin: 2% 0%;
+}
+div.catering-advertisement__list-item p {
+    background-color: yellow;
+    margin: 2%;
+}
+/* .catering-advertisement {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+} */
+/* .catering-advertisement__picture {
     display: block;
     width: 100%;
-}
+} */
 div.catering-advertisement__picture img {
     display: block;
     width: 100%;
 }
-.container {
-    max-width: 100%;
-    margin: auto;
-}
-/* .catering-advertisement {
-    display: flex;
+
+/* section.catering-advertisement__section > * {
+    margin: 4%;
 } */
 .catering-advertisement__title{
     font-family:'Permanent Marker';
