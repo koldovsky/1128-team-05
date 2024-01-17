@@ -11,6 +11,11 @@
 :root {
   font-family: 'Lato', sans-serif;
   scroll-behavior: smooth;
+  /*header*/
+  --header-top-background: #e7903b;
+  --header-container-background: #fbbe36;
+  --header__navicon: #282623;
+  /*weekly*/
   --weekly-color-main: #fbbe36;
   --weekly-title-color: #ffffff;
   --weekly-description-color: rgb(69, 69, 69);
@@ -49,8 +54,15 @@ img {
 a {
   text-decoration: none;
 }
-
+li {
+  list-style: none;
+}
 .container {
   max-width: 1200px;
   margin: auto;
+}
+
+.fixed-body {
+  width: 100%;
+  position: fixed;
 }
