@@ -43,3 +43,14 @@ img {
   font-family: Rubik, sans-serif;
   font-weight: bold;
 }
+/* перенести .secton-title в свій css файл */
+
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
