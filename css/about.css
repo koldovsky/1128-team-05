@@ -1,4 +1,6 @@
 @import "common.css";
+@import "header.css";
+@import "footer.css";
 
 .top {
   background-color: var(--background-top-color);
@@ -8,7 +10,8 @@
   padding: 80px 24px 80px;
 }
 
-.main-about-page h1, h2 {
+.main-about-page h1,
+h2 {
   font-family: "Permanent Marker", cursive;
   font-size: 1rem;
   color: var(--titles-color);
@@ -84,6 +87,7 @@
 
 .team {
   background-color: var(--background-medium-color);
+  padding-top: 60px;
 }
 
 .team__carousel-box {
@@ -110,6 +114,10 @@
 
 .team__carousel-item img {
   border-radius: 7px;
+}
+
+team__section-end {
+  width: 100vw;
 }
 
 @media (min-width: 768px) {
@@ -141,6 +149,13 @@
   }
 
   .team__carousel-box {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 991px) {
+  .team {
     display: flex;
     flex-direction: row;
   }
