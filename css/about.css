@@ -2,6 +2,11 @@
 @import "header.css";
 @import "footer.css";
 
+.main-about-page img {
+  display: block;
+  width: 100%;
+}
+
 .top {
   background-color: var(--background-top-color);
   display: flex;
@@ -13,21 +18,17 @@
 .main-about-page h1,
 h2 {
   font-family: "Permanent Marker", cursive;
-  font-size: 1rem;
+  font-size: 1.25rem;
+  font-weight: 400;
   color: var(--titles-color);
 }
 
 .top__subtitle {
   font-family: "Rubik", sans-serif;
-  font-size: 2.375rem;
+  font-size: 56px;
   color: var(--text-light-color);
   font-weight: bold;
-  padding-top: 30px;
-  min-height: 100px;
-}
-
-.top__title {
-  padding-bottom: 80px;
+  padding-top: 16px;
 }
 
 .top__description {
@@ -36,6 +37,7 @@ h2 {
   color: var(--text-light-color);
   font-weight: 600;
   line-height: 1.6;
+  padding-top: 60px;
 }
 
 .about {
@@ -49,11 +51,14 @@ h2 {
 
 .about__article,
 .team__article {
-  padding: 30px 30px 30px;
+  padding: 60px 30px 30px 30px;
+  min-width: 300px;
+  max-height: 80%;
   display: grid;
-  grid-template-rows: 30px 1.5fr 2fr auto;
+  grid-template-rows: 30px 1.5fr 2fr 5fr;
   align-items: center;
 }
+
 
 .about__article-subtitle,
 .team__subtitle {
@@ -86,8 +91,8 @@ h2 {
 }
 
 .team {
-  background-color: var(--background-medium-color);
-  padding-top: 60px;
+  background-image: url("/img/background-leaf.jpg");
+  background-position: left;
 }
 
 .team__carousel-box {
@@ -97,7 +102,8 @@ h2 {
 
 .team__carousel-item {
   padding: 15px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 
 .team__carousel-item h3 {
@@ -131,12 +137,14 @@ team__section-end {
     flex: 40%;
     max-width: 480px;
     padding-bottom: 0;
+    justify-content: baseline;
   }
 
   .top__description {
     flex: 60%;
     max-width: 780px;
     align-self: center;
+    padding-top: 0;
   }
 
   .top__description-text {
@@ -148,6 +156,10 @@ team__section-end {
     grid-template-columns: 1fr 1fr;
   }
 
+  .about__img {
+    min-height: 665px;
+  }
+
   .team__carousel-box {
     display: flex;
     flex-direction: row;
@@ -155,8 +167,14 @@ team__section-end {
 }
 
 @media (min-width: 991px) {
-  .team {
+  .about__article {
+    padding-left: 100px;
+    min-width: 600px;
+  }
+
+  .team div.container {
     display: flex;
+    align-items: center;
     flex-direction: row;
   }
 }
