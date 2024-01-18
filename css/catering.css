@@ -147,3 +147,22 @@ div.catering-advertisement__picture img {
   margin: 10px 0px 10px 0px;
   color: #454545;
 }
+
+/* верхній блок i блок map  */
+.motto{
+  background: var(--header-container-background);
+  
+}
+.motto__container{
+  max-width: 1200px;
+  margin:auto;
+}
+
+.motto__brand{
+  margin: 0px!important;
+  
+}
+
+.motto__subtitle{
+  color: var(--text-light-color)!important;
+}
