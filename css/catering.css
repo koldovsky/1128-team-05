@@ -2,11 +2,6 @@
 @import "header.css";
 @import "footer.css";
 
-body {
-  /* Убирает прокрутку по горизонтали, для мобильной версии */
-  overflow-x: hidden;
-}
-
 iframe {
   max-width: 100%;
   overflow: hidden;
@@ -31,18 +26,18 @@ h3 {
 
 .centered-image {
   display: block;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   margin: auto;
 }
 
 .circle-icon {
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #efece3;
+  background-color: var(--circle-background-icon);
   display: flex;
   justify-content: center;
 }
@@ -86,27 +81,14 @@ div.catering-advertisement__list-item p {
   background-color: yellow;
 }
 
-/* .catering-advertisement {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-} */
-/* .catering-advertisement__picture {
-    display: block;
-    width: 100%;
-} */
 div.catering-advertisement__picture img {
   display: block;
   width: 100%;
 }
 
-/* section.catering-advertisement__section > * {
-    margin: 4%;
-} */
 .catering-advertisement__title {
   font-family: "Permanent Marker";
-  color: rgb(231, 39, 45);
+  color: var(--h2-color);
   font-size: 16px;
   margin: 10px 0px 10px 0px;
 }
@@ -131,13 +113,13 @@ div.catering-advertisement__picture img {
 
 .catering-advertisement__additional-text {
   font-family: "Lato", sans-serif;
-  color: rgb(103, 103, 103);
+  color: var(--additional-text);
   font-size: 17px;
   margin: 10px 0px 10px 0px;
 }
 
 .catering-options-wrapper {
-  background: rgb(251 247 236);
+  background: var(--options-background);
 }
 
 .catering-options__text {
@@ -145,5 +127,42 @@ div.catering-advertisement__picture img {
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0px 10px 0px;
-  color: #454545;
+  color: var(--options-text-color);
+  line-height: 40px;
+}
+.catering-options-list__item-title {
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  margin: 10px 0px 10px 0px;
+  color: var(--options-header-name);
+}
+
+.catering-options-list__item-text {
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  margin: 10px 0px 10px 0px;
+  color: var(--options-text-paragraph);
+  line-height: 30px;
+}
+.catering-request-wrap {
+  background-image: url("../img/img-for-catering/burger-background.jpg");
+}
+
+/* верхній блок i блок map  */
+.motto{
+  background: var(--header-container-background);
+  
+}
+.motto__container{
+  max-width: 1200px;
+  margin:auto;
+}
+
+.motto__brand{
+  margin: 0px!important;
+  
+}
+
+.motto__subtitle{
+  color: var(--text-light-color)!important;
 }
