@@ -37,12 +37,20 @@
   --bottom-box-button-hover: rgb(40, 38, 35);
   --menu-icon-title-color-text: rgb(69, 69, 69);
   /* menu.html */
+  /* catering-page.html */
+  --circle-background-icon: #efece3;
+  --h2-color: rgb(231, 39, 45);
+  --additional-text: rgb(103, 103, 103);
+  --options-background: rgb(251 247 236);
+  --options-text-color: #454545;
+  --options-header-name: #282623;
+  --options-text-paragraph : #676767;
 }
 
-img {
+/* img {
   display: block;
   width: 100%;
-}
+} */
 
 .section-title {
   font-family: Rubik, sans-serif;
@@ -50,13 +58,14 @@ img {
 }
 /* перенести .secton-title в свій css файл */
 
-
 a {
   text-decoration: none;
 }
+
 li {
   list-style: none;
 }
+
 .container {
   max-width: 1200px;
   margin: auto;
