@@ -92,7 +92,6 @@ h2 {
 
 .team {
   background-image: url("/img/background-leaf.jpg");
-  background-position: left;
 }
 
 .team__carousel-box {
@@ -126,7 +125,7 @@ team__section-end {
   width: 100vw;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 765px) {
   .top {
     display: flex;
     flex-direction: row;
@@ -170,6 +169,14 @@ team__section-end {
   .about__article {
     padding-left: 100px;
     min-width: 600px;
+  }
+
+  .team {
+    background-image: url("/img/background-leaf.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 75%;
+    background-position-y: bottom;
   }
 
   .team div.container {
