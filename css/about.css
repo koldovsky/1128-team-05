@@ -59,7 +59,6 @@ h2 {
   align-items: center;
 }
 
-
 .about__article-subtitle,
 .team__subtitle {
   font-family: "Rubik", sans-serif;
@@ -91,7 +90,7 @@ h2 {
 }
 
 .team {
-  background-image: url("/img/background-leaf.jpg");
+  background-color: var(--background-medium-color);
 }
 
 .team__carousel-box {
@@ -120,10 +119,10 @@ h2 {
 .team__carousel-item img {
   border-radius: 7px;
 }
-
+/*
 team__section-end {
   width: 100vw;
-}
+} */
 
 @media (min-width: 765px) {
   .top {
