@@ -1,36 +1,32 @@
+    
+.ingredients-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.ingredients__image-container,
+.ingredients__content-container {
+    flex: 1;
+}
 
-/*DESKTOP FIRST*/
-.ingredients__image{
-    object-fit: cover   ;  
+.ingredients__image {
+    display: block;
+    object-fit: cover;
     width: 100%;
-    height: 100%;
-}
-
-.ingredients-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-height: 100vh;
-}
-
-.ingredients__image-container{
-    max-height: 780px;
+    max-height: 720px;
     height: 100vh;
-}
-
-.ingredients__content-container{
-    padding-left: 85px;
-    padding-right: 85px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    max-height: 780px;
-    height: 100vh;
-}
+  }
+  
 .ingredients__content{
+    padding-left: 90px;
+    padding-top: 60px;
+    padding-bottom: 70px;
+    padding-right: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    gap: 35px;
-}
+    gap: 20px;
+}  
 
 .ingredients__subtitle{
     font-size: 56px;
@@ -44,14 +40,16 @@
 }
 
 .ingredients__list{
-    line-height: 35px;
+    line-height: 40px;
 }
 
 .ingredients__item{
     font-size: 17px;
     color: var(--text-medium-color);
     font-weight: bold;
-    gap: 10px;
+    gap: 15px;
+    align-items: center;
+    padding: 3px;
 }
 
 .ingredients__title{
@@ -75,3 +73,61 @@
     text-align: left;
     max-width: 100%;
 }
+
+@media (max-width: 765px){
+    .ingredients-container{
+        flex-direction: column;
+    }
+    .ingredients__image{
+        height: 40%;
+    }
+
+    .ingredients__title{
+        font-size: 18px;
+    }
+
+    .ingredients__subtitle{
+        font-size: 38px;
+    }
+
+    .ingredients__content{
+        padding-left: 25px;
+        padding-right: 15px;
+    }
+
+    .ingredients__item{
+        margin-top: 10px;
+        line-height: 25px;
+        align-items:first baseline;
+    }
+
+    @media (min-width: 768px){
+        .ingredients__image {
+            height: 100vh;
+            object-fit: cover;
+        }
+        .ingredients__title{
+            font-size: 18px;
+        }
+    
+        .ingredients__subtitle{
+            font-size: 47px;
+        }
+    
+        .ingredients__content{
+            padding-left: 25px;
+            padding-right: 15px;
+            padding-top: 30px;
+            padding-bottom: 0px;
+        }
+    
+        .ingredients__item{
+            margin-top: 10px;
+            line-height: 25px;
+            align-items:first baseline;
+        }
+     
+    }
+}
+
+
