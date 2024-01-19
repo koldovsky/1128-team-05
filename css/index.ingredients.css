@@ -1,0 +1,17 @@
+.ingredients-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredients__image-container{
+    display: flex;
+    max-width: 706px;
+}
+
+.ingredients__image{
+    object-fit: cover;
+}
+
+.ingredients-content{
+    flex: 1;
+}
