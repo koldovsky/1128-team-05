@@ -150,19 +150,52 @@ div.catering-advertisement__picture img {
 
 /* верхній блок i блок map  */
 .motto{
+  
   background: var(--header-container-background);
   
 }
+
+
+
 .motto__container{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
   max-width: 1200px;
   margin:auto;
 }
-
+.motto__container-brand-subtitle{
+  display: flex;
+  flex-direction: column;
+}
 .motto__brand{
+  
   margin: 0px!important;
+  max-width: 600px;
   
 }
 
 .motto__subtitle{
+  
   color: var(--text-light-color)!important;
+  max-width: 600px;
+  
 }
+
+.motto__container-text{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  margin: auto;
+  background: var(--header-container-background);
+  max-width: 600px;
+  color: var(--text-light-color)!important;
+  
+}
+
+
+.location{
+  display: flex;
+  max-width:auto;
+}
+
