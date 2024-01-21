@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+.index-form {
+  background-image: url(../img/burger-food-truck-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 800px;
+}
+.index-form__wrapper-form-content {
+  display: flex;
+  flex-direction: column;
+  max-height: 1200px;
+  align-items: center;
+}
+
+.index-form__content {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.index-form__heading {
+  font-family: "Permanent Marker", cursive;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(231, 39, 45);
+}
+
+.index-form__empty-column {
+  height: auto;
+  max-width: 670px;
+}
+
+.index-form__subtitle {
+  font-family: "Rubik", sans-serif;
+  font-size: 36px;
+  text-align: center;
+  display: block;
+}
+.index-form__description {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  justify-content: center;
+}
+.index-form__contact-form {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+
+.index-form .index-form__input-form { 
+background-color: #fbf7ed;
+border-radius: 45px;
+}
+
+.index-form__submit-button {
+  background-color: rgb(231, 39, 45);
+  border-radius: 45px;
+}
