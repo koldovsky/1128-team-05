@@ -15,8 +15,23 @@
         justify-content: space-between;
     } 
 }
+.header__top-background {
+    padding: 15px;
+}
+.header__address, .header__email, .header__operating-hours {
+    color: var(--light-top-color)!important;
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
 
-.header__logo {
+.header__top address {
+ font-style: normal;
+}
+.header__email a {
+    color: var(--light-top-color)!important;
+}
+.header__logo-img {
     width: 232px;
     height: auto;
 }
@@ -96,6 +111,12 @@
     display: flex;
     flex-direction: row;
 }
+.header__menu-link {
+    color: var( --menu-color-link);
+    font-family Lato, sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+}
 
 @media (min-width: 1024px) {
     .header__burger-menu {
@@ -114,8 +135,8 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        flex-wrap: wrap;
         position: relative;
+      
     }
 
     .header__menu {
@@ -123,8 +144,5 @@
         flex-direction: row;
         gap: 30px;
     }
-
-
-
 }
 

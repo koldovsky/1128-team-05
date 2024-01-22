@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+.index-form {
+  background-image: url(../img/burger-food-truck-background.jpg);
+  /* display: flex;
+  flex-direction: row; */
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 800px;
+}
+.index-form__bottom-baground{
+  background-image: url(../img/form-hire-up-baground-bottom.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 60px;
+  
+} .index-form__top-baground{
+background-image: url(../img/form-hire-up-baground-top.svg);
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 60px;
+}
+.index-form__wrapper-form-content {
+  display: flex;
+  flex-direction: row;
+  padding: 90px 24px 90px 24px;
+}
+
+.index-form__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  min-width: 272px;
+  min-height: 666px;
+  padding: 35px;
+}
+.index-form__heading {
+  font-family: "Permanent Marker", cursive;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(231, 39, 45);
+}
+
+.index-form__subtitle {
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+.index-form__description {
+  color: rgb(69, 69, 69);
+  max-height: 120px;
+  min-width: 202px;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+.index-form__contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 37px;
+}
+.index-form .index-form__input-form {
+  background-color: #fbf7ed;
+  color: rgb(40, 38, 35);
+  min-width: 158px;
+  min-height: 18px;
+  border-radius: 45px;
+  border: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  padding: 11px 22px 11px 22px;
+}
+
+.index-form__submit-button {
+  background-color: rgb(231, 39, 45);
+  color: white;
+  width: 202px;
+  height: 40px;
+  border-radius: 45px;
+  border: 0;
+  margin-top: 32px;
+}
+.submit-button__text-send {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  padding: 22px 11px 22px 11px;
+}
+
+@media (min-width: 375px) {
+  .index-form__content {
+    min-width: 257px;
+    min-height: 530px;
+  }
+  .index-form .index-form__input-form,
+  .index-form__submit-button {
+    min-width: 257px;
+  }
+}
+
+@media (min-width: 500px) {
+  .index-form__content {
+    min-width: 257px;
+    min-height: 530px;
+  }
+  .index-form .index-form__input-form{
+    margin-top: 25px 0 0 0;
+    min-width: 372px;
+  }
+  .index-form__submit-button {
+    min-width: 372px;
+  }
+}
+
+@media (min-width: 768px) {
+  .index-form__wrapper-form-content {
+    padding: 95px 32px 95px 32px;
+  }
+  .index-form__content {
+    max-width: 275px;
+  max-height: 690px;
+  padding: 40px;
+  }
+
+  .index-form__empty-column{
+    min-width: 400px;
+    min-height: 163px;
+  }
+  .index-form .index-form__input-form,
+  .index-form__submit-button {
+    min-width: 195px;
+  }
+}
+
+@media (min-width: 992px) {
+  .index-form__wrapper-form-content {
+    padding: 100px 40px 100px 40px;
+  }
+  .index-form__content {
+    max-width: 362px;
+  max-height: 693px;
+  padding: 50px;
+  }
+
+  .index-form .index-form__input-form,
+  .index-form__submit-button {
+    min-width: 262px;
+  }
+  .index-form__subtitle {
+    font-size: 36px;
+  }
+}
+@media (min-width: 1024px) {
+  .index-form__content {
+    max-width: 375px;
+  max-height: 650px;
+  }
+.index-form__heading{
+  font-size: 20px;
+}
+  .index-form .index-form__input-form,
+  .index-form__submit-button {
+    min-width: 275px;
+  }
+}
+
+
