@@ -164,7 +164,7 @@ min-height: 60px;
     font-size: 36px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .index-form__content {
     max-width: 375px;
   max-height: 650px;
