@@ -119,7 +119,11 @@ div.catering-advertisement__picture img {
 }
 
 .catering-options-wrapper {
-  background: var(--options-background);
+  /* background-size: cover; */
+  /* background-attachment: fixed; */
+
+  background-image: url("../img/img-for-catering/beige-background-with-mushroom.jpg");
+
 }
 
 .catering-options__text {
@@ -130,6 +134,7 @@ div.catering-advertisement__picture img {
   color: var(--options-text-color);
   line-height: 40px;
 }
+
 .catering-options-list__item-title {
   font-family: "Rubik", sans-serif;
   font-size: 24px;
@@ -144,25 +149,38 @@ div.catering-advertisement__picture img {
   color: var(--options-text-paragraph);
   line-height: 30px;
 }
+
 .catering-request-wrap {
+
   background-image: url("../img/img-for-catering/burger-background.jpg");
+  height: 500px;
+}
+
+.catering-request-rounded-corners {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  border-width: 20px;
+  border-color: blue;
+  margin: auto;
+
 }
 
 /* верхній блок i блок map  */
-.motto{
+.motto {
   background: var(--header-container-background);
-  
+
 }
-.motto__container{
+
+.motto__container {
   max-width: 1200px;
-  margin:auto;
+  margin: auto;
 }
 
-.motto__brand{
-  margin: 0px!important;
-  
+.motto__brand {
+  margin: 0px !important;
+
 }
 
-.motto__subtitle{
-  color: var(--text-light-color)!important;
+.motto__subtitle {
+  color: var(--text-light-color) !important;
 }

@@ -1,0 +1,13 @@
+{
+  "name": "1128-team-05",
+  "version": "1.0.0",
+  "description": "This template repository includes preconfigured GitHub Action that will validate html files in a project with (HTMLProofer)[https://github.com/gjtorikian/html-proofer/].",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
