@@ -1,0 +1,41 @@
+// game move
+function move(position, roll) {
+  return (position = position + 2 * roll);
+}
+
+//keep gydrated
+function litres(time) {
+  const litres = Math.floor(time * 0.5);
+  return litres;
+}
+
+//make-negative
+function makeNegative(num) {
+  return num < 0 ? num : -num;
+}
+
+//messi goals
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  const totalGoals =
+    Number(laLigaGoals) +
+    Number(copaDelReyGoals) +
+    Number(championsLeagueGoals);
+  return totalGoals;
+}
+
+//opposites attract
+function lovefunc(flower1, flower2) {
+  if (
+    (flower1 % 2 === 0 && flower2 % 2 !== 0) ||
+    (flower1 % 2 !== 0 && flower2 % 2 === 0)
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+//personalized message
+function greet(name, owner) {
+  return name === owner ? "Hello boss" : "Hello guest";
+}
