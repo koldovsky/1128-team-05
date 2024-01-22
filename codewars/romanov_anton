@@ -14,3 +14,9 @@ function makeNegative(num) {
 function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
 return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
+
+// Game Move
+
+function move (position, roll) {
+  return position + roll * 2;
+}
