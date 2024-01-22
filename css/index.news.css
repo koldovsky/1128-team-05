@@ -4,19 +4,6 @@
     background: url(../img/img_news/bg-6.jpg);
 }
 
-.services-item__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 37px;
-    margin-top: 20px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-
-/*MOBILE FIRST*/
 .services-container {
     max-width: 1200px;
     margin: auto;
@@ -24,50 +11,6 @@
     flex-direction: column;
     align-items: center;
     padding: 30px;
-}
-
-.services-item {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--text-light-color);
-    margin-top: 40px;
-    border-radius: 13px;
-    margin-bottom: 0px;
-    max-width: inherit;
-}
-
-
-
-.services-item__image {
-    border-top-right-radius: 13px;
-    border-top-left-radius: 13px;
-    width: 100%;
-    object-fit: cover;
-}
-
-
-
-.services-item__svg {
-    filter: brightness(0) saturate(100%) invert(84%) sepia(50%) saturate(1194%) hue-rotate(327deg) brightness(101%) contrast(108%);
-    width: 18px;
-}
-
-
-.services-item__text--short {
-    font-size: 20px;
-    color: var(--text-big-color);
-    font-weight: 700;
-    line-height: 30px;
-}
-
-.services-item__text--extended,
-.services-item__info {
-    font-size: 17px;
-    color: var(--text-small-color);
-}
-
-.services-item__info {
-    margin-left: 7px;
 }
 
 .services_news {
@@ -97,62 +40,6 @@
     line-height: 22.4px;
     text-align: center;
     text-transform: uppercase;
-}
-
-
-@media(min-width: 765px) {
-    .services-item {
-        flex-direction: row;
-    }
-
-    .services-item__image {
-        flex: 1;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-        border-top-left-radius: 13px;
-        border-bottom-left-radius: 13px;
-        max-width: 585px;
-        width: 50%;
-    }
-
-    .services-item__reverse {
-        flex-direction: row-reverse;
-        border-top-right-radius: 13px;
-        border-bottom-right-radius: 13px;
-    }
-
-    .services-item__reverse .services-item__image {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        border-top-right-radius: 13px;
-        border-bottom-right-radius: 13px;
-    }
-
-    .services-item__content {
-        flex: 1;
-        padding-left: 25px;
-        padding-bottom: 30px;
-    }
-
-    .services-item__title {
-        font-size: 36px;
-    }
-
-    .services-item__button {
-        margin-top: 35px;
-    }
-
-    .services__subtitle {
-        font-size: 56px;
-    }
-
-    .services__title {
-        font-size: 20px;
-    }
-
-    .services {
-        background-size: contain;
-    }
 }
 
 
