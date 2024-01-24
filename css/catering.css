@@ -2,6 +2,10 @@
 @import "header.css";
 @import "footer.css";
 
+* {
+  box-sizing: border-box;
+}
+
 iframe {
   max-width: 100%;
   overflow: hidden;
@@ -43,11 +47,13 @@ h3 {
 }
 
 .circle-image {
-  display: inline;
+  /* display: inline;
   width: auto;
   height: 20px;
   width: 20px;
-  margin-right: 10px;
+  margin-right: 10px; */
+
+  width: 20px;
 }
 
 .catering-advertisement__section,
@@ -63,22 +69,22 @@ h3 {
 div.catering-advertisement__list {
   display: flex;
   flex-direction: column;
-  background-color: tomato;
+  /* background-color: tomato; */
 }
 
 .catering-advertisement__list-item {
   display: grid;
   grid-template-columns: 1fr 100fr;
   margin: 10px 0px 10px 0px;
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
 }
 
 div.catering-advertisement__list-item img {
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 div.catering-advertisement__list-item p {
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 div.catering-advertisement__picture img {
@@ -153,33 +159,55 @@ div.catering-advertisement__picture img {
 .catering-request-wrap {
 
   background-image: url("../img/img-for-catering/burger-background.jpg");
-  height: 500px;
+  padding: 24px 90px;
+
 }
 
 .catering-request-rounded-corners {
+  
+
   background-color: #FFFFFF;
   border-radius: 10px;
-  border-width: 20px;
-  border-color: blue;
-  margin: auto;
+  
+
+  
 
 }
 
+.catering-options__section {
+  
+}
+
+.catering-request__form-inner {
+ 
+}
+
+.catering-request__input {
+  padding: 11px 22px;
+  margin: 12px 0 0;
+  border: 0;
+  background-color: #fbf7ed;
+  border-radius: 20px;
+}
+.textarea-placeholder {
+  
+}
 /* верхній блок i блок map  */
 .motto {
   background: var(--header-container-background);
 
 }
-.motto__container{
+
+.motto__container {
   max-width: 1200px;
   margin: auto;
 }
 
-.motto__brand{
-  margin: 0px!important;
-  
+.motto__brand {
+  margin: 0px !important;
+
 }
 
-.motto__subtitle{
-  color: var(--text-light-color)!important;
+.motto__subtitle {
+  color: var(--text-light-color) !important;
 }

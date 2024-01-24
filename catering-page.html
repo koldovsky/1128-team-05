@@ -11,9 +11,8 @@
 
 <body>
 
-  <!-- <header data-include="header.partial.html"></header> -->
-
-
+  <header data-include="header.partial.html"></header>
+  
   <main class="catering-wrapper">
     <section data-include="catering-page.motto.partial.html"></section>
     <!-- я добавив але не знаю чи працює -->
@@ -35,15 +34,15 @@
           </p>
           <div class="catering-advertisement__list">
             <div class="catering-advertisement__list-item">
-              <img src="img/img-for-catering/yellow-circle.svg" class="circle-image" alt="" />
+              <img src="img/check.svg" class="circle-image" alt="" />
               <p>$200 minimum order;</p>
             </div>
             <div class="catering-advertisement__list-item">
-              <img src="img/img-for-catering/yellow-circle.svg" class="circle-image" alt="" />
+              <img src="img/check.svg" class="circle-image" alt="" />
               <p>24-hour notice is appreciated for all orders;</p>
             </div>
             <div class="catering-advertisement__list-item">
-              <img src="img/img-for-catering/yellow-circle.svg" class="circle-image" alt="" />
+              <img src="img/check.svg" class="circle-image" alt="" />
               <p>Prices do not include tax, delivery, or service.</p>
             </div>
           </div>
@@ -122,12 +121,12 @@
     <section data-include="catering-page.map.partial.html"></section>
     <!-- Чомусь тимчасово не працює-->
     <div class="catering-request">
-      <div class="catering-request__image">
-        <!-- <img
+      <!-- <div class="catering-request__image">
+        <img
             src="img/img-for-catering/burger-background.jpg"
             alt="burger burger-background"
-          /> -->
-      </div>
+          />
+      </div> -->
       <div class="catering-request-wrap">
         <div class="catering-request-rounded-corners">
           <h2 class="catering-request__title">Request</h2>
@@ -142,6 +141,7 @@
               <input type="text" placeholder="Number of people" name="numberOfPeople" class="catering-request__input" />
               <input type="text" placeholder="Leave any questions or specific notes" name="notes"
                 class="catering-request__input" />
+              <textarea placeholder="Leave any questions or specific notes" class="catering-request__input" maxlength="2000"></textarea>
               <input type="submit" class="catering-request__submit" />
             </form>
           </div>
@@ -150,7 +150,7 @@
     </div>
   </main>
   <footer data-include="footer.partial.html"></footer>
-  <!-- <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script> -->
+  <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
 
 
 </body>
