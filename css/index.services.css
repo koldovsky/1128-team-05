@@ -1,7 +1,9 @@
 .services{
     background-color: var(--background-medium-color);
     padding-top: 90px;
-    background: url(../img/services-background-image.jfif);
+    background-image: url(../img/services-background-image.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /*MOBILE FIRST*/
@@ -17,7 +19,7 @@
 .services-item{
     display: flex;
     flex-direction: column;
-    --color: var(--text-light-color);
+    background-color: var(--text-light-color);
     margin-top: 40px;
     border-radius: 13px;
     margin-bottom: 0px;
@@ -49,6 +51,7 @@
     border-style: none;
     background-color: var(--background-top-color);
     color: var(--text-light-color);
+    text-align: center;
     font-weight: 700;
     font-size: 16.5px;
     font-family: 'Lato';
@@ -107,7 +110,7 @@
 }
 
 .services__title{
-    font-family: 'Permanent Marker', cursive;;
+    font-family: 'Permanent Marker', cursive;
     font-size: 18px;
     color: var(--titles-color);
     font-weight: 400;

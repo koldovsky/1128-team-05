@@ -13,13 +13,14 @@
 }
 .special-offer__item{
     padding: 15px;
+    border-radius: 15px ; 
 }
 
-.burger{
+.special-offer__burger{
     max-width: 700px;
 }
 
-.salad{
+.special-offer__salad{
     max-width: 500px;
 }
 

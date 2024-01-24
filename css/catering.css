@@ -170,17 +170,16 @@ div.catering-advertisement__picture img {
   background: var(--header-container-background);
 
 }
-
-.motto__container {
+.motto__container{
   max-width: 1200px;
   margin: auto;
 }
 
-.motto__brand {
-  margin: 0px !important;
-
+.motto__brand{
+  margin: 0px!important;
+  
 }
 
-.motto__subtitle {
-  color: var(--text-light-color) !important;
+.motto__subtitle{
+  color: var(--text-light-color)!important;
 }

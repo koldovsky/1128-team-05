@@ -1,3 +1,11 @@
 .hero__action-phone-img {
     width: 50px;
 }
+.hero  {
+    min-height: 500px;
+    background-size: cover;
+    background-image: url(../img/hero-background.jpg);
+}
+.hero__phone-img {
+    width: 50px;
+}
