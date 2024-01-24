@@ -40,3 +40,22 @@ function warnTheSheep(queue) {
     "! You are about to be eaten by a wolf!"
   );
 }
+
+// https://www.codewars.com/kata/beginner-lost-without-a-map
+
+function maps(x) {
+  return x.map((n) => n * 2);
+}
+
+// https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript
+
+function firstNonConsecutive(arr) {
+  let consecutiveYes = true;
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (Math.abs(arr[i + 1] - arr[i]) !== 1) {
+      consecutiveYes = false;
+      return arr[i + 1];
+    }
+  }
+  if (consecutiveYes == true) return null;
+}
