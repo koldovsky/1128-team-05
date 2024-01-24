@@ -47,13 +47,12 @@ h3 {
 }
 
 .circle-image {
-  /* display: inline;
-  width: auto;
-  height: 20px;
   width: 20px;
-  margin-right: 10px; */
+}
 
-  width: 20px;
+.catering-advertisement {
+  display: flex;
+  flex-direction: column;
 }
 
 .catering-advertisement__section,
@@ -69,22 +68,12 @@ h3 {
 div.catering-advertisement__list {
   display: flex;
   flex-direction: column;
-  /* background-color: tomato; */
 }
 
 .catering-advertisement__list-item {
   display: grid;
   grid-template-columns: 1fr 100fr;
   margin: 10px 0px 10px 0px;
-  /* background-color: chartreuse; */
-}
-
-div.catering-advertisement__list-item img {
-  /* background-color: aqua; */
-}
-
-div.catering-advertisement__list-item p {
-  /* background-color: yellow; */
 }
 
 div.catering-advertisement__picture img {
@@ -125,11 +114,7 @@ div.catering-advertisement__picture img {
 }
 
 .catering-options-wrapper {
-  /* background-size: cover; */
-  /* background-attachment: fixed; */
-
   background-image: url("../img/img-for-catering/beige-background-with-mushroom.jpg");
-
 }
 
 .catering-options__text {
@@ -157,29 +142,24 @@ div.catering-advertisement__picture img {
 }
 
 .catering-request-wrap {
-
   background-image: url("../img/img-for-catering/burger-background.jpg");
-  padding: 24px 90px;
-
+  padding: 90px 0;
 }
 
 .catering-request-rounded-corners {
-  
-
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   background-color: #FFFFFF;
   border-radius: 10px;
-  
-
-  
-
-}
-
-.catering-options__section {
-  
+  margin: 10%;
 }
 
 .catering-request__form-inner {
- 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 10%;
 }
 
 .catering-request__input {
@@ -189,9 +169,32 @@ div.catering-advertisement__picture img {
   background-color: #fbf7ed;
   border-radius: 20px;
 }
-.textarea-placeholder {
-  
+
+.catering-request__submit {
+  padding: 11px 22px;
+  margin: 12px 0 0;
+  border: 0;
+  background-color: #e7272d;
+  color: white;
+  border-radius: 20px;
 }
+
+.catering-request__submit:hover {
+  background-color: black;
+}
+
+@media(min-width: 765px) {
+  .catering-advertisement {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .catering-advertisement__section {
+    flex-grow: 1;
+    /* Равномерно распределить пространство между изображением и текстом */
+  }
+}
+
 /* верхній блок i блок map  */
 .motto {
   background: var(--header-container-background);
