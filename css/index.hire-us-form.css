@@ -3,24 +3,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 .index-form {
   background-image: url(../img/burger-food-truck-background.jpg);
-  /* display: flex;
-  flex-direction: row; */
+
   align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 800px;
 }
-.index-form__bottom-baground{
+.index-form__bottom-background {
   background-image: url(../img/form-hire-up-baground-bottom.svg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 60px;
-  
-} .index-form__top-baground{
-background-image: url(../img/form-hire-up-baground-top.svg);
-background-repeat: no-repeat;
-background-size: cover;
-min-height: 60px;
+}
+.index-form__top-background {
+  background-image: url(../img/form-hire-up-baground-top.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 60px;
 }
 .index-form__wrapper-form-content {
   display: flex;
@@ -32,7 +31,7 @@ min-height: 60px;
   display: flex;
   flex: 1;
   flex-direction: column;
-  background-color: #fff;
+  background-color: var(--form-background-color);
   border-radius: 8px;
   min-width: 272px;
   min-height: 666px;
@@ -43,7 +42,7 @@ min-height: 60px;
   font-size: 16px;
   font-weight: 400;
   text-align: center;
-  color: rgb(231, 39, 45);
+  color: var(--h2-form-color);
 }
 
 .index-form__subtitle {
@@ -54,7 +53,7 @@ min-height: 60px;
   margin-top: 20px;
 }
 .index-form__description {
-  color: rgb(69, 69, 69);
+  color: var(--form-description-color);
   max-height: 120px;
   min-width: 202px;
   font-family: "Lato", sans-serif;
@@ -72,8 +71,8 @@ min-height: 60px;
   margin-top: 37px;
 }
 .index-form .index-form__input-form {
-  background-color: #fbf7ed;
-  color: rgb(40, 38, 35);
+  background-color: var(--input-fields-color);
+  color: var(--input-words-color);
   min-width: 158px;
   min-height: 18px;
   border-radius: 45px;
@@ -86,8 +85,8 @@ min-height: 60px;
 }
 
 .index-form__submit-button {
-  background-color: rgb(231, 39, 45);
-  color: white;
+  background-color: var(--form-button-color);
+  color: var(--form-button-text-color);
   width: 202px;
   height: 40px;
   border-radius: 45px;
@@ -117,7 +116,7 @@ min-height: 60px;
     min-width: 257px;
     min-height: 530px;
   }
-  .index-form .index-form__input-form{
+  .index-form .index-form__input-form {
     margin-top: 25px 0 0 0;
     min-width: 372px;
   }
@@ -132,11 +131,11 @@ min-height: 60px;
   }
   .index-form__content {
     max-width: 275px;
-  max-height: 690px;
-  padding: 40px;
+    max-height: 690px;
+    padding: 40px;
   }
 
-  .index-form__empty-column{
+  .index-form__empty-column {
     min-width: 400px;
     min-height: 163px;
   }
@@ -152,8 +151,8 @@ min-height: 60px;
   }
   .index-form__content {
     max-width: 362px;
-  max-height: 693px;
-  padding: 50px;
+    max-height: 693px;
+    padding: 50px;
   }
 
   .index-form .index-form__input-form,
@@ -167,15 +166,13 @@ min-height: 60px;
 @media (min-width: 1024px) {
   .index-form__content {
     max-width: 375px;
-  max-height: 650px;
+    max-height: 650px;
   }
-.index-form__heading{
-  font-size: 20px;
-}
+  .index-form__heading {
+    font-size: 20px;
+  }
   .index-form .index-form__input-form,
   .index-form__submit-button {
     min-width: 275px;
   }
 }
-
-
