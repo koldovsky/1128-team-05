@@ -1,7 +1,10 @@
 .services {
+  /*
     background-color: var(--background-medium-color);
     padding-top: 90px;
     background: url(../img/img_news/bg-6.jpg);
+  */
+    
 }
 .container {
     padding: 70px 0 40px;
@@ -36,7 +39,7 @@
     }
 }
 
-.why-list {
+.news-list {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,22 +49,83 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .why-list {
+    .news-list {
         gap: 24px;
         margin-bottom: 80px;
     }
 }
 
 @media only screen and (min-width: 1280px) {
-    .why-list {
+    .news-list{
         flex-direction: row;
         gap: 24px;
     }
 }
+/*
+
+
+
+*/
+.news-list-text{
+    font-family: "Lato", sans-serif;
+    display: flex;
+    font-size: 15px;
+}
+
+.news-list-title {
+    color: #e7272d;
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+}
+
+.news-list-date {
+    color: #fbbe36;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+.news-bl-text{
+    font-size: 17px;
+    color: var(--text-small-color);
+    line-height: 25px;
+    text-align: left;
+    max-width: 100%;
+}
+
+.news-name-new{
+    font-family: "Rubik", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: var(--text-medium-color);
+}
+
+.btn-news {
+    margin-top: 20px;
+    padding: 16px 28px;
+    border-radius: 25px;
+    border-style: none;
+    background-color: var(--background-top-color);
+    color: var(--text-light-color);
+    font-weight: 700;
+    font-size: 16.5px;
+    font-family: 'Lato';
+    transition: background-color 0.5s;
+}
+
+.btn-news:hover {
+    background-color: var(--text-medium-color);
+    cursor: pointer;
+}
+
+/*
 
 .why-card {
-    display: flex;
-    align-items: center;
+align-items: center;
     justify-content: center;
     border-radius: 10px;
     padding: 20px;
@@ -82,6 +146,11 @@
         height: 128px;
     }
 }
+
+*/
+    
+
+
 
 .step {
     padding: 12px 0;
@@ -221,6 +290,7 @@
     text-align: center;
     /*max-width: 768px;*/
     margin-top: 27.4px;
+    padding-bottom:45px;
 }
 
 
