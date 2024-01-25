@@ -8,20 +8,45 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    padding: 50px 0px 130px;
+    
     
 }
 .special-offer__item{
-    padding: 15px;
-    border-radius: 15px ; 
+    margin: 10px;
+    
+    
 }
 
 .special-offer__burger{
-    max-width: 700px;
+    background-image: url('../img/img-for-special-offer/burher.jpg');
+    background-position:center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 700px;
+    min-height: 350px;
+    border-radius: 10px;
+    
 }
 
 .special-offer__salad{
-    max-width: 500px;
+    min-height: 350px;
+    min-width: 400px;
+    border-radius: 10px;
+    background-image: url('../img/img-for-special-offer/salad.jpg');
+    background-position:center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+special-offer__item-salad-text{
+    
+    
 }
 
 @media (min-width: 500px) {
