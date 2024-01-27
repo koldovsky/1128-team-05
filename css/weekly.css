@@ -58,16 +58,33 @@
 
 .schedule-carousel {
   display: flex;
+  position: relative;
+  overflow: hidden;
 }
 
 .shedule__carousel-slides {
   flex: 1;
   justify-content: space-around;
 }
+.schedule-carousel .carousel__button {
+  position: absolute;  
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
 
-@media (min-width: 992px) {
-  .schedule-carousel {
-    display: flex;
-  }
+.schedule-carousel .carousel__button--prev {
+  left: 10px;
+}
 
+.schedule-carousel .carousel__button--next {
+  right: 10px;
+}
+.schedule-carousel .carousel__inner{
+  display: flex;
+    transition: transform 0.5s ease-in-out;
+  
 }
