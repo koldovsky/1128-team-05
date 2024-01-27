@@ -66,8 +66,9 @@
   flex: 1;
   justify-content: space-around;
 }
+
 .schedule-carousel .carousel__button {
-  position: absolute;  
+  position: absolute;
   transform: translateY(-50%);
   background: rgba(255, 255, 255, 0.7);
   border: none;
@@ -83,8 +84,22 @@
 .schedule-carousel .carousel__button--next {
   right: 10px;
 }
-.schedule-carousel .carousel__inner{
+
+.schedule-carousel .carousel__inner {
   display: flex;
-    transition: transform 0.5s ease-in-out;
-  
+
+
+}
+
+.schedule-carousel {
+
+  grid-template-columns: 40px 1fr 40px;
+  min-height: 150px;
+}
+
+.schedule-carousel div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
