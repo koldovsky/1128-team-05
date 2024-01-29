@@ -9,3 +9,6 @@
 .hero__phone-img {
     width: 50px;
 }
+.hero__title {
+    color: var( --hero__title)!important;
+}
