@@ -7,6 +7,26 @@
 .header__top {
     display: none;
 }
+.header__address,
+.header__email,
+.header__operating-hours {
+    color: var(--light-top-color) !important;
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.header__top address {
+    font-style: normal;
+}
+
+.header__email a {
+    color: var(--light-top-color) !important;
+}
+
+.header__mobile-contact {
+    text-align: center;
+}
 
 @media (min-width: 992px) {
     .header__top {
@@ -18,23 +38,6 @@
     .header__top-background {
         padding: 15px;
         background: var(--header-top-background);
-    }
-
-    .header__address,
-    .header__email,
-    .header__operating-hours {
-        color: var(--light-top-color) !important;
-        font-family: Lato, sans-serif;
-        font-weight: bold;
-        font-size: 15px;
-    }
-
-    .header__top address {
-        font-style: normal;
-    }
-
-    .header__email a {
-        color: var(--light-top-color) !important;
     }
 }
 
@@ -62,8 +65,11 @@
     padding-left: 6px;
     position: relative;
 }
+
 .header__menu-btn {
     cursor: pointer;
+    width: 24px;
+    height: 24px;
 }
 
 .header__navicon {
@@ -133,7 +139,9 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    flex: 1;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 10px;
 }
 
 .header__menu-link {
@@ -144,7 +152,7 @@
     font-size: 17px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
 
     .header__social-icons {
         display: flex;
@@ -174,14 +182,27 @@
     .header__menu {
         display: flex;
         flex-direction: row;
-        gap: 30px;
+        gap: 60px;
     }
-} 
+    .header__mobile-contact {
+        display: none;
+    }
+}
 
 .header__social-icons-img {
-    width: 36px;
+    width: 32px;
 }
 
 .header__social-icons {
     display: none;
 }
+
+@media (min-width: 992px) {
+    .header__social-icons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+}
+
