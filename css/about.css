@@ -93,6 +93,13 @@ h2 {
   background-color: var(--background-medium-color);
 }
 
+.team div.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
 .team__carousel-box {
   display: flex;
   flex-direction: column;
@@ -119,12 +126,38 @@ h2 {
 .team__carousel-item img {
   border-radius: 7px;
 }
-/*
-team__section-end {
-  width: 100vw;
-} */
 
-@media (min-width: 765px) {
+.team__prev_button {
+  height: 32px;
+  width: 32px;
+  background-color: var(--button-color);
+  border: 0;
+  border-radius: 50%;
+  position: absolute;
+  left: 400px;
+  cursor: pointer;
+}
+
+.team__next_button {
+  height: 32px;
+  width: 32px;
+  background-color: var(--button-color);
+  border: 0;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.team__prev_button:hover {
+  background-color: var(--background-top-color);
+}
+
+.team__next_button:hover {
+  background-color: var(--background-top-color);
+}
+
+@media (min-width: 768px) {
   .top {
     display: flex;
     flex-direction: row;
@@ -158,6 +191,11 @@ team__section-end {
     min-height: 665px;
   }
 
+  .team div.container {
+    display: flex;
+    flex-direction: row;
+  }
+
   .team__carousel-box {
     display: flex;
     flex-direction: row;
@@ -180,7 +218,7 @@ team__section-end {
 
   .team div.container {
     display: flex;
-    align-items: center;
     flex-direction: row;
   }
 }
+
