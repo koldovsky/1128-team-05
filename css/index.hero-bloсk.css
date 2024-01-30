@@ -2,6 +2,21 @@
     padding-left: 24px;
     padding-right: 24px;;
 }
+
+@media (min-width: 768px) {
+    .hero__content  {
+        display: flex;
+    }
+    .hero__text {
+        flex-basis: 60%;
+        max-width: 60%;
+    }
+   .hero__big-img {
+        flex-basis: 40%;
+        max-width: 40%;
+    }
+}
+
 .hero__action-phone-img {
     width: 50px;
 }
@@ -20,9 +35,14 @@
     padding-top: 100px;
     padding-bottom: 90px;
 }
+@media (min-width: 768px) {
+    .hero__content {
+        padding-top: 150px;
+    }
+}
 .hero__title {
     font-family: "Permanent Marker", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
 }
 .hero__slogan { 
     padding-top: 20px;
@@ -30,6 +50,13 @@
     font-size: 3.5rem;
     font-weight: 700;
 }
+@media (min-width: 768px) {
+    .hero__slogan { 
+        font-size: 4rem;
+        font-weight: 700;
+    }  
+}
+
 .hero__information { 
     font-family: "Lato, sans-serif", sans-serif;
     font-size: 1.25rem;
@@ -58,3 +85,4 @@
 .hero__phone {
     margin-top: 50px;
 }
+
