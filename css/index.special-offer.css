@@ -1,92 +1,103 @@
-.special-offer{
-    background-image: url('../img/img-for-special-offer/background.jpg');
-    background-size: cover;
+.special-offer {
+  background-image: url("../img/img-for-special-offer/background.jpg");
+  background-size: cover;
 }
 
-.special-offer__block{
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 50px 0px 130px;
-    
-    
+.special-offer__block {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0px 130px;
 }
-.special-offer__item{
-    
-    margin: 15px;
-    
+.special-offer__item {
+  margin: 15px;
 }
 
-
-
-.special-offer__burger{
-    background-image: url('../img/img-for-special-offer/burher.jpg');
-    background-position:center;
-    background-size: cover;
-    display: flex;
-    align-items: left;
-    justify-content: top;
-    min-width: 700px;
-    min-height: 350px;
-    border-radius: 10px;
-    flex-direction: column;
-    padding: 40px;
-    
+.special-offer__burger {
+  background-image: url("../img/img-for-special-offer/burher.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: left;
+  justify-content: top;
+  min-width: 700px;
+  min-height: 350px;
+  border-radius: 10px;
+  flex-direction: column;
+  padding: 40px;
 }
 
-.special-offer__salad{
-    min-height: 350px;
-    min-width: 400px;
-    border-radius: 10px;
-    background-image: url('../img/img-for-special-offer/salad.jpg');
-    background-position:center;
-    background-size: cover;
-    display: flex;
-    align-items: left;
-    justify-content: top;
-    flex-direction: column;
-    padding: 40px;
-    
-   
+.special-offer__salad {
+  min-height: 350px;
+  min-width: 400px;
+  border-radius: 10px;
+  background-image: url("../img/img-for-special-offer/salad.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: left;
+  justify-content: top;
+  flex-direction: column;
+  padding: 40px;
 }
 
-
-
-.name-offer, .name-offer-salad, .product-composition{
-    margin-top:30px;
+.name-offer,
+.name-offer-salad,
+.product-composition {
+  margin-top: 30px;
 }
 
 h2 {
-    font-family: "Permanent Marker";
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-  }
+  font-family: "Permanent Marker";
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
 
-  h3 {
-    color: rgb(255, 255, 255);
-    font-family: "Rubik", sans-serif;
-    font-size: 38px;
-  }
-.special-font{
-    color: rgb(255, 0, 0);
+h3 {
+  color: rgb(255, 255, 255);
+  font-family: "Rubik", sans-serif;
+  font-size: 38px;
+}
+.special-offer__title {
+  color: rgb(255, 0, 0);
 }
 
 .special-offer__composition {
-    font-family: "Lato", sans-serif;
-    font-size: 15px;
-    font-weight: bold;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
 
-    color:rgb(69, 69, 69);
+  color: rgb(69, 69, 69);
 }
-.name-offer-salad{
-    color: rgb(255, 255, 255);
+.name-offer-salad,
+.special-font {
+  color: rgb(255, 255, 255);
+}
+.special-offer__button {
+  margin-top: 40px;
+  height: 50px;
+  max-width: 140px;
+  background-color: white;
+  color: rgb(69, 69, 69);
+  border-radius: 50px;
+  text-align: center;
+  padding-top: 15px;
+  font-weight: bold;
+  transition: background-color 0.5s, color 0.5s;
+}
+.special-offer__button:hover {
+  color: white;
+  background-color: rgb(255, 0, 0);
+}
+
+.salad-button:hover {
+  background-color: #fbbe36 !important;
 }
 
 @media (min-width: 500px) {
-    .special-offer__block{
-        display: flex;
-        flex-direction: row;
-    }
+  .special-offer__block {
+    display: flex;
+    flex-direction: row;
+  }
 }
-
