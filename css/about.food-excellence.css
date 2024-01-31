@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+.food-excellence {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-image: url(../img/food-excellence-background.jpg);
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  width: 100%;
+  min-height: 700px;
+}
+.food-excellence__wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 90px 24px 90px 24px;
+}
+.food-excellence__text-content {
+  background-color: var(--background-text-block-color);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-width: 272px;
+  min-height: 780px;
+  padding: 31px 27px 31px 27px;
+}
+.food-excellence__heading {
+  font-family: "Permanent Marker", undefined;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--h2-food-excellence-color);
+}
+.food-excellence__subtitle {
+  font-family: Rubik, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 20px;
+  color: var(--subtitle-food-excellence-text-color);
+}
+.food-excellence__description {
+  margin-top: 25px;
+}
+.food-excellence__description-main-item {
+  font-family: Lato, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-top: 25px;
+  color: var(--food-excellence-main-description-color);
+}
+.food-excellence__description {
+  font-family: Lato, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25.5px;
+  color: var(--food-excellence-description-color);
+}
+@media (min-width: 375px) {
+  .food-excellence__text-content {
+    min-height: 700px;
+  }
+}
+@media (min-width: 480px) {
+  .food-excellence__text-content {
+    min-height: 550px;
+  }
+}
+@media (min-width: 768px) {
+  .food-excellence__text-content {
+    min-height: 550px;
+    min-width: 250px;
+    padding: 34px 28px 34px 28px;
+  }
+  .food-excellence__empty-container {
+    min-width: 430px;
+    padding: 0 15px 0 15px;
+  }
+  .food-excellence__wrapper {
+    padding-top: 105px;
+    padding-bottom: 105px;
+  }
+  .food-excellence__heading {
+    font-size: 18px;
+  }
+  .food-excellence__subtitle {
+    font-size: 33px;
+  }
+}
+
+@media (min-width: 992px) {
+  .food-excellence__empty-container {
+    min-width: 550px;
+  }
+  .food-excellence__text-content {
+    min-width: 362px;
+    padding: 40px 30px 40px 30px;
+  }
+  .food-excellence__wrapper {
+    padding: 120px 40px 120px 40px;
+  }
+}
+@media (min-width: 992px) {
+    .food-excellence__text-content {
+        min-width: 310px;
+    }
+    .food-excellence__empty-container {
+        min-width: 570px;
+      }
+}
+
+@media (min-width: 1200px) {
+    .food-excellence__empty-container {
+        min-width: 670px;
+      }
+      .food-excellence__heading {
+        font-size: 20px;
+      }
+      .food-excellence__subtitle {
+        font-size: 36px;
+      }
+}
+@media (min-width: 1280px) {
+  .food-excellence__text-content {
+    min-width: 470px;
+    max-width: 475px;
+}
+.food-excellence__empty-container {
+  min-width: 700px;
+}
+.food-excellence__wrapper {
+  padding: 120px 15px 120px 15px;
+  margin: 0 40px 0 40px;
+}
+}

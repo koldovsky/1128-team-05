@@ -1,6 +1,9 @@
 @import "common.css";
 @import "header.css";
 @import "footer.css";
+@import "about.our-track.css";
+@import "about.food-excellence.css";
+
 
 .main-about-page img {
   display: block;
