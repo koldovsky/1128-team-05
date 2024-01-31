@@ -7,7 +7,7 @@ const persons = [
 
 let personsIdx = 0;
 
-const personsContainer = document.querySelector(".team__carousel-box");
+const personsContainer = document.querySelector(".team__carousel");
 
 function renderPersons() {
   personsContainer.innerHTML = persons[personsIdx];
