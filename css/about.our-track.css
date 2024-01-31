@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+.our-tack {
+    background-image: url(../img/our-track-background.jpg);
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.our-tack__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 24px 90px 24px;
+}
+
+.our-tack_person-photo {
+  background-image: url(../img/man-photo-from-our-track-about-us-page.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 343px;
+  min-width: 272px;
+  border-radius: 6px;
+  padding: 0 15px 0 15px;
+}
+
+.our-tack__text-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 1171px;
+  min-width: 272px;
+  margin-top: 50px;
+}
+
+.our-tack__heading {
+  font-family: "Permanent Marker", undefined;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--h2-our-track-color);
+}
+.our-tack__subtitle {
+  font-family: Rubik, sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--subtitle-text-color);
+  margin-top: 20px;
+}
+.our-tack__description {
+  font-family: Lato, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 25px;
+  color: var(--our-track-description-color);
+}
+.our-tack__description-item {
+  display: block;
+  padding-bottom: 20px;
+  line-height: 25.5px;
+}
+
+@media (min-width: 375px) {
+  .our-tack_person-photo {
+    min-width: 330px;
+    min-height: 412px;
+  }
+
+  .our-tack__wrapper {
+    max-height: 1635px;
+  }
+
+  .our-tack__text-content {
+    min-height: 992px;
+    min-width: 327px;
+  }
+}
+
+@media (min-width: 480px) {
+  .our-tack_person-photo {
+    min-width: 432px;
+    min-height: 545px;
+  }
+
+  .our-tack__wrapper {
+    max-height: 1572px;
+  }
+  .our-tack__text-content {
+    min-height: 797px;
+  }
+}
+
+@media (min-width: 768px) {
+  .our-tack__wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 100px 32px 105px 32px;
+  }
+  .our-tack_person-photo {
+    min-width: 275px;
+    min-height: 348px;
+  }
+  .our-tack__text-content {
+    padding: 0 15px 0 30px;
+    margin: 0 -15px 0 0;
+  }
+  .our-tack__heading {
+    font-size: 18px;
+  }
+  .our-tack__subtitle {
+    font-size: 47px;
+  }
+}
+@media (min-width: 992px) {
+  .our-tack__heading {
+    font-size: 20px;
+  }
+  .our-tack__subtitle {
+    font-size: 56px;
+  }
+  .our-tack__text-content {
+    min-width: 519px;
+    margin: 0;
+  }
+  .our-tack_person-photo {
+    min-width: 382px;
+    min-height: 457px;
+  }
+  .our-tack__wrapper {
+    padding: 100px 40px 105px 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .our-tack_person-photo {
+    min-width: 470px;
+    min-height: 592px;
+  }
+  .our-tack__wrapper {
+    min-height: 853px;
+    margin: 0 40px 0 40px;
+    padding: 110px 15px 120px 15px;
+  }
+  .our-tack {
+    background-position: right;
+   
+}
+.our-tack__text-content {
+    min-height: 599px;
+  }
+  .our-tack__wrapper {
+    min-height: 600px;
+  }
+}
+
+@media (min-width: 1280px) {
+    .our-tack__text-content {
+        max-width: 710px;
+      }
+}
