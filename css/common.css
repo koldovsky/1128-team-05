@@ -17,12 +17,20 @@
   --header__navicon: #282623;
   --light-top-color: #ffffff;
   --menu-color-link: rgb(79, 80, 71);
+   /*hero*/
+  --hero__title: #e7272d;
+  --hero__information: #4f5047;
+  --hero__light-btn-color: #ffffff;
+  --hero__btn-border: #e7272d;
+  --hero__btn-color: #e7272d;
+  
   /*weekly*/
   --weekly-color-main: #fbbe36;
   --weekly-title-color: #ffffff;
   --weekly-description-color: rgb(69, 69, 69);
   --weekly-link-color: black;
   /* about-page.html */
+  --button-color: #fbbd3682;
   --background-top-color: #fbbe36;
   --background-medium-color: #fbf7ec;
   --titles-color: #e7272d;
@@ -55,6 +63,7 @@
   --input-words-color: rgb(40, 38, 35);
   --form-button-color:rgb(231, 39, 45);
   --form-button-text-color: white;
+<<<<<<< HEAD
   /* about.our-track.html */
   --h2-our-track-color:  rgb(231, 39, 45);
   --subtitle-text-color: rgb(40, 38, 35);
@@ -65,6 +74,10 @@
   --subtitle-food-excellence-text-color: rgb(255, 255, 255);
   --food-excellence-main-description-color: rgb(173, 173, 173);
   --food-excellence-description-color: rgb(136, 136, 136)
+=======
+  
+
+>>>>>>> 1e5d63d313bc7d51c2c36ae3534900e69777599e
 }
 
 /* img {

@@ -1,6 +1,6 @@
-.container{
-    padding: 70px 0 40px;
-}
+/*.container{
+    padding: 70px 0 40px; // ВИДАЛИТИ
+}*/
 .why-item-title{
     font-size: 20px;
     color: var(--text-big-color);
