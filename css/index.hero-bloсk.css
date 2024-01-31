@@ -81,7 +81,7 @@
     border-bottom-width: 1px;
     border-color: var(--hero__btn-border) ;
     background-color: var(--hero__btn-color);
-    cursor pointer;
+    cursor: pointer;
     color: var(--hero__light-btn-color);
     font-weight: 700;
     padding: 15px 25px;
