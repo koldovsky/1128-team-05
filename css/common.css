@@ -63,7 +63,6 @@
   --input-words-color: rgb(40, 38, 35);
   --form-button-color:rgb(231, 39, 45);
   --form-button-text-color: white;
-<<<<<<< HEAD
   /* about.our-track.html */
   --h2-our-track-color:  rgb(231, 39, 45);
   --subtitle-text-color: rgb(40, 38, 35);
@@ -74,10 +73,8 @@
   --subtitle-food-excellence-text-color: rgb(255, 255, 255);
   --food-excellence-main-description-color: rgb(173, 173, 173);
   --food-excellence-description-color: rgb(136, 136, 136)
-=======
   
 
->>>>>>> 1e5d63d313bc7d51c2c36ae3534900e69777599e
 }
 
 /* img {
