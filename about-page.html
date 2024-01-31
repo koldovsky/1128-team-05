@@ -13,108 +13,100 @@
   <body>
     <header data-include="header.partial.html"></header>
     <main class="main-about-page">
-        <section class="top">
-            <div class="top__title">
-              <h1>FREDDY BURGERS</h1>
-              <p class="top__subtitle">About Us</p>
-            </div>
-            <div class="top__description">
-              <p class="top__description-text">
-                Our mission is to change the way people think about food trucks and
-                burgers. Come and try our dishes!
+      <section class="top">
+        <div class="top__title">
+          <h1>FREDDY BURGERS</h1>
+          <p class="top__subtitle">About Us</p>
+        </div>
+        <div class="top__description">
+          <p class="top__description-text">
+            Our mission is to change the way people think about food trucks and
+            burgers. Come and try our dishes!
+          </p>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__img">
+          <img
+            src="img/about-burger.webp"
+            alt="Burger with potatoes and cola"
+          />
+        </div>
+        <article class="about__article">
+          <h2 class="about__article-title">About</h2>
+          <p class="about__article-subtitle">Freddy Burgers</p>
+          <p class="about__article-description">
+            We prepare juicy burgers and side dishes from the best ingredients
+            and mix traditional recipes with new approaches.
+          </p>
+          <p class="about__article-text">
+            While cooking our burgers, we use only certified Piedmontese beef
+            which means that it is nourishing and soft by nature, has minimum
+            calories and fat but has a high protein level. This meat is the
+            result of a special feature of the Piedmontese breed, which lies in
+            the development of lean, heavy musculature in the production of
+            beef, which does not depend on fat marbling (as a rule in other
+            breeds of cattle) to reach softness. Certified Piedmontese cattle
+            are grown without using any steroids, growth hormones, or
+            antibiotics, which ensures the highest quality and nutrient beef.
+          </p>
+        </article>
+      </section>
+      <section class="team">
+        <div class="container">
+          <article class="team__article">
+            <h2 class="team__title">TEAM</h2>
+            <p class="team__subtitle">Our Team</p>
+            <p class="team__description">
+              The main secret of delicious burgers is the chefs' love for
+              cooking.
+            </p>
+            <div class="team__article-text">
+              <p>
+                Our team consists of professional chefs. We love delicious food
+                and share our love for burgers with our customers.
+              </p>
+              <p>
+                If you want to join our team, please contact us in any
+                convenient way!
               </p>
             </div>
-          </section>
-          <section class="about">
-            <div class="about__img">
-              <img src="img/about-burger.webp" alt="Burger with potatoes and cola" />
-            </div>
-            <article class="about__article">
-              <h2 class="about__article-title">About</h2>
-              <p class="about__article-subtitle">Freddy Burgers</p>
-              <p class="about__article-description">
-                We prepare juicy burgers and side dishes from the best ingredients and
-                mix traditional recipes with new approaches.
-              </p>
-              <p class="about__article-text">
-                While cooking our burgers, we use only certified Piedmontese beef which
-                means that it is nourishing and soft by nature, has minimum calories and
-                fat but has a high protein level. This meat is the result of a special
-                feature of the Piedmontese breed, which lies in the development of lean,
-                heavy musculature in the production of beef, which does not depend on
-                fat marbling (as a rule in other breeds of cattle) to reach softness.
-                Certified Piedmontese cattle are grown without using any steroids,
-                growth hormones, or antibiotics, which ensures the highest quality and
-                nutrient beef.
-              </p>
-            </article>
-          </section>
-          <section class="team">
-            <div class="container">
-              <article class="team__article">
-                <h2 class="team__title">TEAM</h2>
-                <p class="team__subtitle">Our Team</p>
-                <p class="team__description">
-                  The main secret of delicious burgers is the chefs' love for cooking.
-                </p>
-                <div class="team__article-text">
-                  <p>
-                    Our team consists of professional chefs. We love delicious food and
-                    share our love for burgers with our customers.
-                  </p>
-                  <p>
-                    If you want to join our team, please contact us in any convenient
-                    way!
-                  </p>
-                </div>
-              </article>
-              <div class="team__carousel-box">
-                <article class="team__carousel-item">
-                  <img
-                    src="img/team_photo_mstone.webp"
-                    alt="Mary Stone, Gourmet Chef"
-                  />
-                  <h3 class="team__carousel-name">Mary Stone</h3>
-                  <p class="team__carousel-job">Gourmet Chef</p>
-                </article>
-                <article class="team__carousel-item">
-                  <img
-                    src="img/team_photo_jpalmer.webp"
-                    alt="John Palmer, Sauce Chef"
-                  />
-                  <h3 class="team__carousel-name">John Palmer</h3>
-                  <p class="team__carousel-job">Sauce Chef</p>
-                </article>
-                <article class="team__carousel-item">
-                  <img
-                    src="img/team_photo_jclower.webp"
-                    alt="Jessica Clower, Meat Specialist"
-                  />
-                  <h3 class="team__carousel-name">Jessica Clower</h3>
-                  <p class="team__carousel-job">Meat Specialist</p>
-                </article>
-                <article class="team__carousel-item">
-                  <img
-                    src="img/team_photo_hsmith.webp"
-                    alt="Helen Smith, Burger Master"
-                  />
-                  <h3 class="team__carousel-name">Helen Smith</h3>
-                  <p class="team__carousel-job">Burger Master</p>
-                </article>
-              </div>
-            </div>
-            <div class="section-ending">
-              <img src="img/end-section.svg" alt="End team section" />
-            </div>
-          </section>
-      <section data-include="about.our-track.partial.html"></section>
-      <section data-include="about.food-excellence.partial.html"></section>
           </article>
           <div class="team__carousel-box">
-            <!-- js puts html code here -->
+            <button class="team__prev_button">
+              <svg class="button-arrow" viewBox="0 0 30 30">
+                <defs>
+                  <path
+                    d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z"
+                    id="a-1704542943099"
+                  ></path>
+                </defs>
+                <use
+                  fill-rule="nonzero"
+                  opacity=".8"
+                  xlink:href="#a-1704542943099"
+                ></use>
+              </svg>
+            </button>
+            <div class="team__carousel">
+              <!-- js puts html code here -->
+            </div>
+            <button class="team__next_button">
+              <svg class="button-arrow" viewBox="0 0 30 30">
+                <defs>
+                  <path
+                    d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z"
+                    id="a-1704542943099"
+                  ></path>
+                </defs>
+                <use
+                  fill-rule="nonzero"
+                  opacity=".8"
+                  xlink:href="#a-1704542943099"
+                ></use>
+              </svg>
+            </button>
           </div>
-          <button class="team__prev_button"></button>
-          <button class="team__next_button"></button>
         </div>
       </section>
       <div class="section-ending">
