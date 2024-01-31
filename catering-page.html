@@ -20,7 +20,7 @@
     <div class="catering-advertisement">
       <!--start of block-->
       <div class="catering-advertisement__picture">
-        <img src="img/img-for-catering/burgers-and-salad.jpg" alt="burgers" style="height: fit-content;" />
+        <img src="img/img-for-catering/burgers-and-salad.jpg" alt="burgers" />
       </div>
       <section class="catering-advertisement__section">
         <div class="catering-advertisement__section-wrapper">
@@ -121,17 +121,12 @@
     <section data-include="catering-page.map.partial.html"></section>
     <!-- Чомусь тимчасово не працює-->
     <div class="catering-request">
-      <!-- <div class="catering-request__image">
-        <img
-            src="img/img-for-catering/burger-background.jpg"
-            alt="burger burger-background"
-          />
-      </div> -->
       <div class="catering-request-wrap">
+        <!-- <div class="catering-request__empty-column"></div> пустая колонка для сдвига формы-->
         <div class="catering-request-rounded-corners">
           <h2 class="catering-request__title centered-text">Request</h2>
           <h3 class="catering-request__subtitle centered-text">Fill in a Catering Inquiry</h3>
-          <!-- <div class="catering-request__form"> -->
+          
           <form action="https://formspree.io/f/mbjnllbl" method="post" class="catering-request__form-inner">
             <input type="text" placeholder="Full name*" required name="fullName" class="catering-request__input" />
             <input type="text" placeholder="Phone number*" required name="phoneNumber"
@@ -145,8 +140,9 @@
               maxlength="2000" rows="7"></textarea>
             <input type="submit" class="catering-request__submit" />
           </form>
-          <!-- </div> -->
+          
         </div>
+        
       </div>
     </div>
   </main>

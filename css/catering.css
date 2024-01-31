@@ -48,6 +48,7 @@ h3 {
 
 .circle-image {
   width: 20px;
+  margin-right: 10px
 }
 
 .catering-advertisement {
@@ -193,6 +194,24 @@ div.catering-advertisement__picture img {
     flex-grow: 1;
     /* Равномерно распределить пространство между изображением и текстом */
   }
+
+  div.catering-advertisement__picture img {
+    height: 100%;
+    object-fit: cover;
+    /* Картинка без розтягування */
+  }
+  .catering-request-wrap{
+    display: flex;
+    flex-direction: row; 
+    /* для формы============================= */
+
+  }
+  .catering-request__empty-column{
+    min-width: 500px;
+    min-height: 163px;
+    /* для формы============================= */
+  }
+
 }
 
 /* верхній блок i блок map  */
