@@ -145,6 +145,7 @@ div.catering-advertisement__picture img {
 .catering-request-wrap {
   background-image: url("../img/img-for-catering/burger-background.jpg");
   padding: 90px 0;
+  background-size: cover;
 }
 
 .catering-request-rounded-corners {
@@ -202,13 +203,16 @@ div.catering-advertisement__picture img {
   }
   .catering-request-wrap{
     display: flex;
-    flex-direction: row; 
+    flex-direction: row-reverse; 
+
     /* для формы============================= */
 
   }
   .catering-request__empty-column{
-    min-width: 500px;
-    min-height: 163px;
+    /* min-width: 500px;
+    min-height: 163px; */
+    min-width: 40%;
+    min-height: 100%;
     /* для формы============================= */
   }
 
