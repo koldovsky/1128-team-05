@@ -150,20 +150,7 @@
   </main>
   <footer data-include="footer.partial.html"></footer>
   <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
-  <script>
-    function validateForm() {
-        const fullName = document.contactForm.fullName.value;
-        const phoneNumber = document.forms[0]["phoneNumber"].value;
-        const email = document.forms[0]["email"].value;
-
-        if (fullName.trim() === "" || phoneNumber.trim() === "" || email.trim() === "") {
-            alert("Please fill in all required fields");
-            return false; 
-        }
-
-        return true; 
-      }
-  </script>
+  <script src="js/catering-page-form-validate.js"></script>
 
 
 </body>
