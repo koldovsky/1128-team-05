@@ -98,24 +98,45 @@
 }
 
 .schedule-carousel {
+  text-align: center;
   display: flex;
   flex-direction: row;
 }
 
-.shedule-carousel__button-prev .shedule-carousel__button--next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent;
-  border: none;
+.shedule-carousel__button-prev {
+
+  height: 32px;
+  width: 32px;
+  background-color: var(--button-color);
+  border: 0;
+  border-radius: 50%;
   cursor: pointer;
-  z-index: 1;
-  width: 24px;
-  height: 24px;
+  position: absolute;
+  left: 0;
+  top: 30%;
+  bottom: 70%;
+  transform: scaleX(-1);
+}
+
+.shedule-carousel__button--next {
+  height: 32px;
+  width: 32px;
+  background-color: var(--button-color);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 30%;
+  bottom: 70%;
 }
 
 .info__carousel {
   padding: 15px;
   display: flex;
   flex-direction: column;
+}
+
+.button-arrow {
+  fill: var(--text-light-color);
 }
