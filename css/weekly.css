@@ -67,39 +67,55 @@
   justify-content: space-around;
 }
 
-.schedule-carousel .carousel__button {
-  position: absolute;
-  transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.7);
-  border: none;
-  font-size: 20px;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.schedule-carousel .carousel__button--prev {
-  left: 10px;
-}
-
-.schedule-carousel .carousel__button--next {
-  right: 10px;
-}
-
-.schedule-carousel .carousel__inner {
-  display: flex;
-
-
-}
-
 .schedule-carousel {
-
   grid-template-columns: 40px 1fr 40px;
   min-height: 150px;
 }
 
 .schedule-carousel div {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+}
+
+.shedule-carousel__button-prev {
+  left: 10;
+}
+
+.shedule-carousel__button--next {
+  right: 10;
+}
+
+.carousel__slide {
+  display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+}
+
+.carousel__inner {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.schedule-carousel {
+  display: flex;
+  flex-direction: row;
+}
+
+.shedule-carousel__button-prev .shedule-carousel__button--next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+}
+
+.info__carousel {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
 }
