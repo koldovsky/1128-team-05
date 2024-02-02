@@ -1,2 +1,191 @@
 @import "common.css";
 @import "header.css";
+@import "footer.css";
+
+.contacts-page__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 80px 0 65px;
+    justify-content: center;
+    background-color: var(--contacts-background-header-color);
+}
+
+.contacts-page__header__first-column {
+    width: 550px;
+    height: 100px;
+    padding: 0 45px;
+}
+
+.contacts-page__header__first-column__text {
+    height: 25px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Permanent Marker', cursive;
+    color: var(--contacts-first-column-text-color);
+}
+
+.contacts-page__header__first-column__title {
+    font-size: 56px;
+    font-weight: 700;
+    padding: 15px 0 0 0;
+    font-family: 'Rubik', sans-serif;
+    color: var(--contacts-text-color-white);
+}
+
+.contacts-page__header__second-column__text {
+    padding: 0 15px;
+    font-size: 20px;
+    font-weight: 600;
+    max-width: 700px;
+    line-height: 30px;
+    font-family: 'Lato', sans-serif;
+    color: var(--contacts-text-color-white);
+}
+
+.contacts-page__sections-divider {
+    background-color: var(--contacts-background-body-color);
+}
+
+.cropped-background-image {
+    width: 100%;
+    height: 60px;
+    object-fit: cover;
+}
+
+.contacts-page__section-of-proposed-actions {
+    padding: 90px 0 0 0;
+    background-color: var(--contacts-background-body-color);
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+}
+  
+.card {
+    margin: 10px;
+    width: 350px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
+    background-color: var(--contacts-text-color-white);
+}
+ 
+.card img {
+    margin: 20px 0 0 0;
+    height: 70px;
+    width: 70px;
+}
+
+.card h3 {
+    margin: 20px 0 0 0;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    color: var(--contacts-card-title-color);
+}
+  
+.card p {
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 20px 0 0 0;
+    font-family: 'Lato', sans-serif;
+    color: var(--contacts-card-text-color);
+}
+
+.card h4 {
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: bold;
+    margin: 20px 0 20px 0;
+    font-family: 'Lato', sans-serif;
+    color: var(--contacts-card-title-color);
+}
+
+.contacts-page__map-section {
+    padding: 50px 0 0 0;
+    background-color: var(--contacts-background-body-color);
+}
+
+.contacts-page__google-maps {
+    display: flex;
+    align-items: center;
+    padding: 0 0 60px 0;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacts-page__google-maps iframe {
+    width: 80%;
+    height: 530px;
+    filter: grayscale();
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 960px) {
+    .contacts-page__header__first-column {
+        width: 500px;
+    }
+
+    .contacts-page__header__first-column__text {
+        font-size: 18px;  
+    }
+
+    .contacts-page__header__first-column__title {
+        font-size: 47px;
+    }
+
+    .card h3 {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts-page__header {
+        padding: 80px 24px 65px;
+        align-items: start;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .contacts-page__header__first-column {
+        padding: 0;
+        width: 200px;
+    }
+
+    .contacts-page__header__first-column__text {
+        font-size: 16px;  
+    }
+
+    .contacts-page__header__first-column__title {
+        font-size: 38px;
+    }
+
+    .contacts-page__header__second-column__text {
+        padding: 0;
+    }
+
+    .cards-container {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .card img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .card h3 {
+        font-size: 24px;
+    }
+
+    .contacts-page__google-maps iframe {
+        width: 90%;
+    }
+}

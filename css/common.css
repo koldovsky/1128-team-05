@@ -72,9 +72,15 @@
   --h2-food-excellence-color: rgb(231, 39, 45);
   --subtitle-food-excellence-text-color: rgb(255, 255, 255);
   --food-excellence-main-description-color: rgb(173, 173, 173);
-  --food-excellence-description-color: rgb(136, 136, 136)
-  
-
+  --food-excellence-description-color: rgb(136, 136, 136);
+  /* contacts-page */
+  --contacts-background-header-color: #fbbe36;
+  --contacts-first-column-text-color: #e7272d;
+  --contacts-text-color-white: #fff;
+  --contacts-background-body-color: #fbf7ed;
+  --contacts-card-title-color: #282623;
+  --contacts-card-text-color: #676767;
+  /* contacts-page */
 }
 
 /* img {
