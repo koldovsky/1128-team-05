@@ -1,156 +1,116 @@
-/*
-.services-news {
+.services {
+    background-color: var(--background-medium-color);
     padding-top: 90px;
     background-image: url(../img/services-background-image.jfif);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-
-}*/
-
-.why-item-title {
-    font-size: 20px;
-    color: var(--text-big-color);
-    font-weight: 700;
-    line-height: 30px;
-}
-
-.why-item-text {
-    font-size: 17px;
-    color: var(--text-small-color);
-}
-
-.plus-text {
-    padding: 12px 0;
-    background: (239, 236, 227);
-}
-
-@media only screen and (max-width: 767px) {
-    .step-item {
-        width: 145px;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .step-item {
-        width: 280px;
-    }
-    .image-caption{
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-}
-
-.news-list {
+/*MOBILE FIRST*/
+.services-container {
+    max-width: 1200px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 44px;
-}
-.news-list-item {
-    padding-top: 25px;
-    display: inline-block;
-    width: 30%;
-    margin: 10px;
-    vertical-align: top;
-    margin-left: 25px;
+    padding: 30px;
 }
 
-@media only screen and (min-width: 768px) {
-    .news-list {
-        gap: 24px;
-        margin-bottom: 80px;
-    }
-    .image-caption{
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    .news-title {
-        font-size: 20px;
-    }
-    .news-subtitle {
-        font-size: 56px;
-    }
-}
-
-@media only screen and (min-width: 1280px) {
-    .news-list {
-        flex-direction: row;
-        gap: 24px;
-    }
-    .image-caption{
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-}
-
-.news-list-text {
-    font-family: "Lato", sans-serif;
+.services-item {
     display: flex;
-    font-size: 15px;
-}
-.image-caption{
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.news-list-title {
-    color: #e7272d;
-    font-weight: bold;
-    font-family: "Lato", sans-serif;
-    font-size: 15px;
-    line-height: 1.6;
-    padding-top: 40px;
+    flex-direction: column;
+    background-color: var(--text-light-color);
+    margin-top: 40px;
+    border-radius: 13px;
+    margin-bottom: 0px;
+    max-width: inherit;
 }
 
-.news-list-date {
-    color: #fbbe36;
-    font-family: "Lato", sans-serif;
-    font-size: 15px;
-    font-weight: bold;
+.services-item__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 37px;
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
-
-
-.news-bl-text {
-    font-size: 17px;
-    color: var(--text-small-color);
-    line-height: 25px;
-    text-align: left;
-    width: 370px;
+.services-item__image {
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+    width: 100%;
+    object-fit: cover;
 }
 
-.news-name-new {
-    font-family: "Rubik", sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-    color: var(--text-medium-color);
-    width: 370px;
-
-}
-
-.btn-news {
+.services-item__button {
     margin-top: 20px;
     padding: 16px 28px;
     border-radius: 25px;
     border-style: none;
     background-color: var(--background-top-color);
     color: var(--text-light-color);
+    text-align: center;
     font-weight: 700;
     font-size: 16.5px;
     font-family: 'Lato';
     transition: background-color 0.5s;
 }
 
-.btn-news:hover {
+.services-item__button:hover {
     background-color: var(--text-medium-color);
     cursor: pointer;
 }
 
+.services-item__svg {
+    filter: brightness(0) saturate(100%) invert(84%) sepia(50%) saturate(1194%) hue-rotate(327deg) brightness(101%) contrast(108%);
+    width: 18px;
+}
 
-.news-title {
+.services-item__title {
+    font-family: 'Rubik';
+    font-size: 30px;
+    color: var(--text-medium-color);
+}
+
+.services-item__text--short {
+    font-size: 20px;
+    color: var(--text-big-color);
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.services-item__text--extended,
+.services-item__info {
+    font-size: 17px;
+    color: var(--text-small-color);
+}
+
+.services-item__info {
+    margin-left: 7px;
+}
+
+.services__description {
+    color: var(--text-big-color);
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 768px;
+    margin-top: 27.4px;
+}
+
+.services__subtitle {
+    font-size: 38px;
+    font-weight: bold;
+    color: var(--text-medium-color);
+    font-family: 'Rubik';
+    margin-top: 15px;
+}
+
+.services__title {
     font-family: 'Permanent Marker', cursive;
     font-size: 18px;
     color: var(--titles-color);
@@ -161,31 +121,58 @@
     text-transform: uppercase;
 }
 
-.news-subtitle {
-    font-family: 'Rubik';
-    font-size: 18px;
-    color: var(--text-medium-color);
-    font-weight: bold;
-    text-align: center;
-    margin-top: 15px;
-}
 
-.news-text {
-    color: var(--text-big-color);
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: bold;
-    text-align: center;
-    margin: 45px 25px;
-}
+@media(min-width: 765px) {
+    .services-item {
+        flex-direction: row;
+    }
 
+    .services-item__image {
+        flex: 1;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 13px;
+        border-bottom-left-radius: 13px;
+        max-width: 585px;
+        width: 50%;
+    }
 
+    .services-item__reverse {
+        flex-direction: row-reverse;
+        border-top-right-radius: 13px;
+        border-bottom-right-radius: 13px;
+    }
 
+    .services-item__reverse .services-item__image {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 13px;
+        border-bottom-right-radius: 13px;
+    }
 
-.image {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-    transform: scale(1.5);
-    border-radius: 10px;
+    .services-item__content {
+        flex: 1;
+        padding-left: 25px;
+        padding-bottom: 30px;
+    }
+
+    .services-item__title {
+        font-size: 36px;
+    }
+
+    .services-item__button {
+        margin-top: 35px;
+    }
+
+    .services__subtitle {
+        font-size: 56px;
+    }
+
+    .services__title {
+        font-size: 20px;
+    }
+
+    .services {
+        background-size: contain;
+    }
 }
