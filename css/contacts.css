@@ -64,7 +64,7 @@
 }
   
 .card {
-    margin: 10px;
+    margin: 10px 30px 10px 30px;
     width: 350px;
     padding: 20px;
     border-radius: 5px;
@@ -124,6 +124,133 @@
     box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
 }
 
+.contacts-page__footer {
+    padding: 60px 0 110px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--contacts-background-body-color);
+}
+
+.weekly-schedule {
+    width: 400px;
+    margin-left: 20px;
+}
+
+.weekly-schedule p {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Permanent Marker', cursive;
+    color: var(--contacts-first-column-text-color);
+}
+
+.weekly-schedule h3 {
+    font-size: 36px;
+    font-weight: 700;
+    padding: 20px 0 0 0;
+    font-family: 'Rubik', sans-serif;
+    color: var(--contacts-card-title-color);
+}
+
+.schedule-dates h3 {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    color: var(--contacts-card-title-color);
+}
+
+.schedule-dates p {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 5px 0 0 0;
+    font-family: 'Lato', sans-serif;
+    color: var(--contacts-card-title-color);
+}
+
+.schedule-dates h4 {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Lato', sans-serif;
+    color: var(--contacts-card-text-color);
+}
+
+.weekly-schedule-sequel {
+    padding: 90px 0 0 0;
+}
+
+.weekly-schedule-sequel .schedule-dates h3 {
+    padding: 20px 0 0 0;
+}
+
+.weekly-schedule-sequel .schedule-dates .spacer {
+    padding: 10px 0 0 0;
+}
+
+.subcribe-form .card h3{
+    font-size: 36px;
+}
+
+.subcribe-form .form {
+    padding: 25px 0 0 0;
+}
+
+.form-group {
+    margin: 15px 0 15px 0;
+  }
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+.form-group input[type="text"],
+.form-group input[type="phone"],
+.form-group input[type="email"] {
+    border: 0;
+    width: 90%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    padding: 13px 25px 13px 25px;
+    background-color: var(--contacts-background-body-color);
+}
+
+.form-group input[type="text"]::placeholder,
+.form-group input[type="phone"]::placeholder,
+.form-group input[type="email"]::placeholder {
+    opacity: 0.5;
+    font-size: 15px;
+    color: var(--contacts-card-title-color);
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="phone"]:focus,
+.form-group input[type="email"]:focus {
+    outline: auto;
+    outline-color: var(--contacts-outline-input-color);
+}
+  
+.form-group button[type="submit"] {
+    border: 0;
+    width: 90%;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 700;
+    margin: 20px 0 20px 0;
+    border-radius: 20px;
+    padding: 11px 22px 11px 22px;
+    font-family: 'Lato', sans-serif;
+    color: var(--contacts-text-color-white);
+    background-color: var(--contacts-first-column-text-color);
+}
+
+.form-group button[type="submit"]:hover {
+    transition-delay: 0.2s;
+    background-color: var(--contacts-card-title-color);
+}
+
 @media (max-width: 960px) {
     .contacts-page__header__first-column {
         width: 500px;
@@ -139,6 +266,18 @@
 
     .card h3 {
         font-size: 27px;
+    }
+
+    .weekly-schedule .weekly-schedule-p {
+        font-size: 18px;
+    }
+
+    .weekly-schedule .weekly-schedule-h3 {
+        font-size: 33px;
+    }
+
+    .subcribe-form .card h3 {
+        font-size: 33px;
     }
 }
 
@@ -187,5 +326,49 @@
 
     .contacts-page__google-maps iframe {
         width: 90%;
+    }
+
+    .contacts-page__footer {
+        display: inline-block;
+    }
+
+    .weekly-schedule {
+        position: relative;
+        left: 30%; 
+        transform: translateX(-30%);
+        width: fit-content;
+        display: inline-block;
+    }
+
+    .weekly-schedule-sequel {
+        position: relative;
+        left: 25%; 
+        transform: translateX(-25%);
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+
+    .weekly-schedule h3{
+        width: 200px;
+    }
+
+    .weekly-schedule .schedule-dates{
+        width: 150px;
+    }
+
+    .weekly-schedule-sequel .schedule-dates{
+        width: 150px;
+    }
+}
+
+@media (max-width: 575px) {
+    .weekly-schedule {
+        left: 25%; 
+        transform: translateX(-25%);
+    }
+
+    .weekly-schedule-sequel {
+        left: 20%; 
+        transform: translateX(-20%);
     }
 }
