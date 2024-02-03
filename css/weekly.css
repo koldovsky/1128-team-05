@@ -35,8 +35,8 @@
   font-family: Lato, sans-serif;
   font-size: 20px;
   text-align: center;
-  color: var(--weekly-description-color);
-  line-height: 30px;
+  font-weight: 700;
+  color: var(--weekly-description-color);  
   text-align: left;
   padding: 20px;
 }
@@ -128,16 +128,17 @@
   display: flex;
   flex-direction: row;
   position: relative;
+  padding: 25px;
 }
 
 .schedule-carousel {
   text-align: center;
   display: flex;
   flex-direction: row;
+  scroll-snap-type: x mandatory;
 }
 
 .shedule-carousel__button-prev {
-
   height: 32px;
   width: 32px;
   background-color: var(--button-color);
@@ -146,8 +147,8 @@
   cursor: pointer;
   position: absolute;
   left: 0;
-  top: 30%;
-  bottom: 70%;
+  top: 50%;
+  bottom: 80%;
   transform: scaleX(-1);
 }
 
@@ -160,8 +161,8 @@
   cursor: pointer;
   position: absolute;
   right: 0;
-  top: 30%;
-  bottom: 70%;
+  top: 50%;
+  bottom: 80%;
 }
 
 .info__carousel {
@@ -172,4 +173,68 @@
 
 .button-arrow {
   fill: var(--text-light-color);
+}
+.shedule__carousel-slides h5{
+  font-family: "Permanent Marker";
+  color: rgb(255, 0, 0);
+  font-size: 15px;
+  padding: 5px;
+}
+.shedule__carousel-slides h3{  
+  font-size: 1.375rem;
+  color: #f2b701;
+  padding: 5px;
+}
+.shedule__carousel-slides a{
+  border-radius: 40px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--hero__btn-border) ;
+  background-color: var(--hero__btn-color);
+  cursor: pointer;
+  color: var(--hero__light-btn-color);
+  font-weight: 700;
+  padding: 15px 25px;
+  
+}
+.shedule__carousel-slides {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px; /* Змінено margin-right для додання проміжку між слайдами */
+  scroll-snap-align: start;
+  flex: 1; /* Змінено на автоматичне розміщення */
+}
+.shedule__carousel-slides h4{
+padding: 15px;
+}
+.shedule__carousel-slides p{
+  font-size: 15px;
+}
+@media (min-width: 768px) {
+  .carousel__slide div.carousel__inner {
+  display: flex;
+  flex-direction: column;
+}
+}
+@media (min-width: 991px) {
+  .schedule-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 20px;
+  }
+
+  .schedule-info {
+    width: 100%;
+  }
+
+  .schedule-carousel {
+    width: 100%; 
+  }
+
+  .shedule__carousel-slides {
+    margin-right: 20px; 
+  }
 }
