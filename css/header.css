@@ -1,214 +1,212 @@
 /*Created by Romanovska Svitlana*/
 .header {
-    position: relative;
-    z-index: 0;
+  position: relative;
+  z-index: 0;
 }
 
 .header__top {
-    display: none;
+  display: none;
 }
 .header__address,
 .header__email,
 .header__operating-hours {
-    color: var(--light-top-color) !important;
-    font-family: Lato, sans-serif;
-    font-weight: bold;
-    font-size: 15px;
+  color: var(--light-top-color) !important;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .header__top address {
-    font-style: normal;
+  font-style: normal;
 }
 
 .header__email a {
-    color: var(--light-top-color) !important;
+  color: var(--light-top-color) !important;
 }
 
 .header__mobile-contact {
-    text-align: center;
+  text-align: center;
 }
 
 @media (min-width: 992px) {
-    .header__top {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  .header__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    .header__top-background {
-        padding: 15px;
-        background: var(--header-top-background);
-    }
+  .header__top-background {
+    padding: 15px;
+    background: var(--header-top-background);
+  }
 }
 
 .header__logo-img {
-    width: 252px;
-    height: auto;
+  width: 252px;
+  height: auto;
 }
 
 .header__container-background {
-    background: var(--header-container-background);
+  background: var(--header-container-background);
 }
 
 .header__logo-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    justify-content: space-between;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (min-width: 768px) {
+  .header__logo-wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 .header__burger-menu {
-    padding-right: 6px;
-    padding-left: 6px;
-    position: relative;
+  padding-right: 6px;
+  padding-left: 6px;
+  position: relative;
 }
 
 .header__menu-btn {
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
 }
 
 .header__navicon {
-    display: block;
-    width: 24px;
-    height: 2px;
-    background: var(--header__navicon);
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--header__navicon);
 }
 
 .header__navicon::before,
 .header__navicon::after {
-    content: '';
-    width: 24px;
-    height: 2px;
-    background: var(--header__navicon);
-    display: block;
-    position: absolute;
+  content: "";
+  width: 24px;
+  height: 2px;
+  background: var(--header__navicon);
+  display: block;
+  position: absolute;
 }
 
 .header__navicon::before {
-    top: -8px;
+  top: -8px;
 }
 
 .header__navicon::after {
-    top: 8px;
+  top: 8px;
 }
 
 .header.responsive .header__navicon {
-    background: transparent;
+  background: transparent;
 }
 
 .header.responsive .header__navicon:before {
-    transform: rotate(-45deg);
-    width: 30px;
+  transform: rotate(-45deg);
+  width: 30px;
 }
 
 .header.responsive .header__navicon:after {
-    transform: rotate(45deg);
-    width: 30px;
+  transform: rotate(45deg);
+  width: 30px;
 }
 
 .header.responsive .header__navicon:before,
 .header.responsive .header__navicon:after {
-    top: 0;
+  top: 0;
 }
 
 .header__nav {
-    display: none;
+  display: none;
 }
 
 .header.responsive .header__nav {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    top: 100px;
-    left: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: var(--header-container-background);
-    gap: 30px;
-    z-index: 1;
-    padding-bottom: 30px;
-    overflow-y: auto;
-    overflow-x: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 100px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--header-container-background);
+  gap: 30px;
+  z-index: 1;
+  padding-bottom: 30px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-
 .header__menu {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
-    padding-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 10px;
 }
 
 .header__menu-link {
-    color: var(--menu-color-link);
-    font-family: Lato,
-    sans-serif;
-    font-weight: 700;
-    font-size: 17px;
+  color: var(--menu-color-link);
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-size: 17px;
 }
 
 @media (min-width: 992px) {
+  .header__social-icons {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .header__social-icons {
-        display: flex;
-        flex-direction: row;
-    }
+  .header__burger-menu {
+    display: none;
+  }
 
-    .header__burger-menu {
-        display: none;
-    }
+  .header__header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .header__header-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+  .header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+  }
 
-    }
-
-    .header__nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        position: relative;
-
-    }
-
-    .header__menu {
-        display: flex;
-        flex-direction: row;
-        gap: 60px;
-    }
-    .header__mobile-contact {
-        display: none;
-    }
+  .header__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+  }
+  .header__mobile-contact {
+    display: none;
+  }
 }
 
 .header__social-icons-img {
-    width: 32px;
+  width: 32px;
 }
 
 .header__social-icons {
-    display: none;
+  display: none;
 }
 
 @media (min-width: 992px) {
-    .header__social-icons {
-        display: flex;
-        justify-content: flex-end;
-        gap: 10px;
-    }
-
+  .header__social-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
 }
-
