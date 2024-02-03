@@ -36,6 +36,7 @@
     padding-right: 25px;
     padding-bottom: 30px;
     padding-top: 30px;
+    margin-bottom: 20px;
 }
 .services-item__image{
     border-top-right-radius: 13px;
@@ -45,7 +46,7 @@
 }
 
 .services-item__button{
-    margin-top: 20px;
+    margin-top: 40px;
     padding: 16px 28px;
     border-radius: 25px;
     border-style: none;
@@ -100,7 +101,9 @@
     max-width: 768px;
     margin-top: 27.4px;
 }
-
+.services-item__text--extended{
+    margin-bottom: 50px;
+}
 .services__subtitle{
     font-size: 38px;
     font-weight: bold;
