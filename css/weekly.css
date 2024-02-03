@@ -28,8 +28,8 @@
   text-align: center;
   text-align: left;
   color: var(--weekly-title-color);
+  padding: 20px;
 }
-
 .schedule__description {
   font-family: Lato, sans-serif;
   font-size: 20px;
@@ -37,16 +37,42 @@
   color: var(--weekly-description-color);
   line-height: 30px;
   text-align: left;
-
+  padding: 20px;
 }
-
-.schedule_contact img {
-  width: 26px;
-  height: 26px;
+.schedule__contact-block{  
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
-
+.schedule__contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: fit-content;  
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+.schedule__contact-text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 7.5px;
+}
+.weekly__icon{  
+  display: flex;
+  width: 40px;
+  height: 40px;
+  fill: #fff;
+  border-radius: 50%;
+  background-color: #f2b701;
+  margin: 0 auto;
+  padding: 5px;
+  margin-right: 10px;
+}
 .shedule__contact-link {
-  color: var(--weekly-link-color);
+  color: var(--weekly-link-color);  
 }
 
 .schedule__contact-title {
@@ -54,6 +80,7 @@
   font-family: Lato, sans-serif;
   font-size: 17px;
   font-weight: 700;
+  padding: 3px;
 }
 
 .schedule-carousel {
