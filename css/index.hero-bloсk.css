@@ -72,7 +72,7 @@
   row-gap: 60px;
   justify-content: flex-start;
   align-items: start;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 @media (min-width: 768px) {
@@ -96,17 +96,17 @@
 }
 
 .hero__button:hover {
-    background-color: var(--hero__btn-background-hover);
-    border-color: var(--hero__btn-border-hover);
-    transition: all 1s ease-out;
+  background-color: var(--hero__btn-background-hover);
+  border-color: var(--hero__btn-border-hover);
+  transition: all 1s ease-out;
 }
 
 .hero__phone {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 .hero__phone-text-waper {
-    margin-left: 20px ;
+  margin-left: 20px;
 }
 
 .hero__bottom-image {
@@ -117,15 +117,51 @@
 .hero__phone-img {
   width: 50px;
 }
-.hero__phone-text{
-    color: var(--hero__phone-text);
-    font-weight: 700;
-    font-size: 1.0625rem;
-    line-height: 30px;
+.hero__phone-text {
+  color: var(--hero__phone-text);
+  font-weight: 700;
+  font-size: 1.0625rem;
+  line-height: 30px;
 }
 .hero__phone-tel a {
-    color: var(--hero__phone-tel);
-    font-weight: 700;
-    font-size: 1.0625rem;
-    font-style: normal;
+  color: var(--hero__phone-tel);
+  font-weight: 700;
+  font-size: 1.0625rem;
+  font-style: normal;
+}
+
+.hero__text-animation {
+  display: none;
+}
+@media (min-width: 992px) {
+  .showanimation.hero__text-animation {
+    display: block;
+    color: var(--hero__btn-color);
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(
+      90deg,
+      var(--hero__btn-color),
+      var(--hero__phone-text),
+      var(--hero__btn-color)
+    );
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: var(--hero__text-animation);
+  }
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
 }
