@@ -129,11 +129,11 @@
   font-size: 1.0625rem;
   font-style: normal;
 }
-@media (min-width: 992px) {
-  .hero__text-animation {
-    display: none;
-  }
 
+.hero__text-animation {
+  display: none;
+}
+@media (min-width: 992px) {
   .showanimation.hero__text-animation {
     display: block;
     color: var(--hero__btn-color);
