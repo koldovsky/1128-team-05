@@ -36,7 +36,7 @@
   font-size: 20px;
   text-align: center;
   font-weight: 700;
-  color: var(--weekly-description-color);  
+  color: var(--weekly-description-color);
   text-align: left;
   padding: 20px;
 }
@@ -44,7 +44,6 @@
 .schedule__contact-block {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
 }
 
 .schedule__contact {
@@ -59,10 +58,7 @@
 }
 
 .schedule__contact-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 7.5px;
+  margin-left: 20px;
 }
 
 .weekly__icon {
@@ -135,20 +131,19 @@
   text-align: center;
   display: flex;
   flex-direction: row;
-  scroll-snap-type: x mandatory;
 }
 
 .shedule-carousel__button-prev {
   height: 32px;
   width: 32px;
   background-color: var(--button-color);
-  border: 0;
+  border: none;
   border-radius: 50%;
   cursor: pointer;
   position: absolute;
   left: 0;
-  top: 50%;
-  bottom: 80%;
+  top: 45%;
+  bottom: 70%;
   transform: scaleX(-1);
 }
 
@@ -156,13 +151,13 @@
   height: 32px;
   width: 32px;
   background-color: var(--button-color);
-  border: 0;
+  border: none;
   border-radius: 50%;
   cursor: pointer;
   position: absolute;
   right: 0;
-  top: 50%;
-  bottom: 80%;
+  top: 45%;
+  bottom: 70%;
 }
 
 .info__carousel {
@@ -174,55 +169,61 @@
 .button-arrow {
   fill: var(--text-light-color);
 }
-.shedule__carousel-slides h5{
+
+.shedule__carousel-slides h5 {
   font-family: "Permanent Marker";
   color: rgb(255, 0, 0);
   font-size: 15px;
   padding: 5px;
 }
-.shedule__carousel-slides h3{  
+
+.shedule__carousel-slides h3 {
   font-size: 1.375rem;
   color: #f2b701;
   padding: 5px;
 }
-.shedule__carousel-slides a{
+
+.shedule__carousel-slides a {
+  margin-top: 13px;
   border-radius: 40px;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-color: var(--hero__btn-border) ;
+  border-color: var(--hero__btn-border);
   background-color: var(--hero__btn-color);
   cursor: pointer;
   color: var(--hero__light-btn-color);
   font-weight: 700;
   padding: 15px 25px;
-  
+
 }
+
 .shedule__carousel-slides {
   background-color: #fff;
   border-radius: 10px;
   padding: 35px;
   display: flex;
   flex-direction: column;
-  margin-right: 20px; /* Змінено margin-right для додання проміжку між слайдами */
+  margin-right: 10px;
+  margin-left: 10px;
   scroll-snap-align: start;
-  flex: 1; /* Змінено на автоматичне розміщення */
+  flex: 1;
+  justify-content: space-around;
+  width: 100%;
+  max-width: none;
 }
-.shedule__carousel-slides h4{
-padding: 15px;
+
+.shedule__carousel-slides h4 {
+  padding: 15px;
 }
-.shedule__carousel-slides p{
+
+.shedule__carousel-slides p {
   font-size: 15px;
 }
-@media (min-width: 768px) {
-  .carousel__slide div.carousel__inner {
-  display: flex;
-  flex-direction: column;
-}
-}
+
 @media (min-width: 991px) {
   .schedule-container {
     display: grid;
-    grid-template-columns: 1fr 2fr; 
+    grid-template-columns: 1fr 2fr;
     gap: 20px;
   }
 
@@ -231,10 +232,6 @@ padding: 15px;
   }
 
   .schedule-carousel {
-    width: 100%; 
-  }
-
-  .shedule__carousel-slides {
-    margin-right: 20px; 
+    width: 100%;
   }
 }
