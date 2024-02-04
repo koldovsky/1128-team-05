@@ -16,12 +16,13 @@ navLinks.addEventListener("click", () => {
 const currentURLQueryString = window.location.href;
 const splittedArray = currentURLQueryString.split("/");
 const thisPage = splittedArray[splittedArray.length - 1];
-alert(thisPage);
-/*
+
 if (thisPage != null && thisPage !== "") {
   changeStatusMenu(thisPage);
-}*/
+}
 function changeStatusMenu(idElement) {
   const activElement = document.getElementById(idElement);
-  activElement.classList.add('header__active-menu');
+  if (activElement !== null) {
+    activElement.classList.add("header__active-menu");
+  }
 }
