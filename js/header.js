@@ -15,7 +15,9 @@ navLinks.addEventListener("click", () => {
 
 const currentURLQueryString = window.location.href;
 const splittedArray = currentURLQueryString.split("/");
-const thisPage = splittedArray[splittedArray.length - 1];
+let thisPage = splittedArray[splittedArray.length - 1];
+const splittedArrayPoint  = thisPage.split(".");
+thisPage = splittedArrayPoint[0];
 
 if (thisPage != null && thisPage !== "") {
   changeStatusMenu(thisPage);
