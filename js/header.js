@@ -11,4 +11,15 @@ menuButton.addEventListener("click", () => {
 navLinks.addEventListener("click", () => {
   body.classList.remove("fixed-body");
   header.classList.remove("responsive");
-})
+});
+
+const currentURLQueryString = window.location.href;
+const splittedArray = currentURLQueryString.split("/");
+const thisPage = splittedArray[splittedArray.length - 1];
+if (thisPage != null && thisPage !== "") {
+  changeStatusMenu(thisPage);
+}
+function changeStatusMenu(idElement) {
+  const activElement = document.getElementById(idElement);
+  activElement.classList.add('header__active-menu');
+}
