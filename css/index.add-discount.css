@@ -44,6 +44,7 @@
     padding-left: 28px;
     margin-right: 174px;
     margin-left: 150px;
+    scroll-behavior: smooth;
 }
 
 .discount-content__point {
@@ -53,6 +54,8 @@
 .discount-content__button:hover {
     background-color: var(--text-medium-color);
 }
+
+
 
 @media(max-width: 765px){
     .discount-content{
@@ -70,6 +73,16 @@
         .discount-content__title{
             margin-left: 10px;
         }
+    }
+}
+@media(max-width: 1092px){
+    .discount-content__button{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .discount-content__title{
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
 }

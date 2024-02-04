@@ -49,26 +49,25 @@ h2 {
   object-fit: cover;
 }
 
-.about__article,
-.team__article {
+.about__article {
   padding: 60px 30px 30px 30px;
+  max-width: 670px;
   min-width: 300px;
   max-height: 80%;
   display: grid;
-  grid-template-rows: 30px 1.5fr 2fr 5fr;
-  align-items: center;
+  grid-template-rows: 30px 1fr 1fr 2fr;
+  align-items: last baseline;
 }
 
-.about__article-subtitle,
-.team__subtitle {
+.about__article-subtitle {
   font-family: "Rubik", sans-serif;
-  font-size: 2.375rem;
+  font-size: 3.5rem;
   font-weight: bold;
   color: var(--text-big-color);
+  padding-bottom: 25px;
 }
 
-.about__article-description,
-.team__description {
+.about__article-description {
   font-family: "Lato", sans-serif;
   font-size: 1.25rem;
   font-weight: 600;
@@ -76,8 +75,7 @@ h2 {
   color: var(--text-medium-color);
 }
 
-.about__article-text,
-.team__article-text {
+.about__article-text {
   font-family: "Lato", sans-serif;
   font-size: 1.06rem;
   line-height: 1.5;
@@ -85,24 +83,26 @@ h2 {
   color: var(--text-small-color);
 }
 
-.team__article-text p {
-  margin-top: 30px;
-}
-
 .team {
   background-color: var(--background-medium-color);
+  padding-top: 30px;
+  padding: 30px 30px 30px 30px;
 }
 
 .team div.container {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  position: relative;
 }
 
 .team__carousel-box {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  position: relative;
+}
+
+.team__carousel {
+  display: flex;
+  flex-direction: row;
 }
 
 .team__carousel-item {
@@ -124,7 +124,7 @@ h2 {
 }
 
 .team__carousel-item img {
-  border-radius: 7px;
+  border-radius: 8px;
 }
 
 .team__prev_button {
@@ -133,9 +133,12 @@ h2 {
   background-color: var(--button-color);
   border: 0;
   border-radius: 50%;
-  position: absolute;
-  top: 31%;
   cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 30%;
+  bottom: 70%;
+  transform: scaleX(-1);
 }
 
 .team__next_button {
@@ -144,9 +147,15 @@ h2 {
   background-color: var(--button-color);
   border: 0;
   border-radius: 50%;
-  position: absolute;
-  bottom: 0;
   cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 30%;
+  bottom: 70%;  
+}
+
+.button-arrow {
+  fill: var(--text-light-color);
 }
 
 .team__prev_button:hover {
@@ -155,6 +164,41 @@ h2 {
 
 .team__next_button:hover {
   background-color: var(--background-top-color);
+}
+
+.team__article {
+  padding: 60px 30px 30px 30px;
+  min-width: 380px;
+  max-height: 80%;
+  display: grid;
+  grid-template-rows: 30px 1fr 1fr 2fr;
+  align-items: last baseline;
+}
+
+.team__subtitle {
+  font-family: "Rubik", sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--text-big-color);
+}
+
+.team__description {
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--text-medium-color);
+}
+
+.team__article-text {
+  font-family: "Lato", sans-serif;
+  font-size: 1.06rem;
+  line-height: 1.5;
+  color: var(--text-small-color);
+}
+
+.team__article-text p {
+  padding-top: 25px;
 }
 
 @media (min-width: 768px) {
@@ -193,53 +237,28 @@ h2 {
 
   .team div.container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
-
-  .team__carousel-box {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .team__prev_button {
-    left: 42%;
-    top: 50%;
-  }
-
-  .team__next_button {
-    right: 0;
-    top: 50%;
-}
-
 }
 
 @media (min-width: 991px) {
   .about__article {
-    padding-left: 100px;
-    min-width: 600px;
+    padding-left: 15%;
   }
 
   .team {
-    background-image: url("/img/background-leaf.jpg");
+    background-image: url(../img/about-background-leaf.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: 75%;
+    background-position: center;
+    background-size: 1500px auto;
     background-position-y: bottom;
+    background-position-x: 40%;
+    padding-top: 40px;
+    padding-bottom: 0;
   }
 
   .team div.container {
     display: flex;
     flex-direction: row;
   }
-
-  .team__prev_button {
-    left: 31%;
-    top: 50%;
-  }
-
-  .team__next_button {
-    right: 0;
-    top: 50%;
 }
-}
-

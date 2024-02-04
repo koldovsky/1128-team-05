@@ -13,17 +13,25 @@
 
 .section__menu-top {
     background-color: var(--background-menu-color);
-    display: flex;
     width: 100%;
     padding: 80px 0 65px;
+
+}
+
+.section__menu-top-items {
+    max-width: 1200px;
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 40px;
 }
 
 .menu-top-review {
-    width: 354px;
-    height: 97px;
+    max-width: 370px;
     padding: 0 15px;
+    max-height: 110px;
+    width: 100%;
 }
 
 .menu-top-title {
@@ -39,16 +47,21 @@
     font-size: 56px;
     font-weight: 700;
     font-family: 'Rubik', sans-serif;
-    padding: 15px 0 0 0;
+    padding: 19px 0 0 0;
 }
 
 .menu-top__description {
     color: var(--ui-light-accent-color);
     font-size: 20px;
     font-weight: 700;
-    max-width: 737px;
+    max-width: 800px;
     padding: 0 15px;
     line-height: 30px;
+    width: 100%;
+}
+
+.background__image-whi-yel {
+    height: 60px;
 }
 
 .background__image {
@@ -58,20 +71,20 @@
 }
 
 .section__menu-container {
+    background: url(../img/img-for-menu/background-image-leaf.jpg) 57.25% 62% / cover no-repeat;
+}
+
+.section__menu-container-image {
+
     padding: 100px 0;
     position: relative;
     height: 100%;
 }
 
-.section__menu-container-image {
-    background-image: url(../img/img-for-menu/background-image-leaf.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .section__menu-btn {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 40px;
 }
 
 .section__menu {
@@ -88,7 +101,30 @@
     grid-template-columns: repeat(3, 150px);
 }
 
-.menu-icon {
+.menu-icon, .burgers {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    gap: 17px;
+}
+
+.menu-icon, .salads {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    gap: 17px;
+}
+.menu-icon, .drinks {
     display: flex;
     height: 60px;
     align-items: center;
@@ -133,7 +169,7 @@
     font-size: 20px;
     font-weight: 700;
     font-family: 'Lato', sans-serif;
-    color:  var(--menu-icon-title-color-text);
+    color: var(--menu-icon-title-color-text);
 }
 
 .section__menu-items {
@@ -141,22 +177,36 @@
     margin: 15px 0 0 0;
 }
 
-.menu-wrapper-burgers, .menu-wrapper-salads, .menu-wrapper-drinks  {
+.menu-wrapper-burgers {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+
 }
 
 .menu-wrapper-salads {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
     display: none;
 }
 
-.menu-wrapper-drinks{
+.menu-wrapper-drinks {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
     display: none;
 }
 
-.section__menu-burgers-l, .section__menu-burgers-r, .section__menu-salads-l, .section__menu-salads-r, .section__menu-drinks-l, .section__menu-drinks-r {
+.section__menu-burgers-l,
+.section__menu-burgers-r,
+.section__menu-salads-l,
+.section__menu-salads-r,
+.section__menu-drinks-l,
+.section__menu-drinks-r {
     max-width: 600px;
     display: grid;
     gap: 15px;
@@ -164,8 +214,9 @@
 
 
 
-.menu-burger, .menu-salads, .menu-drinks {
-    height: 102px;
+.menu-burger,
+.menu-salads,
+.menu-drinks {
     display: flex;
     padding: 7.5px 0;
 }
@@ -175,16 +226,22 @@
     width: 70px;
 }
 
-.items-icon-burgers, .items-icon-drinks, .items-icon-salads {
+.items-icon-burgers,
+.items-icon-drinks,
+.items-icon-salads {
     height: 70px;
     width: 70px;
 }
 
-.menu-burgers__box, .menu-salads__box, .menu-drinks__box {
+.menu-burgers__box,
+.menu-salads__box,
+.menu-drinks__box {
     padding: 0 0 0 18px;
 }
 
-.menu-burgers-name, .menu-salads-name, .menu-drinks-name {
+.menu-burgers-name,
+.menu-salads-name,
+.menu-drinks-name {
     display: flex;
     width: 100%;
     height: 36px;
@@ -196,21 +253,32 @@
     font-size: 20px;
     font-weight: 700;
     padding: 0 5px 0 0;
+    color: var(--menu-burgers-name-h3-color);
+    font-family: 'Lato', sans-serif;
+    letter-spacing: -0.6px;
 }
 
 .menu-salads-name h3 {
     font-size: 20px;
     font-weight: 700;
     padding: 0 5px 0 0;
+    color: var(--menu-burgers-name-h3-color);
+    font-family: 'Lato', sans-serif;
+    letter-spacing: -0.6px;
 }
 
 .menu-drinks-name h3 {
     font-size: 20px;
     font-weight: 700;
     padding: 0 5px 0 0;
+    color: var(--menu-burgers-name-h3-color);
+    font-family: 'Lato', sans-serif;
+    letter-spacing: -0.6px;
 }
 
-.menu-burgers-title, .menu-salads-title, .menu-drinks-title {
+.menu-burgers-title,
+.menu-salads-title,
+.menu-drinks-title {
     font-size: 17px;
     color: var(--p-menu-burgers-title);
     padding: 5px 0 0 0;
@@ -243,7 +311,7 @@
 
 .menu-btn {
     display: flex;
-    margin: 55px 0 auto;
+    margin-top: 50px;
     padding: 0 15px;
     max-width: 100%;
     justify-content: center;
@@ -271,16 +339,21 @@
 
 .section__menu-bottom {
     background-color: var(--background-menu-color);
-    display: flex;
     width: 100%;
     padding: 50px 0 40px;
+}
+
+.section__menu-bottom-items {
+    display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 40px;
+    margin: 0 auto;
 }
 
 .menu-bottom-box-h3 {
     max-width: 600px;
-    padding: 0 18px 0 15px;
+    padding: 0 15px 0 15px;
 }
 
 .box-h3 {
@@ -304,7 +377,7 @@
 
 .menu-bottom-box-button {
     max-width: 200px;
-    padding: 0 33px;
+    padding: 0 15px;
 }
 
 .bottom-box-button {
@@ -324,6 +397,91 @@
     background-color: var(--bottom-box-button-hover);
 }
 
+@media (max-width: 991px) {
+    .section__menu-top {
+        background-color: var(--background-menu-color);
+        display: flex;
+        width: 100%;
+        padding: 80px 0 65px;
+        align-items: start;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .section__menu-top-items {
+        max-width: 1200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0 32px;
+    }
+
+    .menu-top-review {
+        max-width: 290px;
+        max-height: 110px;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .menu-top-title {
+        font-family: 'Permanent Marker', cursive;
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--h2-span-color);
+        height: 25px;
+    }
+
+    .menu-top-subtitle {
+        color: var(--ui-light-accent-color);
+        font-size: 47px;
+        font-weight: 700;
+        font-family: 'Rubik', sans-serif;
+        padding: 19px 0 0 0;
+    }
+
+    .menu-burgers-name span {
+        font-size: 27px;
+    }
+
+    .menu-drinks-name span {
+        font-size: 27px;
+    }
+
+    .menu-salads-name span {
+        font-size: 27px;
+    }
+
+    .menu-bottom-box-h3 .box-h3 {
+        font-size: 33px;
+        line-height: 39.6px;
+    }
+
+    .section__menu-bottom-items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 32px;
+        margin: 0 auto;
+    }
+
+    .menu-bottom-box-h3 {
+        max-width: 600px;
+        padding: 0;
+    }
+
+    .menu-bottom-box-title {
+        max-width: 320px;
+        padding: 0 15px;
+        font-size: 14px;
+        color: var(--ui-light-accent-color);
+        font-weight: 900;
+        line-height: 19.6px;
+    }
+
+}
+
 @media (max-width: 767px) {
     .section__menu-top {
         background-color: var(--background-menu-color);
@@ -335,10 +493,22 @@
         gap: 50px;
     }
 
+    .section__menu-top-items {
+        max-width: 1200px;
+        display: flex;
+        margin: 0 auto;
+        padding: 0;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
     .menu-top-review {
-        /* width: 354px; */
-        /* height: 97px; */
-        padding: 0 15px;
+        max-width: 290px;
+        padding: 0;
+        max-height: 110px;
+        width: 100%;
+        height: 100%;
     }
 
     .menu-top-title {
@@ -362,39 +532,52 @@
         font-size: 20px;
         font-weight: 700;
         max-width: 737px;
-        padding: 0 15px;
+        padding: 0;
         line-height: 30px;
+        margin-top: 50px;
     }
 
     .section__menu-bottom {
         background-color: var(--background-menu-color);
-        display: flex;
         width: 100%;
-        padding: 50px 0 40px;
-        align-items: start;
-        flex-direction: column;
-        gap: 50px;
+        padding: 50px 24px 40px;
     }
 
-    .box-h3 {
+    .section__menu-bottom-items {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .menu-bottom-box-h3 {
+
+        padding: 0;
+    }
+
+    .menu-bottom-box-h3 .box-h3 {
         font-size: 30px;
         font-family: 'Rubik', sans-serif;
         color: var(--ui-light-accent-color);
     }
 
     .menu-bottom-box-title {
-        padding: 0 15px;
+        padding: 0;
         font-size: 14px;
         color: var(--ui-light-accent-color);
         font-weight: 900;
         line-height: 22px;
         max-width: fit-content;
+        margin-top: 50px;
     }
 
     .menu-bottom-box-button {
         max-width: 200px;
         padding: 0 33px;
         align-self: center;
+        margin-top: 50px;
     }
 
     .section__menu {
@@ -430,14 +613,30 @@
         margin: 15px 0 0 0;
     }
 
-    .menu-wrapper-burgers, .menu-wrapper-salads, .menu-wrapper-drinks {
+    .menu-wrapper-burgers {
         display: grid;
         width: 100%;
         grid-template-columns: 1fr;
         gap: 50px;
     }
 
-    .menu-burger, .menu-salads, .menu-drinks {
+    .menu-wrapper-salads {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .menu-wrapper-drinks {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .menu-burger,
+    .menu-salads,
+    .menu-drinks {
         max-width: 100%;
         height: 100%;
         display: flex;
@@ -452,13 +651,20 @@
         display: none;
     }
 
-    .section__menu-burgers-l, .section__menu-burgers-r, .section__menu-salads-l, .section__menu-salads-r, .section__menu-drinks-l, .section__menu-drinks-r {
+    .section__menu-burgers-l,
+    .section__menu-burgers-r,
+    .section__menu-salads-l,
+    .section__menu-salads-r,
+    .section__menu-drinks-l,
+    .section__menu-drinks-r {
         max-width: 100%;
         display: grid;
         gap: 15px;
     }
 
-    .menu-burgers__box, .menu-salads__box, .menu-drinks__box {
+    .menu-burgers__box,
+    .menu-salads__box,
+    .menu-drinks__box {
         padding: 0 0 0 18px;
         width: 100%;
     }
@@ -468,7 +674,7 @@
         padding: 0 15px;
         max-width: 100%;
         justify-content: center;
-        margin: 0;
+        margin-top: 50px;
     }
 
 }
@@ -518,7 +724,9 @@
         margin: 15px 0 0 0;
     }
 
-    .menu-burger, .menu-salads, .menu-drinks {
+    .menu-burger,
+    .menu-salads,
+    .menu-drinks {
         max-width: 100%;
         height: 100%;
         display: flex;
@@ -530,17 +738,23 @@
         width: 40px;
     }
 
-    .items-icon-burgers, .items-icon-drinks, .items-icon-salads {
+    .items-icon-burgers,
+    .items-icon-drinks,
+    .items-icon-salads {
         height: 40px;
         width: 40px;
     }
 
-    .menu-burgers__box, .menu-salads__box, .menu-drinks__box {
+    .menu-burgers__box,
+    .menu-salads__box,
+    .menu-drinks__box {
         padding: 0 0 0 18px;
         max-width: 100%;
     }
 
-    .menu-burgers-name, .menu-salads-name, .menu-drinks-name {
+    .menu-burgers-name,
+    .menu-salads-name,
+    .menu-drinks-name {
         display: flex;
         width: 100%;
         height: 36px;
@@ -562,7 +776,9 @@
         padding-left: 5px;
     }
 
-    .menu-burgers-title, .menu-salads-title, .menu-drinks-title {
+    .menu-burgers-title,
+    .menu-salads-title,
+    .menu-drinks-title {
         font-size: 13px;
         color: var(--p-menu-burgers-title);
         padding: 5px 0 0 0;
@@ -574,7 +790,7 @@
         padding: 0 15px;
         max-width: 100%;
         justify-content: center;
-        margin: 0;
+        margin-top: 50px;
     }
 
     .btn-style-inside {

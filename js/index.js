@@ -1,4 +1,4 @@
 document.addEventListener("partialsLoaded", () => {
   import("./header.js");
-  import("./weekly-capousel.js");
+  import("./weekly-carousel.js");
 });

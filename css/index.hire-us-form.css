@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 .index-form {
   background-image: url(../img/burger-food-truck-background.jpg);
-
+background-position: center;
   align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
