@@ -44,15 +44,8 @@
   padding-top: 30px;
   padding-bottom: 30px;
   justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 20px;
 }
-@media (min-width: 768px) {
-  .header__logo-wrapper {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-}
+
 .header__logo-img {
   width: 252px;
   height: auto;
@@ -161,6 +154,8 @@
 .header__mobile-contact .header__operating-hours {
   padding-top: 20px;
 }
+
+
 
 @media (min-width: 992px) {
   .header__burger-menu {

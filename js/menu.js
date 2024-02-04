@@ -1,3 +1,6 @@
+document.addEventListener("partialsLoaded", () => {
+    import("./header.js");
+});
 const menuIconBurgers = document.querySelector('.burgers');
 const menuIconSalads = document.querySelector('.salads');
 const menuIconDrinks = document.querySelector('.drinks');

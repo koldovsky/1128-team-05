@@ -109,12 +109,32 @@ li {
   list-style: none;
 }
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-}
 
 .fixed-body {
   width: 100%;
   position: fixed;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+      padding: 0 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+      padding: 0 30px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+      padding: 0 40px;
+  }
 }

@@ -2,8 +2,6 @@
 .hero {
   min-height: 500px;
   background: var(--hero-container-background);
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 @media (min-width: 768px) {
