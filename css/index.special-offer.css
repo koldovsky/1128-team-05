@@ -95,7 +95,7 @@ h3 {
   background-color: #fbbe36 !important;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 765px) {
   .special-offer__block {
     display: flex;
     flex-direction: row;
