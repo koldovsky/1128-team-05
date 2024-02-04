@@ -17,7 +17,7 @@
   --header__navicon: #282623;
   --light-top-color: #ffffff;
   --menu-color-link: rgb(79, 80, 71);
-  --active-menu-color-link: #4f5047;
+  --active-menu-color-link: #6a6b61;
   --menu-color-link-hover: #e7272d;
   /*hero*/
   --hero__title: #e7272d;
@@ -29,6 +29,7 @@
   --hero__btn-border-hover: #282623;
   --hero__btn-background-hover: #282623;
   --hero__phone-text:#ffffff;
+  --hero__text-animation: rgba(255, 255, 255, 0);
   --hero__phone-tel: #282623;
   /*weekly*/
   --weekly-color-main: #fbbe36;
