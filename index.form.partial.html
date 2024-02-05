@@ -12,10 +12,10 @@
       </p>
       <form
         class="index-form__contact-form"
+        id="index-form__contact-form-id"
         action="https://formspree.io/f/xleqdelq"
         method="post"
       >
-        <!-- <label for="full-name" class="visually-hidden">Full Name</label> -->
         <input
           class="index-form__input-form"
           type="text"
@@ -24,28 +24,26 @@
           placeholder="Enter your full name"
           required
         />
-        <!-- <label for="phone-number" class="visually-hidden">Phone Number</label> -->
         <input
           class="index-form__input-form"
           type="text"
-          id="phone-number"
+          id="index-form__input-form-phone-number"
           name="Phone-number"
           placeholder="Enter your phone number"
           required
         />
-        <!-- <label for="email" class="visually-hidden">Email</label> -->
         <input
           class="index-form__input-form"
           type="text"
-          id="email"
+          id="index-form__input-form-email"
           name="Email"
           placeholder="Enter your email"
           required
         />
-        <!-- <input type="submit" value="Send" class="index-form__submit-button" /> -->
         <button type="submit" class="index-form__submit-button">
           <span class="submit-button__text-send">Send</span>
         </button>
+        <p id="index-form__form-status"></p>
       </form>
     </div>
     <div class="index-form__empty-column"></div>
