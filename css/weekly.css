@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  /* background-image: url("img/head-of-block.svg"); */
   background-color: var(--weekly-color-main);
   background-size: cover;
   background-position: center;

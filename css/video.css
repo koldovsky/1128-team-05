@@ -10,11 +10,12 @@
   padding-bottom: 50px;
 }
 
-.video__icon-block{
+.video__icon-block {
   display: flex;
   align-items: center;
 }
-.video__icon-img{
+
+.video__icon-img {
   height: 50px;
 }
 
@@ -45,6 +46,7 @@
   font-weight: 700;
   margin: 20px;
 }
+
 .video__title {
   font-family: "Permanent Marker";
   color: rgb(255, 0, 0);
@@ -53,27 +55,69 @@
   width: auto;
   margin: 20px;
 }
-.video__block{
+
+.video__block {
   display: grid;
   align-items: center;
   padding: 10px;
 
 }
-@media screen and (min-width: 768px) {
+
+@media (min-width: 768px) {
+  .video {
+    background-position: bottom 35%;
+    background-size: auto 125%;
+    min-height: 500px;
+  }
+
   .video__block {
-    width: 50%;  
+    width: 50%;
     margin-left: 0;
     align-items: center;
   }
-  
+
   .video__description {
     text-align: left;
   }
-  .video__description,
-  .video__description-title,
-  .video__text-icon,
-  .video__title {
-    font-size: 1.5em; /* increase font size by 50% */
-    margin: 30px; /* increase margin for spacing */
+}
+
+@media (min-width: 991px) {
+  .video {
+    background-position: bottom 45%;
+    background-size: auto 135%;
+    min-height: 590px;
+  }
+
+  .video__block {
+    width: 50%;
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .video__description {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .video {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .video__block {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .video__block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .video__info {
+    width: 100%;
   }
 }
