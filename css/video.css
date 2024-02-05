@@ -1,10 +1,10 @@
 .video {
-  display: flex;
+  display: block;
   flex-direction: column;
   margin: 0;
   background-image: url(../img/container10-back.jpg);
-  background-size: auto;
-  background-position: left;
+  background-size: cover;
+  background-position: absolute;
   background-repeat: no-repeat;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -68,5 +68,12 @@
   
   .video__description {
     text-align: left;
+  }
+  .video__description,
+  .video__description-title,
+  .video__text-icon,
+  .video__title {
+    font-size: 1.5em; /* increase font size by 50% */
+    margin: 30px; /* increase margin for spacing */
   }
 }
