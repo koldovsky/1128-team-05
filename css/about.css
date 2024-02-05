@@ -52,7 +52,7 @@ h2 {
 .about__article {
   padding: 60px 30px 30px 30px;
   max-width: 670px;
-  min-width: 300px;
+  /* min-width: 300px;*/
   max-height: 80%;
   display: grid;
   grid-template-rows: 30px 1fr 1fr 2fr;
@@ -168,7 +168,7 @@ h2 {
 
 .team__article {
   padding: 60px 30px 30px 30px;
-  min-width: 380px;
+  /*min-width: 380px;*/
   max-height: 80%;
   display: grid;
   grid-template-rows: 30px 1fr 1fr 2fr;
