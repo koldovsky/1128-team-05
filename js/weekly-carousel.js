@@ -16,10 +16,6 @@ function renderSlide() {
     if (window.matchMedia('(min-width: 768px)').matches) {
         const secondSlideIdx = slideIdx + 1 >= slides.length ? 0 : slideIdx + 1;
         slideContainer.innerHTML += slides[secondSlideIdx];
-        if (window.matchMedia('(min-width: 980px)').matches) {
-            const thirdSlideIdx = secondSlideIdx + 1 >= slides.length ? 0 : secondSlideIdx + 1;
-            slideContainer.innerHTML += slides[thirdSlideIdx];
-        }
     }
 }
 

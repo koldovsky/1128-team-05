@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  background-image: url("img/head-of-block.svg");
+  /* background-image: url("img/head-of-block.svg"); */
   background-color: var(--weekly-color-main);
   background-size: cover;
   background-position: center;
@@ -28,21 +28,49 @@
   text-align: center;
   text-align: left;
   color: var(--weekly-title-color);
+  padding: 20px;
 }
 
 .schedule__description {
   font-family: Lato, sans-serif;
   font-size: 20px;
   text-align: center;
+  font-weight: 700;
   color: var(--weekly-description-color);
-  line-height: 30px;
   text-align: left;
-
+  padding: 20px;
 }
 
-.schedule_contact img {
-  width: 26px;
-  height: 26px;
+.schedule__contact-block {
+  display: flex;
+  flex-direction: row;
+}
+
+.schedule__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: fit-content;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+.schedule__contact-text {
+  margin-left: 20px;
+}
+
+.weekly__icon {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  fill: #fff;
+  border-radius: 50%;
+  background-color: #f2b701;
+  margin: 0 auto;
+  padding: 5px;
+  margin-right: 10px;
 }
 
 .shedule__contact-link {
@@ -54,6 +82,7 @@
   font-family: Lato, sans-serif;
   font-size: 17px;
   font-weight: 700;
+  padding: 3px;
 }
 
 .schedule-carousel {
@@ -67,39 +96,142 @@
   justify-content: space-around;
 }
 
-.schedule-carousel .carousel__button {
-  position: absolute;
-  transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.7);
-  border: none;
-  font-size: 20px;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.schedule-carousel .carousel__button--prev {
-  left: 10px;
-}
-
-.schedule-carousel .carousel__button--next {
-  right: 10px;
-}
-
-.schedule-carousel .carousel__inner {
-  display: flex;
-
-
-}
-
 .schedule-carousel {
-
   grid-template-columns: 40px 1fr 40px;
   min-height: 150px;
 }
 
 .schedule-carousel div {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+}
+
+.shedule-carousel__button-prev {
+  left: 10;
+}
+
+.shedule-carousel__button--next {
+  right: 10;
+}
+
+.carousel__slide {
+  display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.carousel__inner {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 25px;
+}
+
+.schedule-carousel {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.shedule-carousel__button-prev {
+  height: 32px;
+  width: 32px;
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 45%;
+  bottom: 70%;
+  transform: scaleX(-1);
+}
+
+.shedule-carousel__button--next {
+  height: 32px;
+  width: 32px;
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 45%;
+  bottom: 70%;
+}
+
+.info__carousel {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-arrow {
+  fill: var(--text-light-color);
+}
+
+.shedule__carousel-slides h5 {
+  font-family: "Permanent Marker";
+  color: rgb(255, 0, 0);
+  font-size: 15px;
+  padding: 5px;
+}
+
+.shedule__carousel-slides h3 {
+  font-size: 1.375rem;
+  color: #f2b701;
+  padding: 5px;
+}
+
+.shedule__carousel-slides a {
+  margin-top: 13px;
+  border-radius: 40px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--hero__btn-border);
+  background-color: var(--hero__btn-color);
+  cursor: pointer;
+  color: var(--hero__light-btn-color);
+  font-weight: 700;
+  padding: 15px 25px;
+
+}
+
+.shedule__carousel-slides {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  margin-left: 10px;
+  scroll-snap-align: start;
+  flex: 1;
+  justify-content: space-around;
+  width: 100%;
+  max-width: none;
+}
+
+.shedule__carousel-slides h4 {
+  padding: 15px;
+}
+
+.shedule__carousel-slides p {
+  font-size: 15px;
+}
+
+@media (min-width: 991px) {
+  .schedule-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+
+  .schedule-info {
+    width: 100%;
+  }
+
+  .schedule-carousel {
+    width: 100%;
+  }
 }

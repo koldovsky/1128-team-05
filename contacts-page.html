@@ -12,31 +12,140 @@
     <header data-include="header.partial.html"></header>
     <main class="contacts-wrapper">
       <section class="contacts-page__header">
-        <div class="contacts-page__header__row">
-          <div class="contacts-page__header__first-column">
-            <p class="contacts-page__header__first-column__text">
-              <span class="contacts-page__header__first-column__text-style">
-                GET IN TOUCH WITH US
-              </span>
-            </p>
-            <h2 class="contacts-page__header__first-column__title">
-              <span class="contacts__header__first-column__title-style">
-                Contacts
-              </span>
-            </h2>
+        <div class="contacts-page__header__first-column">
+          <p class="contacts-page__header__first-column__text">
+            GET IN TOUCH WITH US
+          </p>
+          <h2 class="contacts-page__header__first-column__title">Contacts</h2>
+        </div>
+        <div class="contacts-page__header__second-column">
+          <p class="contacts-page__header__second-column__text">
+            Feel free to contact us to pre-order burgers, learn more about
+            delivery options, or hire us to cater at your event.
+          </p>
+        </div>
+      </section>
+      <section class="contacts-page__sections-divider">
+        <img
+          class="cropped-background-image"
+          src="img/img-for-contacts-page/top-sections-divider.svg"
+          alt="#"
+        />
+      </section>
+      <section class="contacts-page__section-of-proposed-actions">
+        <div class="cards-container">
+          <div class="card">
+            <img src="img/img-for-contacts-page/action-message.svg" alt="#" />
+            <h3>Send a Message</h3>
+            <p>If you have any comments about the service, write to us!</p>
+            <h4>freddy.burgers@email.com</h4>
           </div>
-          <div class="contacts-page__header__second-column">
-            <p class="contacts-page__header__second-column__text">
-              <span class="contacts-page__header__second-column__text-style">
-                Feel free to contact us to pre-order burgers, learn more about
-                delivery options, or hire us to cater at your event.
-              </span>
-            </p>
+          <div class="card">
+            <img src="img/img-for-contacts-page/action-call.svg" alt="#" />
+            <h3>Make a Call</h3>
+            <p>We are always happy to confirm your pre-order by phone.</p>
+            <h4>+1 (234) 567 89 01</h4>
+          </div>
+          <div class="card">
+            <img src="img/img-for-contacts-page/action-location.svg" alt="#" />
+            <h3>Visit Us</h3>
+            <p>Don't forget to drop by to try delicious burgers in LA!</p>
+            <h4>1061 S Hill St, Los Angeles, CA 90015</h4>
           </div>
         </div>
       </section>
+      <section class="contacts-page__map-section">
+        <div class="contacts-page__google-maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.9194566555913!2d-118.26005614873041!3d34.04043900803301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7a6e10d11ad%3A0x8c18fb72a398bfc4!2sFreddy%20Burgers!5e0!3m2!1sen!2sua!4v1706849909018!5m2!1sen!2sua"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </section>
+      <section class="contacts-page__footer">
+        <div class="weekly-schedule">
+          <p class="weekly-schedule-p">WHERE TO FIND US</p>
+          <h3 class="weekly-schedule-h3">Weekly Schedule</h3>
+          <div class="schedule-dates">
+            <h3>July 09</h3>
+            <p>1.30 PM - 4.30 PM</p>
+            <h4>Port Jasen, 7432 Kay Tunnel</h4>
+            <h3>July 10</h3>
+            <p>1.30 PM - 6.30 PM</p>
+            <h4>East Richard ,383 Gibson Loaf</h4>
+            <h3>July 11</h3>
+            <p>11.30 AM - 3.30 PM</p>
+            <h4>West Darienport, 195 Will Curve</h4>
+          </div>
+        </div>
+        <div class="weekly-schedule-sequel">
+          <div class="schedule-dates">
+            <h3>July 12</h3>
+            <p>1.30 PM - 4.30 PM</p>
+            <h4>Culver City, NPR 9909 Jeff Blvd</h4>
+            <h3>July 13</h3>
+            <p>1.30 PM - 6.30 PM</p>
+            <h4>Universal, Lankershim Blvd. 91604</h4>
+            <h3>July 14-15</h3>
+            <br />
+            <div class="spacer"></div>
+            <h4>Catering only</h4>
+          </div>
+        </div>
+        <div class="subcribe-form">
+          <div class="card">
+            <h3>Want to Become Our Franchisee?</h3>
+            <form class="form" id="franchiseeForm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your full name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="phone"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your e-mail"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="contacts-page__sections-divider">
+        <img
+          class="cropped-background-image"
+          src="img/img-for-contacts-page/bottom-sections-divider.svg"
+          alt="#"
+        />
+      </section>
     </main>
-    <footer></footer>
+    <footer data-include="footer.partial.html"></footer>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+    <script src="js/contacts-page.js"></script>
   </body>
 </html>

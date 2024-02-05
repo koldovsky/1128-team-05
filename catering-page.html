@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="css/catering.css" />
   <title>Catering</title>
 </head>
@@ -20,7 +21,7 @@
     <div class="catering-advertisement">
       <!--start of block-->
       <div class="catering-advertisement__picture">
-        <img src="img/img-for-catering/burgers-and-salad.jpg" alt="burgers" style="height: fit-content;" />
+        <img src="img/img-for-catering/burgers-and-salad.jpg" alt="burgers" />
       </div>
       <section class="catering-advertisement__section">
         <div class="catering-advertisement__section-wrapper">
@@ -121,22 +122,18 @@
     <section data-include="catering-page.map.partial.html"></section>
     
     <div class="catering-request">
-      <!-- <div class="catering-request__image">
-        <img
-            src="img/img-for-catering/burger-background.jpg"
-            alt="burger burger-background"
-          />
-      </div> -->
       <div class="catering-request-wrap" id="catering-order-form">
+        
+        
         <div class="catering-request-rounded-corners">
           <h2 class="catering-request__title centered-text">Request</h2>
           <h3 class="catering-request__subtitle centered-text">Fill in a Catering Inquiry</h3>
-          <!-- <div class="catering-request__form"> -->
-          <form action="https://formspree.io/f/mbjnllbl" method="post" class="catering-request__form-inner">
-            <input type="text" placeholder="Full name*" required name="fullName" class="catering-request__input" />
-            <input type="text" placeholder="Phone number*" required name="phoneNumber"
+          
+          <form action="https://formspree.io/f/mbjnllbl" method="post" class="catering-request__form-inner" onsubmit="return validateForm()" name="contactForm">
+            <input type="text" placeholder="Full name*"  name="fullName" class="catering-request__input" />
+            <input type="text" placeholder="Phone number*"  name="phoneNumber"
               class="catering-request__input" />
-            <input type="text" placeholder="E-mail*" required name="email" class="catering-request__input" />
+            <input type="text" placeholder="E-mail*"  name="email" class="catering-request__input" />
             <input type="text" placeholder="Event date" name="eventDate" class="catering-request__input" />
             <input type="text" placeholder="Number of people" name="numberOfPeople" class="catering-request__input" />
             <input type="text" placeholder="Leave any questions or specific notes" name="notes"
@@ -145,13 +142,16 @@
               maxlength="2000" rows="7"></textarea>
             <input type="submit" class="catering-request__submit" />
           </form>
-          <!-- </div> -->
+          
         </div>
+        <div class="catering-request__empty-column"></div> 
+        <!-- пустая колонка для сдвига формы -->
       </div>
     </div>
   </main>
   <footer data-include="footer.partial.html"></footer>
   <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+  <script src="js/catering-page-form-validate.js"></script>
 
 
 </body>

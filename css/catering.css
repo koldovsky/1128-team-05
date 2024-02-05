@@ -48,6 +48,7 @@ h3 {
 
 .circle-image {
   width: 20px;
+  margin-right: 10px
 }
 
 .catering-advertisement {
@@ -144,6 +145,7 @@ div.catering-advertisement__picture img {
 .catering-request-wrap {
   background-image: url("../img/img-for-catering/burger-background.jpg");
   padding: 90px 0;
+  background-size: cover;
 }
 
 .catering-request-rounded-corners {
@@ -193,6 +195,31 @@ div.catering-advertisement__picture img {
     flex-grow: 1;
     /* Равномерно распределить пространство между изображением и текстом */
   }
+
+  div.catering-advertisement__picture img {
+    height: 100%;
+    object-fit: cover;
+    /* Картинка без розтягування */
+  }
+  .catering-request-wrap{
+    display: flex;
+    flex-direction: row-reverse; 
+
+    /* для формы============================= */
+
+  }
+  .catering-request__empty-column{
+    /* min-width: 500px;
+    min-height: 163px; */
+    min-width: 40%;
+    min-height: 100%;
+    /* для формы============================= */
+  }
+
+ 
+  
+  
+
 }
 
 /* верхній блок i блок map  */
@@ -210,6 +237,7 @@ div.catering-advertisement__picture img {
   display: flex;
   max-width: 1200px;
   margin:auto;
+  flex-direction: column;
 }
 
 .motto__container-brand-subtitle{
@@ -245,18 +273,60 @@ div.catering-advertisement__picture img {
 .location{
   display: flex;
   width: 100%;
+  flex-direction: column;
   
 }
 
 .location__info{
-  width:50%;
+  width:100%;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   flex-direction: column;
+  padding: 50px 250px ;
 }
 
 .location__map{
-  width:50%;
+  width:100%;
   height:650px;
+}
+
+.location__list-item, .location__additional-info{
+  font-family: "Lato", sans-serif;
+  color: rgb(103, 103, 103);
+  font-size: 17px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.location__list-yellow_check{
+  width: 20px;
+  margin-right: 10px ;
+  
+}
+
+.location__description{
+  font-family: "Lato", sans-serif;
+  color: rgb(69, 69, 69);
+  font-size: 20px;
+  padding: 15px 0px;
+  font-weight: bold;
+}
+.location__subheader{
+  font-family: "Rubik", sans-serif;
+  color: rgb(40, 38, 35);
+  font-size: 56px;
+
+}
+
+@media(min-width: 765px){
+  .location{
+    display: flex;
+    flex-direction: row;
+  }
+  .motto__container{
+    display: flex;
+    flex-direction: row;
+  }
 }

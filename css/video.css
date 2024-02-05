@@ -1,34 +1,72 @@
 .video {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    background-image: url(../img/container10-back.jpg);    
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-image: url(../img/container10-back.jpg);
+  background-size: auto;
+  background-position: left;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
-.video__icon{
-    width: 24px;
+
+.video__icon-block{
+  display: flex;
+  align-items: center;
 }
+.video__icon-img{
+  height: 50px;
+}
+
 .video__description {
-    font-family: Rubik, sans-serif;
-    font-size: 38px;
-    font-weight: 700;
-    text-align: center;
+  font-family: Rubik, sans-serif;
+  font-size: 38px;
+  font-weight: 500;
+  text-align: left;
+  color: var(--weekly-title-color);
+  line-height: 42px;
+  margin: 20px;
+}
+
+.video__description-title {
+  font-family: Lato, sans-serif;
+  font-size: 20px;
+  color: rgb(173, 173, 173);
+  line-height: 30px;
+  text-align: left;
+  font-weight: 700;
+  margin: 20px;
+}
+
+.video__text-icon {
+  color: var(--weekly-title-color);
+  font-family: Lato, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 20px;
+}
+.video__title {
+  font-family: "Permanent Marker";
+  color: rgb(255, 0, 0);
+  font-size: 18px;
+  line-height: 23px;
+  width: auto;
+  margin: 20px;
+}
+.video__block{
+  display: grid;
+  align-items: center;
+  padding: 10px;
+
+}
+@media screen and (min-width: 768px) {
+  .video__block {
+    width: 50%;  
+    margin-left: 0;
+    align-items: center;
+  }
+  
+  .video__description {
     text-align: left;
-    color: var(--weekly-title-color);
   }
-  .video__description-title{
-    font-family: Lato, sans-serif;
-    font-size: 20px;
-    text-align: center;
-    color: var(--weekly-description-color);
-    line-height: 30px;
-    text-align: left;  
-  }
-  .video__text-icon{
-    color: var(--weekly-title-color);
-    font-family: Lato, sans-serif;
-    font-size: 17px;
-    font-weight: 700;
-  }
+}
