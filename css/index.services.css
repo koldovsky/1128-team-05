@@ -127,7 +127,7 @@
 @media(min-width: 765px){
     .services-item {
         flex-direction: row;
-        width: 150vh;
+        max-width: 80%;
     }
     .services-item__image {
         flex: 1;
@@ -135,7 +135,6 @@
         border-bottom-right-radius: 0;
         border-top-left-radius: 13px;
         border-bottom-left-radius: 13px;
-        max-width: 585px;
         width: 50%;
     }   
     .services-item__reverse
