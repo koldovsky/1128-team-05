@@ -54,7 +54,7 @@
 
 .app__description {
   font-family: "Lato", sans-serif;
-  font-size: 1.06rem;
+  font-size: 1.0625rem;
   line-height: 1.5;
   color: var(--text-small-color);
   padding-top: 35px;
@@ -62,7 +62,7 @@
 
 .app__features-description {
   font-family: "Lato", sans-serif;
-  font-size: 1.06rem;
+  font-size: 1.06256rem;
   line-height: 1.5;
   color: var(--text-small-color);
 }
@@ -134,4 +134,32 @@
       .app__screenshot img {
         max-height: 90%;
     }
+
+}
+
+@media (min-width: 991px) {
+    .app__title {
+        font-size: 1.25rem;
+      }
+      
+      .app__download-title {
+        font-size: 3.5rem;
+      }
+      
+      .app__download-description {
+        font-size: 1.25rem;
+      }
+      
+      .app__description {
+        font-size: 1.06rem;
+      }
+      
+      .app__features-description {
+        font-size: 1.0625rem;
+      }
+      
+      .app__features-name {
+        font-size: 1.375rem;
+      }   
+
 }
