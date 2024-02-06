@@ -98,7 +98,7 @@
     font-size: 15px;
     line-height: 1.6;
     padding-top: 40px;
-
+    padding-left: 30px;
 }
 
 .news-list-date {
@@ -115,6 +115,7 @@
     text-align: left;
     width: 370px;
     padding-top: 20px;
+    padding-left: 30px;
 }
 
 .news-name-new {
@@ -123,6 +124,7 @@
     font-weight: 600;
     color: var(--text-medium-color);
     width: 370px;
+    padding-left: 30px;
 }
 
 .btn-news {
