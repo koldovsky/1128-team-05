@@ -2,7 +2,10 @@
     background-image: url(../img/img_news/bg-6.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover; 
 }
+
+
 
 /*MOBILE FIRST*/
 .services-container-news {
@@ -13,6 +16,7 @@
     align-items: center;
     padding: 30px;
 }
+
 
 .image-caption {
     padding-top: 20px;
@@ -34,9 +38,8 @@
         align-items: center;
         padding: 30px;
     }
-
     .services-news {
-        background-size: contain;
+        background-size: cover; 
     }
 }
 
