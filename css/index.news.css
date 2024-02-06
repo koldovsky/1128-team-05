@@ -13,6 +13,7 @@
     align-items: center;
     padding: 30px;
 }
+
 @media(min-width: 765px) {
 
     .services-news {
@@ -48,7 +49,8 @@
     gap: 20px;
     margin-bottom: 44px;
 }
-.news-list-item{
+
+.news-list-item {
     padding: 20px;
 }
 
