@@ -148,6 +148,11 @@
     cursor: pointer;
 }
 
+.button-news {
+    padding-left: 30px;
+}
+
+
 .news-title {
     font-family: 'Permanent Marker', cursive;
     font-size: 18px;
