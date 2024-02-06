@@ -1,18 +1,137 @@
-.app {
-    padding: 20px;
+.section-ending img {
+  width: 100%;
 }
-.app__screenshot {
-    width: 100%;
-    height: auto;
+
+.app__screenshot img {
+    display: block;
+    position: relative;
     max-width: 100%;
 }
-@media screen and (max-width: 768px) {
-    .app {
-        padding: 10px;
+
+.app {
+  padding-top: 80px;
+  padding-bottom: 90px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: grid;
+}
+
+
+.app__screenshot,
+.app__article {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.app__info {
+  display: grid;
+  grid-template-rows: 1fr 2.25fr 2fr 4fr;
+  align-items: last baseline;
+  padding-bottom: 20px;
+}
+
+.app__title {
+  font-family: "Permanent Marker", cursive;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--titles-color);
+}
+
+.app__download-title {
+  font-family: "Rubik", sans-serif;
+  font-size: 2.375rem;
+  font-weight: bold;
+  color: var(--text-big-color);
+}
+
+.app__download-description {
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--text-medium-color);
+}
+
+.app__description {
+  font-family: "Lato", sans-serif;
+  font-size: 1.06rem;
+  line-height: 1.5;
+  color: var(--text-small-color);
+  padding-top: 35px;
+}
+
+.app__features-description {
+  font-family: "Lato", sans-serif;
+  font-size: 1.06rem;
+  line-height: 1.5;
+  color: var(--text-small-color);
+}
+
+.app__features-name {
+  font-family: "Lato", sans-serif;
+  font-size: 1.375rem;
+  color: var(--text-medium-color);
+  font-weight: bold;
+}
+
+.app__features-item {
+  padding: 20px 0 20px 0;
+  display: flex;
+}
+
+
+.app__features-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--background-medium-color);
+  flex-shrink: 0;
+  position: relative;
+}
+
+.app__features-image img {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.app__features-text {
+  padding-left: 15px;
+}
+
+.app__download-links {
+  padding-top: 20px;
+}
+
+.app__download-link img {
+  border-radius: 7px;
+  height: 60px;
+  width: auto;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .app__features-image {
+        width: 70px;
+        height: 70px;
     }
-    
-    .app__screenshot {
-        width: 100%;
-        height: auto;
+      
+      .app__features-image img {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+      } 
+      
+      .app {
+        grid-template-columns: 50% 50%;
+      }
+
+      .app__screenshot img {
+        max-height: 90%;
     }
 }
