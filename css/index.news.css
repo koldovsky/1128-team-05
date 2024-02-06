@@ -5,7 +5,7 @@
 }
 
 /*MOBILE FIRST*/
-.services-container {
+.services-container-news {
     max-width: 1500px;
     margin: auto;
     display: flex;
