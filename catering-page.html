@@ -9,7 +9,7 @@
   </head>
   <!-- <body class="container"> -->
 
-  <body>
+  <body class="catering-page__container" style="min-width: 320px">
     <header data-include="header.partial.html"></header>
 
     <main class="catering-wrapper">
@@ -138,54 +138,72 @@
               Fill in a Catering Inquiry
             </h3>
 
-            <form
+            <!-- <form
               action="https://formspree.io/f/mbjnllbl"
               method="post"
               class="catering-request__form-inner"
-              onsubmit="return validateForm()"
               name="contactForm"
+              id="form-request"
+            > -->
+
+            <form
+              class="catering-request__form-inner"
+              name="contactForm"
+              id="form-request"
             >
+              <!-- <i class="success-icon"></i> -->
               <input
                 type="text"
                 placeholder="Full name*"
                 name="fullName"
                 class="catering-request__input"
+                id="fullName"
               />
+              <div class="error-message"></div>
+
               <input
                 type="text"
                 placeholder="Phone number*"
                 name="phoneNumber"
                 class="catering-request__input"
+                id="phoneNumber"
               />
+              <div class="error-message"></div>
+              <div
+                class="error-phone-message hidden"
+                id="phone-erorr-message"
+              ></div>
+
               <input
                 type="text"
                 placeholder="E-mail*"
                 name="email"
                 class="catering-request__input"
+                id="email"
               />
+              <div class="error-message"></div>
               <input
-                type="text"
+                type="date"
                 placeholder="Event date"
                 name="eventDate"
                 class="catering-request__input"
+                id="eventDate"
               />
               <input
-                type="text"
+                type="number"
                 placeholder="Number of people"
                 name="numberOfPeople"
                 class="catering-request__input"
-              />
-              <input
-                type="text"
-                placeholder="Leave any questions or specific notes"
-                name="notes"
-                class="catering-request__input"
+                id="numberOfPeople"
+                min="1"
+                max="10"
               />
               <textarea
                 placeholder="Leave any questions or specific notes"
                 class="catering-request__input"
                 maxlength="2000"
                 rows="7"
+                id="notes"
               ></textarea>
               <input type="submit" class="catering-request__submit" />
             </form>
@@ -198,6 +216,7 @@
     <!-- <footer data-include="footer.partial.html"></footer> -->
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
     <script src="js/catering-page-form-validate.js"></script>
+    <script></script>
     <!-- test -->
   </body>
 </html>

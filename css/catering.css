@@ -6,11 +6,13 @@
   box-sizing: border-box;
 }
 
-iframe {
+/* iframe {
   max-width: 100%;
   overflow: hidden;
+} */
+.catering-page__container{
+  min-width: 320px;
 }
-
 h2 {
   font-family: "Permanent Marker";
   color: rgb(231, 39, 45);
@@ -141,6 +143,32 @@ div.catering-advertisement__picture img {
   color: var(--options-text-paragraph);
   line-height: 30px;
 }
+/* 
+* style rules for form
+*/
+
+/* 
+* prevent empty inputs
+*/
+.error-message, .error-phone-message{
+  font-family: "Lato";
+  color: #e7272d;
+  font-size: 13px;
+}
+
+/* 
+* number validation rules
+*/
+/* .error-message-phone-number{
+  color: red;
+  size: 80%
+} */
+.hidden{
+  display: none;
+}
+
+
+
 
 .catering-request-wrap {
   background-image: url("../img/img-for-catering/burger-background.jpg");
@@ -151,25 +179,31 @@ div.catering-advertisement__picture img {
 .catering-request-rounded-corners {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  
   background-color: #FFFFFF;
   border-radius: 10px;
   margin: 10%;
+  min-width: 250px;
 }
 
 .catering-request__form-inner {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin: 10%;
 }
 
 .catering-request__input {
-  padding: 11px 22px;
+  padding:  11px 44px 11px 22px;
   margin: 12px 0 0;
   border: 0;
   background-color: #fbf7ed;
   border-radius: 20px;
+}
+.catering-request__input:focus{
+  outline: none;
+  border: 2px solid #fbbe36 ;
+  background-color: rgba(0,0,0,0.1);
 }
 
 .catering-request__submit {
@@ -185,17 +219,22 @@ div.catering-advertisement__picture img {
   background-color: black;
 }
 
+/* 
+* Media Quaries are here
+*/
+
+@media (min-width: 320px) {
+  
+}
 @media(min-width: 765px) {
   .catering-advertisement {
     display: flex;
     flex-direction: row;
   }
-
   .catering-advertisement__section {
     flex-grow: 1;
     /* Равномерно распределить пространство между изображением и текстом */
   }
-
   div.catering-advertisement__picture img {
     height: 100%;
     object-fit: cover;
@@ -204,22 +243,13 @@ div.catering-advertisement__picture img {
   .catering-request-wrap{
     display: flex;
     flex-direction: row-reverse; 
-
     /* для формы============================= */
-
   }
   .catering-request__empty-column{
-    /* min-width: 500px;
-    min-height: 163px; */
     min-width: 40%;
     min-height: 100%;
     /* для формы============================= */
   }
-
- 
-  
-  
-
 }
 
 /* верхній блок i блок map  */
