@@ -44,14 +44,15 @@
 }
 .hero__slogan {
   padding-top: 20px;
-  font-family: "Rubik, sans-serif", sans-serif;
+  font-family: "Rubikgit", sans-serif;
   font-size: 3.5rem;
   font-weight: 700;
   overflow-wrap: break-word;
+  color: var(--hero__slogan-color);
 }
 @media (min-width: 768px) {
   .hero__slogan {
-    font-size: 4rem;
+    font-size: 4.375rem;
     font-weight: 700;
   }
 }
