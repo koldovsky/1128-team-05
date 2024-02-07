@@ -1,6 +1,6 @@
-// document.addEventListener("partialsLoaded", () => {
-//   import("./header.js");
-// });
+document.addEventListener("partialsLoaded", () => {
+  import("./header.js");
+});
 
 // function validateForm() {
 //     const fullName = document.contactForm.fullName.value;
