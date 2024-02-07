@@ -72,23 +72,29 @@
   padding-top: 25px;
 }
 
-.about-us__menu-list {
+.about-us__list {
   padding-top: 25px;
   display: flex;
   flex-flow: wrap;
   justify-content: flex-start;
   flex-direction: row;
-  gap: 20px;
+  gap: 30px;
+}
+.about-us__list-waper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
-.about-us__menu-item {
-  font-size: 17px;
+.about-us__list-item {
+  font-size: 1rem;
   color: var(--text-medium-color);
   font-weight: bold;
-  gap: 15px;
   align-items: center;
   padding: 3px;
 }
+
+
 .about-us__button-waper {
   padding-top: 25px;
 }

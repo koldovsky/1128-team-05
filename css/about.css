@@ -55,7 +55,7 @@ h2 {
   /* min-width: 300px;*/
   max-height: 80%;
   display: grid;
-  grid-template-rows: 30px 1fr 1fr 2fr;
+  grid-template-rows: 30px 1.25fr 1.25fr 1.5fr;
   align-items: last baseline;
 }
 
@@ -79,7 +79,7 @@ h2 {
   font-family: "Lato", sans-serif;
   font-size: 1.06rem;
   line-height: 1.5;
-  margin-top: 24px;
+  padding-top: 24px;
   color: var(--text-small-color);
 }
 
@@ -227,7 +227,6 @@ h2 {
   }
 
   .about {
-    display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -248,17 +247,15 @@ h2 {
 
   .team {
     background-image: url(../img/about-background-leaf.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1500px auto;
     background-position-y: bottom;
-    background-position-x: 40%;
     padding-top: 40px;
     padding-bottom: 0;
   }
 
   .team div.container {
-    display: flex;
     flex-direction: row;
   }
 }

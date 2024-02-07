@@ -28,6 +28,7 @@
   min-width: 272px;
   border-radius: 6px;
   padding: 0 15px 0 15px;
+  transition: transform 0.5s ease;
 }
 
 .our-tack__text-content {
