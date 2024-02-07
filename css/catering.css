@@ -313,7 +313,7 @@ div.catering-advertisement__picture img {
   align-items: left;
   justify-content: center;
   flex-direction: column;
-  padding: 50px 250px ;
+  /* padding: 50px 250px ; */
 }
 
 .location__map{
@@ -359,4 +359,8 @@ div.catering-advertisement__picture img {
     display: flex;
     flex-direction: row;
   }
+  .location__info{
+    padding: 50px 250px ;
+  }
+
 }
