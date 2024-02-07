@@ -8,7 +8,7 @@
   max-width: 100%;
 }
 
-.app {
+.app div.container {
   padding-top: 80px;
   padding-bottom: 90px;
   padding-left: 24px;
@@ -127,6 +127,17 @@
   }
 
   .app {
+    background: url("../img/about-us-background.jpg") 50% 50% / cover no-repeat,
+      var(--about-us-container-background);
+    position: static;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+  }
+
+  .app div.container {
     grid-template-columns: 50% 50%;
   }
 
