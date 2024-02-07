@@ -308,18 +308,19 @@ div.catering-advertisement__picture img {
 
 
 .location__info{
-  width:100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   
+  flex-direction: column;
+  display: flex;
+  padding-top: 100px ;
+  align-items: center; /* Центрує внутрішній блок по вертикалі, якщо потрібно */
+  width: 100%; 
+}
+
   
 }
 
 .location__info-text{
-  text-align: left; 
-  max-width: 470px;
+  text-align: left; /* Вирівнювання тексту по лівому краю */
 }
 
 .location__map{

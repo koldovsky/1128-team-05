@@ -19,12 +19,7 @@
   background-position: center;
   background-size: cover;
   display: flex;
-  /* align-items: left;
-  justify-content: top; */
-  /*прибрпдп, бо перевірялв в девтулзах, ці не працюють  */
-
-  /* min-width: 700px; */
-  /* прибрала min-width, бо це заважає зменшенню при мобільній адаптації */
+  width: 90%;
   min-height: 350px;
   border-radius: 10px;
   flex-direction: column;
@@ -33,17 +28,12 @@
 
 .special-offer__salad {
   min-height: 350px;
-  /* min-width: 400px; */
-  /* заважає мобільній адаптації */
+  width: 90%;
   border-radius: 10px;
   background-image: url("../img/img-for-special-offer/salad.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
-  /* align-items: left;
-  justify-content: top; */
-  /* перевірила через девтулз- не працює */
-
   flex-direction: column;
   padding: 40px;
 }
@@ -105,5 +95,11 @@ h3 {
   .special-offer__block {
     display: flex;
     flex-direction: row;
+  }
+  .special-offer__salad {
+    width: 400px;
+  }
+  .special-offer__burger {
+    width: 700px;
   }
 }
