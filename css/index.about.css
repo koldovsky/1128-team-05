@@ -1,0 +1,119 @@
+/*Created by Romanovska Svitlana*/
+.about-us {
+  min-height: 500px;
+  background: var(--about-us-container-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+  .about-us {
+    background: url("../img/about-us-background.jpg") 50% 50% / cover no-repeat,
+      var(--about-us-container-background);
+    position: static;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+.about-us__image {
+  display: block;
+  position: relative;
+  max-width: 100%;
+  height: auto; 
+}
+.about-us__wraper {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+@media (min-width: 768px) {
+  .about-us__wraper {
+    grid-column-gap: 10px;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+.about-us__title h2 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.25rem;
+  color: var(--about-us-color-title);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.about-us__slogan {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--about-us-color-suptitle);
+  font-family: "Rubik";
+  padding-top: 25px;
+}
+
+.about-us__description {
+  font-size: 1.25rem;
+  color: var(--about-us-color-desc);
+  font-weight: 700;
+  padding-top: 25px;
+}
+
+.about-us__text {
+  font-size: 1rem;
+  color: var(--about-us-color-text);
+  line-height: 25px;
+  text-align: left;
+  max-width: 100%;
+  padding-top: 25px;
+}
+
+.about-us__list {
+  padding-top: 25px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 30px;
+}
+.about-us__list-waper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.about-us__list-item {
+  font-size: 1rem;
+  color: var(--text-medium-color);
+  font-weight: bold;
+  align-items: center;
+  padding: 3px;
+}
+
+
+.about-us__button-waper {
+  padding-top: 25px;
+}
+
+.about-us__button {
+  border-radius: 25px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--hero__btn-border);
+  background-color: var(--hero__btn-color);
+  cursor: pointer;
+  color: var(--hero__light-btn-color);
+  font-weight: 700;
+  padding: 16px 28px;
+  display: inline-block;
+}
+
+.about-us__button:hover {
+  background-color: var(--hero__btn-background-hover);
+  border-color: var(--hero__btn-border-hover);
+  transition: all 1s ease-out;
+}

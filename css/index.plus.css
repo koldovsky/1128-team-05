@@ -1,6 +1,19 @@
-/*.container{
-    padding: 70px 0 40px; // ВИДАЛИТИ
-}*/
+.services2 {
+    padding-top: 90px;
+    background-color: #fbf7ed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.containerindexplus {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+
 .why-item-title{
     font-size: 20px;
     color: var(--text-big-color);
@@ -19,15 +32,21 @@
     .step-item {
         width: 145px;
     }
+    .why-list {
+        gap: 24px;
+        margin-bottom: 80px;
+    }
 }
 @media only screen and (min-width: 768px) {
     .step-item {
         width: 280px;
     }
+    .why-list{
+        gap: 24px;
+        margin-bottom: 80px;
+    }
 }
-.services2 {
-    background-color: #fbf7ed;
-}
+
 .why-list{
     display: flex;
     flex-direction: column;
@@ -36,12 +55,7 @@
     gap: 20px;
     margin-bottom: 44px;
 }
-@media only screen and (min-width: 768px) {
-    .why-list{
-        gap: 24px;
-        margin-bottom: 80px;
-    }
-}
+
 @media only screen and (min-width: 1280px) {
     .why-list{
         flex-direction: row;
@@ -57,18 +71,17 @@
     gap: 14px;
     height: 112px;
     max-width: 389px;
+    
 }
-@media only screen and (max-width: 375px) {
-    .why-card {
-        max-width: 200px;
-    }
-}
+
 @media only screen and (min-width: 768px) {
     .why-card {
         padding: 40px 20px;
         height: 128px;
+        
     }
 }
+
 .step {
     padding: 12px 0;
     font-size: 18px;

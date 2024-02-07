@@ -17,7 +17,7 @@
   --header__navicon: #282623;
   --light-top-color: #ffffff;
   --menu-color-link: rgb(79, 80, 71);
-  --active-menu-color-link: #4f5047;
+  --active-menu-color-link: #6a6b61;
   --menu-color-link-hover: #e7272d;
   /*hero*/
   --hero__title: #e7272d;
@@ -29,7 +29,15 @@
   --hero__btn-border-hover: #282623;
   --hero__btn-background-hover: #282623;
   --hero__phone-text:#ffffff;
+  --hero__text-animation: rgba(255, 255, 255, 0);
   --hero__phone-tel: #282623;
+  /*about-us*/
+  --about-us-container-background: #ffffff;
+  --about-us-color-suptitle: #282623;
+  --about-us-color-desc: rgb(79, 80, 71);
+  --about-us-color-title: #e7272d;
+  --about-us-color-text: rgb(103, 103, 103);
+
   /*weekly*/
   --weekly-color-main: #fbbe36;
   --weekly-title-color: #ffffff;
@@ -42,8 +50,8 @@
   --titles-color: #e7272d;
   --text-light-color: white;
   --text-small-color: #676767;
-  --text-big-color: #454545;
-  --text-medium-color: #282623;
+  --text-medium-color: #454545;
+  --text-big-color: #282623;
   /* about-page.html */
   /* menu.html */
   --background-menu-color: #fbbe36;
@@ -70,6 +78,7 @@
   --input-words-color: rgb(40, 38, 35);
   --form-button-color: rgb(231, 39, 45);
   --form-button-text-color: white;
+  --from-button-hover-color:#282623;
   /* about.our-track.html */
   --h2-our-track-color: rgb(231, 39, 45);
   --subtitle-text-color: rgb(40, 38, 35);

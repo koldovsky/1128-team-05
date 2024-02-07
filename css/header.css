@@ -72,7 +72,6 @@
   background: var(--header__navicon);
   position: relative;
   cursor: pointer;
-  transition: background 0.2s ease-out;
 }
 
 .header__navicon::before,
@@ -110,6 +109,7 @@
 }
 
 .header.responsive .header__nav {
+  transform: scale(1);
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -153,27 +153,20 @@
   width: 100%;
   height: 1px;
   background: var(--active-menu-color-link);
-  transform: scaleX(0);
-  transition: all 2s ease-in-out;
-}
-.header__menu-link.header__active-menu::after {
-  transform: scale(1);
 }
 
 .header__mobile-contact {
   text-align: center;
 }
-.header__mobile-contact address  {
+.header__mobile-contact address {
   font-style: normal;
-} 
+}
 
 .header__mobile-contact .header__address,
 .header__mobile-contact .header__email,
 .header__mobile-contact .header__operating-hours {
   padding-top: 20px;
 }
-
-
 
 @media (min-width: 992px) {
   .header__burger-menu {
@@ -211,17 +204,15 @@
 
 .header__social-icons-img {
   width: 32px;
-
 }
 
-.header__social-icons-img:hover{
- opacity: 0.6;
+.header__social-icons-img:hover {
+  opacity: 0.6;
 }
 
 .header__social-icons {
   display: none;
 }
-
 
 .header__social-icons-mobile {
   display: flex;
