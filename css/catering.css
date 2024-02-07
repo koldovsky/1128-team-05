@@ -262,7 +262,6 @@ div.catering-advertisement__picture img {
   font-size: 20px;
   font-weight: bold;
   font-family: "Lato", sans-serif;
-  margin: auto;
   background: var(--header-container-background);
   max-width: 600px;
   color: var(--text-light-color)!important;
@@ -277,13 +276,20 @@ div.catering-advertisement__picture img {
   
 }
 
+
 .location__info{
   width:100%;
   display: flex;
-  align-items: left;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 50px 250px ;
+  
+  
+}
+
+.location__info-text{
+  text-align: left; 
+  max-width: 470px;
 }
 
 .location__map{
@@ -324,9 +330,12 @@ div.catering-advertisement__picture img {
   .location{
     display: flex;
     flex-direction: row;
+    
   }
   .motto__container{
     display: flex;
     flex-direction: row;
   }
+
+
 }
