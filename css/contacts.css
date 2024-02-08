@@ -47,6 +47,10 @@
     background-color: var(--contacts-background-body-color);
 }
 
+.contacts-page__sections-divider-bottom {
+    background-color: var(--contacts-card-title-color);
+}
+
 .cropped-background-image {
     width: 100%;
     height: 60px;
