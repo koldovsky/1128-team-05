@@ -1,3 +1,7 @@
+.sections-divider {
+    background-color: var(--index-burgers-background-body-color);
+}
+
 .cropped-background-image {
     width: 100%;
     height: 60px;

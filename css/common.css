@@ -103,7 +103,8 @@
   --index-burgers-partial-top-text-color: #e7272d;
   --index-burgers-partial-title-color: #282623;
   --index-burgers-partial-bottom-text-color: #454545;
-  /* index-burgers-partial */  
+  --index-burgers-background-body-color: #fbf7ed;
+  /* index-burgers-partial */
 }
 
 /* img {
