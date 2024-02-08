@@ -99,6 +99,11 @@
   --contacts-card-text-color: #676767;
   --contacts-outline-input-color: #3b99fc;
   /* contacts-page */
+  /* index-burgers-partial */
+  --index-burgers-partial-top-text-color: #e7272d;
+  --index-burgers-partial-title-color: #282623;
+  --index-burgers-partial-bottom-text-color: #454545;
+  /* index-burgers-partial */  
 }
 
 /* img {

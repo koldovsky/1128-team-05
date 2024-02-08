@@ -17,4 +17,5 @@
 @import "index.news.css";
 @import "index.app.partial.css";
 @import "index.app.partial.css";
-@import "index.burgers.partial.css"
+@import "index.burgers.partial.css";
+@import "index.burgers.partial.carousel.css";
