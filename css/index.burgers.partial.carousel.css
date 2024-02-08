@@ -9,6 +9,8 @@
 }
 
 .burgers-carousel {
+    padding: 100px 0 50px;
+    background-size: cover;
     background-image: url("../img/img-for-burger-partial-carousel/background.jpg");
 }
 
@@ -43,7 +45,26 @@
     color: var(--index-burgers-partial-bottom-text-color);
 }
 
-/* carousel */
+@media (max-width: 960px) {
+    .burgers-carousel-header .top-text {
+        font-size: 18px;
+    }
+
+    .burgers-carousel-header .title {
+        font-size: 47px;
+    }
+}
+
+@media (max-width: 768px) {
+    .burgers-carousel-header .top-text {
+        font-size: 16px;
+    }
+
+    .burgers-carousel-header .title {
+        font-size: 38px;
+    }
+}
+
 .burgers-carousel__slides{
     display: flex;
     padding: 0 35px;
@@ -93,12 +114,10 @@
     width: 100%;
 }
 
-
 .wrapper .carousel{
     gap: 16px;
     display: grid;
     overflow-x: auto;
-    border-radius: 8px;
     scrollbar-width: none;
     grid-auto-flow: column;
     scroll-behavior: smooth;
@@ -132,7 +151,7 @@
 
 .carousel .card {
     margin: 0;
-    height: 342px;
+    width: 100%;
     cursor: pointer;
     box-shadow: none;
     list-style: none;
@@ -155,43 +174,38 @@
 }
 
 .carousel .card h3 {
-    font-weight: 500;
-    font-size: 1.56rem;
-    margin: 30px 0 5px;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 40px 0 5px;
+    color: var(--index-burgers-partial-title-color);
+    font-family: 'Rubik', sans-serif;
 }
 
 .carousel .card span {
-    font-size: 1.31rem;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 20px 0 5px;
+    font-family: 'Lato', sans-serif;
+    color: var(--index-burgers-gray-text-color);
 }
 
-@media screen and (max-width: 900px) {
+.carousel .card p {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 10px 0 0 0;
+    font-family: 'Rubik', sans-serif;
+    color: var(--index-burgers-partial-top-text-color);
+}
+
+@media (max-width: 900px) {
     .wrapper .carousel {
       grid-auto-columns: calc((100% / 2) - 9px);
     }
 }
-@media screen and (max-width: 600px) {
+
+@media (max-width: 600px) {
     .wrapper .carousel {
       grid-auto-columns: 100%;
-    }
-}
-/* carousel */
-
-@media (max-width: 960px) {
-    .burgers-carousel-header .top-text {
-        font-size: 18px;
-    }
-
-    .burgers-carousel-header .title {
-        font-size: 47px;
-    }
-}
-
-@media (max-width: 768px) {
-    .burgers-carousel-header .top-text {
-        font-size: 16px;
-    }
-
-    .burgers-carousel-header .title {
-        font-size: 38px;
     }
 }
