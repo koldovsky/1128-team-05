@@ -362,6 +362,10 @@
 }
 
 @media (max-width: 575px) {
+    .card {
+        margin: 10px 20px 10px 20px;
+    }
+
     .weekly-schedule {
         left: 25%; 
         transform: translateX(-25%);
@@ -370,5 +374,36 @@
     .weekly-schedule-sequel {
         left: 20%; 
         transform: translateX(-20%);
+    }
+}
+
+@media (max-width: 430px) {
+    .card {
+        margin: 10px 10px 10px 15px;
+    }
+
+    .weekly-schedule {
+        left: 5%;
+        margin-left: 5px;
+        transform: translateX(-5%);
+    }
+
+    .weekly-schedule-sequel {
+        left: 0%;
+        margin-left: 15px;
+        padding-top: 50px;
+        transform: translateX(0%);
+    }
+}
+
+@media (max-width: 372px) {
+    .weekly-schedule {
+        left: 65%;
+        transform: translateX(-65%);
+    }
+
+    .weekly-schedule-sequel {
+        left: 45%;
+        transform: translateX(-45%);
     }
 }

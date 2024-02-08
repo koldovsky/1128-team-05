@@ -21,6 +21,7 @@
   --menu-color-link-hover: #e7272d;
   /*hero*/
   --hero__title: #e7272d;
+  --hero__slogan-color:#ffffff;
   --hero__information: #4f5047;
   --hero__light-btn-color: #ffffff;
   --hero__btn-border: #e7272d;
@@ -98,6 +99,13 @@
   --contacts-card-text-color: #676767;
   --contacts-outline-input-color: #3b99fc;
   /* contacts-page */
+  /* index-burgers-partial */
+  --index-burgers-partial-top-text-color: #e7272d;
+  --index-burgers-partial-title-color: #282623;
+  --index-burgers-partial-bottom-text-color: #454545;
+  --index-burgers-background-body-color: #fbf7ed;
+  --index-burgers-gray-text-color: #676767;
+  /* index-burgers-partial */
 }
 
 /* img {
